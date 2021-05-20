@@ -40,6 +40,15 @@ html.is-electron.is-mac .cp__header {
 }
 
 
+/* fixed top bar bar for mobile */
+
+@media screen and (max-width: 640px) {
+    #head {
+        position: fixed;
+    }
+}
+
+
 /* gradient on top and bottom for aesthetics */
 
 .cp__sidebar-main-content:before {
