@@ -48,7 +48,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
  The Code block width of Desktop version is slightly different from modern browser (Chrome and Safari are tested), which might lead to code block overflow. For most cases it works well. If you do care about it, use `custom-desktop.css` file.
 
-The stylesheet has been tested on Safari(iOS), Chrome(macOS) and Logseq Canary Desktop application(macOS).  If you found the code block still overflow the screen on other devices, do use `custom-desktop.css` which  provides more margin space on the right side of code block.
+The stylesheet has been tested on Safari(iOS), Chrome(macOS) and Logseq Canary Desktop application(macOS).  If you find the code block still overflow the screen on other devices, do use `custom-desktop.css` which  provides more margin space on the right side of code block.
 
 ## Thanks
 
