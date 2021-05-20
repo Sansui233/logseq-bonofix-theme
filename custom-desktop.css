@@ -1,0 +1,1029 @@
+:root {
+    --ls-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    --ls-main-content-max-width: 900px;
+    --ls-tag-text-opacity: 0.6;
+    --ls-tag-text-hover-opacity: 0.8;
+    --ls-page-text-size: 1em;
+    --ls-page-title-size: 36px;
+}
+
+.cp__sidebar-main-layout {
+    background: none;
+}
+
+
+/***************************************************************
+***************************** TOP ******************************
+***************************************************************/
+
+#head .repos {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* import (arrows) icon */
+
+#head .ml-2.mr-1 svg {
+    height: 17px;
+}
+
+
+/* left side bar for mobile */
+
+#left-bar #repo-name {
+    max-width: 16ch;
+}
+
+
+/* gradient on top and bottom for aesthetics */
+
+.cp__sidebar-main-content:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cp__sidebar-main-content:after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cp__header-logo,
+.fade-link {
+    opacity: .6;
+}
+
+.cp__header-left-menu {
+    margin-right: unset;
+}
+
+
+/* < > buttons */
+
+a[title="Go Back"],
+a[title="Go Forward"] {
+    border-radius: 3px;
+    opacity: 1;
+    transition: .3s;
+}
+
+
+/* search-field */
+
+#search-wrapper {
+    opacity: 0;
+    transition: .3s;
+}
+
+#search-wrapper:hover,
+#search-wrapper:focus-within {
+    opacity: 1;
+}
+
+#search-wrapper>div:first-child {
+    left: 10px;
+}
+
+#search>.inner {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#search_field:focus {
+    background: var(--ls-search-background-color);
+}
+
+@media screen and (max-width: 640px) {
+    #ui__ac-inner {
+        left: 0px;
+        position: fixed;
+        width: 100vw;
+        box-shadow: 0px 2px 3px #ccc;
+    }
+}
+
+
+/***************************************************************
+************************** Layout ***************************
+***************************************************************/
+
+
+/* fix CodeMirror overflow issue*/
+
+.cp__sidebar-main-content {
+    width: 100%;
+}
+
+@media screen and (max-width:640px) {
+    #main-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /* Canary Version */
+    .extensions__code {
+        margin-right: 40px;
+    }
+}
+
+
+/***************************************************************
+************************** MAIN AREA ***************************
+***************************************************************/
+
+
+/* blocks with background */
+
+[style="background-color: rgb(73, 125, 70); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(83, 62, 125); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(120, 127, 151); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(151, 134, 38); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(73, 118, 123); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(121, 62, 62); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"] {
+    border-radius: 3px;
+    padding: 5px 6px;
+}
+
+
+/* vertical lines */
+
+.block-children {
+    border-left: 1px solid var(--ls-guideline-color);
+}
+
+
+/* weird vertical border on the left side of the screen */
+
+#sidebar-nav-wrapper {
+    border: none !important;
+}
+
+
+/* text mark/highlight */
+
+mark {
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+
+/* page title */
+
+h1.title {
+    font-weight: 700;
+    font-size: 33px;
+    margin-bottom: 1rem;
+}
+
+
+/* page reference */
+
+.page-reference {
+    border-radius: 3px;
+    padding: 2px 0px;
+    transition: .3s;
+}
+
+.page-reference .text-gray-500 {
+    opacity: .5;
+}
+
+
+/* block references */
+
+.block-ref {
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-style: italic;
+}
+
+.block-ref .block-ref {
+    padding: 6px 5px;
+    border: none;
+}
+
+
+/* checkbox */
+
+.form-checkbox {
+    border-radius: 2px;
+    z-index: 1;
+    position: relative;
+}
+
+.marker-switch {
+    border: none;
+    opacity: 1;
+    padding: 0;
+    height: 20px;
+    font-weight: 700;
+    margin: 0 5px 0 2px;
+    line-height: 20px;
+    transition: .3s;
+}
+
+.marker-switch {
+    margin-left: -23px;
+    padding-left: 24px;
+    padding-right: 14px;
+}
+
+
+/* main text */
+
+.block-body dl,
+.block-body ol,
+.block-body ul {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+ul {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+ul li p {
+    line-height: 1.5em;
+}
+
+a {
+    color: var(--ls-alink-color);
+}
+
+.external-link {
+    border-bottom: 0.05em solid rgba(55, 53, 47, 0.25);
+}
+
+.dark-theme .external-link {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.ui__modal-panel {
+    background-color: var(--ls-primary-background-color);
+}
+
+
+/* table */
+
+tr,
+td {
+    border-bottom: 0px;
+}
+
+
+/* Callout */
+
+.admonitionblock {
+    padding: 16px 16px 16px 12px;
+    background-color: var(--ls-callout-background-color);
+    margin: unset;
+}
+
+.admonitionblock .admonition-icon {
+    padding-right: 0.65em;
+    border: unset;
+}
+
+.is-paragraph {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.admonitionblock .is-paragraph {
+    font-size: 0.8em;
+    margin-left: -0.6rem;
+}
+
+.svg-shadow {
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .1));
+}
+
+svg.h-8.w-8 {
+    width: 1.7em;
+    height: 1.7em;
+}
+
+svg.important {
+    color: #c75252;
+}
+
+svg.caution {
+    color: #eea3b4;
+}
+
+svg.tip {
+    color: #edc987;
+}
+
+svg.note {
+    color: var(--ls-secondary-text-color)
+}
+
+
+/* inline code */
+
+:not(pre)>code {
+    border-radius: 3px;
+    font-size: 85%;
+    font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
+    padding: 0.2em 0.4em !important;
+    color: #EB5757;
+}
+
+
+/***************************************************************
+************************ RIGHT SIDEBAR *************************
+***************************************************************/
+
+.cp__right-sidebar .sidebar-item {
+    padding: 10px 20px 10px 2px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+
+/***************************************************************
+**************************** MISC ******************************
+***************************************************************/
+
+a {
+    transition: .3s;
+}
+
+
+/* Calendar */
+
+.cp__sidebar-main-content .logseq-tools-multiple-calendars {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.cp__sidebar-main-content .logseq-tools-multiple-calendars .logseq-tools-calendar {
+    flex: 0 50%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.logseq-tools-calendar tr {
+    background: none !important;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td,
+.logseq-tools-calendar tr {
+    border: none;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td {
+    text-align: center;
+}
+
+
+/* Calendar - pages from other months */
+
+.logseq-tools-calendar .outofmonth {
+    opacity: .3;
+}
+
+
+/***************************************************************
+****************************************************************
+****************************************************************
+************************ DARK - BLACK **************************
+****************************************************************
+****************************************************************
+***************************************************************/
+
+.dark-theme,
+html[data-theme=dark] {
+    --ls-primary-background-color: rgb(47, 52, 55);
+    --ls-secondary-background-color: rgb(55, 60, 63);
+    --ls-tertiary-background-color: rgb(67, 72, 75);
+    --ls-quaternary-background-color: rgb(148 158 164);
+    --ls-table-tr-even-background-color: #0404061c;
+    --ls-callout-background-color: rgba(69, 75, 78, 0.3);
+    --ls-codeblock-background-color: rgb(63, 68, 71);
+    --ls-active-primary-color: var(--ls-link-text-color);
+    --ls-active-secondary-color: var(--ls-link-text-hover-color);
+    --ls-block-properties-background-color: #272727;
+    --ls-block-ref-link-text-color: #761a3f;
+    --ls-search-background-color: var(--ls-primary-background-color);
+    --ls-border-color: #292323;
+    --ls-guideline-color: var(--ls-tertiary-background-color);
+    --ls-menu-hover-color: var(--ls-secondary-background-color);
+    --ls-primary-text-color: rgb(255 255 255 / 90%);
+    --ls-secondary-text-color: #dfdfdf;
+    --ls-title-text-color: var(--ls-primary-text-color);
+    --ls-link-text-color: #f67373;
+    --ls-link-text-hover-color: #f29191;
+    --ls-alink-color: var(--ls-link-text-color);
+    --ls-link-ref-text-color: #6fc2ef;
+    --ls-link-ref-text-color: #6fc2ef;
+    --ls-link-ref-text-hover-color: #8cd2f8;
+    --ls-tag-text-color: var(--ls-link-ref-text-color);
+    --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
+    --ls-mark-text-background-color: #86bada8f;
+    --ls-slide-background-color: var(--ls-primary-background-color);
+    --ls-block-bullet-border-color: #ffffff14;
+    --ls-block-bullet-color: #ffffff1c;
+    --ls-block-highlight-color: #fbfbfb23;
+    --ls-selection-background-color: #AB3641;
+    --ls-page-checkbox-color: #935c62;
+    --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+    --ls-page-blockquote-color: var(--ls-primary-text-color);
+    --ls-page-blockquote-bg-color: var(--ls-primary-background-color);
+    --ls-page-blockquote-border-color: var(--ls-primary-text-color);
+    --ls-page-inline-code-color: #EB5757;
+    --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+    --ls-scrollbar-foreground-color: rgba(192, 202, 223, 0.15);
+    --ls-scrollbar-background-color: rgba(42, 46, 49, 0.9);
+    --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
+    --ls-head-text-color: #FFE27C;
+    --ls-icon-color: var(--ls-quaternary-background-color);
+    --ls-search-icon-color: var(--ls-quaternary-background-color);
+    --ls-a-chosen-bg: var(--ls-secondary-background-color);
+    --ls-right-sidebar-code-bg-color: #3c041f;
+    --color-level-1: var(--ls-secondary-background-color);
+    --color-level-2: var(--ls-tertiary-background-color);
+    --color-level-3: var(--ls-quaternary-background-color);
+    --color-level-4: #632f46;
+    --color-level-5: #865673;
+    --color-level-6: #9e6889;
+}
+
+
+/***************************************************************
+***************************** TOP ******************************
+***************************************************************/
+
+
+/* gradient on top and bottom for aesthetics */
+
+.dark-theme .cp__sidebar-main-content:before {
+    background: linear-gradient(to bottom, rgba(24, 24, 24, .7) 0%, rgba(24, 24, 24, 0) 100%);
+}
+
+.dark-theme .cp__sidebar-main-content:after {
+    background: linear-gradient(to top, rgba(24, 24, 24, .7) 0%, rgba(24, 24, 24, 0) 100%);
+}
+
+
+/* left side bar for mobile */
+
+.dark-theme .cp__header-left-menu {
+    color: var(--ls-primary-text-color);
+    opacity: .6;
+}
+
+.dark-theme #left-bar .close-panel-btn {
+    color: var(--ls-primary-text-color);
+    opacity: .6;
+}
+
+.dark-theme #left-bar a.nav-item:hover {
+    background-color: var(--ls-table-tr-even-background-color);
+}
+
+
+/* < > buttons */
+
+.dark-theme a[title="Go Back"],
+.dark-theme a[title="Go Forward"] {
+    background: unset;
+}
+
+.dark-theme a[title="Go Back"]:hover,
+.dark-theme a[title="Go Forward"]:hover {
+    background: var(--ls-secondary-background-color);
+}
+
+.dark-theme a#repo-name {
+    color: unset;
+}
+
+
+/* search-field */
+
+.dark-theme #search_field {
+    background: linear-gradient(to right, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, .7) 200px, rgba(24, 24, 24, 0) 100%);
+    transition: background .3s;
+}
+
+.dark-theme #search_field:focus {
+    box-shadow: 0px 0px 20px 0px rgba(18, 18, 18, .8);
+}
+
+
+/***************************************************************
+************************** MAIN AREA ***************************
+***************************************************************/
+
+
+/* title menu ... */
+
+.dark-theme [title="More options"] svg {
+    color: var(--ls-secondary-text-color);
+    opacity: .2;
+}
+
+
+/* text mark/highlight */
+
+.dark-theme mark {
+    background: var(--ls-mark-text-background-color);
+    color: var(--ls-primary-text-color);
+}
+
+
+/* bold and italics */
+
+.dark-theme b,
+.dark-theme strong,
+.dark-theme i {
+    color: #e4e0de;
+}
+
+
+/* page reference */
+
+.dark-theme .page-reference:hover {
+    background: var(--ls-secondary-background-color);
+}
+
+.dark-theme .references-blocks .page-reference:hover {
+    background: var(--ls-tertiary-background-color);
+}
+
+.dark-theme .page-reference .text-gray-500 {
+    /* page brackets */
+    opacity: .3;
+}
+
+
+/* block reference */
+
+.dark-theme .block-ref {
+    background: rgba(70, 56, 61, .5);
+    color: var(--ls-primary-text-color);
+    border-bottom-color: rgba(121, 85, 106, .5);
+}
+
+
+/* selected block or higlighted page link */
+
+.dark-theme .ls-block.selected .page-ref,
+.dark-theme mark .page-ref {
+    color: #EEB8BD;
+}
+
+.dark-theme .ls-block.selected .page-ref:hover,
+.dark-theme mark .page-ref:hover {
+    color: #F2DDDF;
+}
+
+
+/* checkbox */
+
+.dark-theme .marker-switch {
+    color: #000;
+    background: #52373a;
+}
+
+.dark-theme .marker-switch:hover {
+    background: #5d3e41;
+}
+
+
+/***************************************************************
+************************ RIGHT SIDEBAR *************************
+***************************************************************/
+
+.dark-theme .cp__right-sidebar.is-open {
+    background: rgba(92, 112, 128, 0.05);
+}
+
+html[data-theme=dark] .cp__right-sidebar-settings a {
+    color: var(--ls-secondary-text-color);
+    opacity: 0.8;
+}
+
+html[data-theme=dark] .cp__right-sidebar-settings a:hover {
+    opacity: 1;
+}
+
+
+/***************************************************************
+**************************** MISC ******************************
+***************************************************************/
+
+.dark-theme textarea {
+    caret-color: #cc515c;
+}
+
+.dark-theme ::selection {
+    background: var(--ls-block-highlight-color);
+}
+
+
+/* dotted bg */
+
+
+/*
+.dark-theme #app-container {
+    background-image: radial-gradient(#373737 5%, #181818 5%);
+    background-position: 0 0;
+    background-size: 25px 25px;
+}*/
+
+
+/***************************************************************
+****************************************************************
+****************************************************************
+************************ LIGHT - WHITE *************************
+****************************************************************
+****************************************************************
+***************************************************************/
+
+.white-theme,
+html[data-theme=light] {
+    --ls-search-background-color: #fff;
+    --ls-secondary-background-color: rgba(244, 245, 246);
+    --ls-tertiary-background-color: #fff;
+    --ls-quaternary-background-color: #e8e5de;
+    --ls-codeblock-background-color: rgb(247, 246, 243);
+    --ls-table-tr-even-background-color: #f4f4f4;
+    --ls-callout-background-color: rgba(235, 236, 237, 0.3);
+    --ls-active-primary-color: rgb(64, 150, 213);
+    --ls-active-secondary-color: rgb(46, 118, 170);
+    --ls-block-properties-background-color: #f7f6f4;
+    --ls-block-bullet-border-color: #dedede;
+    --ls-block-bullet-color: rgba(67, 63, 56, 0.25);
+    --ls-guideline-color: rgba(46, 27, 5, 0.08);
+    --ls-primary-text-color: #433F38;
+    --ls-title-text-color: var(--ls-primary-text-color);
+    --ls-link-text-color: rgb(234, 110, 110);
+    --ls-link-text-hover-color: #ac434c;
+    --ls-link-ref-text-color: #3d88ce;
+    --ls-link-ref-text-hover-color: #5d9cd6;
+    --ls-alink-color: var(--ls-link-text-color);
+    --ls-tag-text-color: var(--ls-link-ref-text-color);
+    --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
+    --ls-icon-color: #c1bdb7;
+    --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+    --ls-page-blockquote-bg-color: rgba(235, 236, 237, 0);
+    --ls-page-blockquote-border-color: var(--ls-primary-text-color);
+    --ls-page-checkbox-color: #9dbbd8;
+    --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
+    --color-level-1: rgba(235, 236, 237, 0.3);
+    --color-level-2: #f3f3f3;
+}
+
+html[data-theme=light] .cp__right-sidebar .block-content {
+    --ls-page-inline-code-bg-color: var(--ls-page-inline-code-bg-color);
+}
+
+
+/***************************************************************
+***************************** TOP ******************************
+***************************************************************/
+
+
+/* gradient on top and bottom for aesthetics */
+
+.white-theme .cp__sidebar-main-content:before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.white-theme .cp__sidebar-main-content:after {
+    background: linear-gradient(to top, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+/* left side bar for mobile */
+
+.white-theme #left-bar nav>a,
+.white-theme #left-bar svg {
+    color: var(--ls-priamary-text-color);
+}
+
+.white-theme #left-bar #repo-name {
+    opacity: 1;
+}
+
+.white-theme #left-bar a.nav-item:hover {
+    background-color: var(--ls-table-tr-even-background-color);
+}
+
+
+/* < > buttons */
+
+.white-theme a[title="Go Back"],
+.white-theme a[title="Go Forward"] {
+    background: rgba(255, 255, 255, 1);
+}
+
+.white-theme a[title="Go Back"]:hover,
+.white-theme a[title="Go Forward"]:hover {
+    background: #f7f6f4;
+}
+
+
+/* search-field */
+
+.white-theme #search_field {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .7) 200px, rgba(255, 255, 255, 0) 100%);
+    transition: background .3s;
+}
+
+.white-theme #search_field:focus {
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, .8);
+}
+
+
+/***************************************************************
+************************** MAIN AREA ***************************
+***************************************************************/
+
+
+/* title menu ... */
+
+.white-theme [title="More options"] svg {
+    color: #7b7b7b;
+}
+
+
+/* page reference */
+
+.white-theme .page-reference {
+    padding: 2px 0px;
+    transition: .3s;
+}
+
+.white-theme .page-reference:hover {
+    background: #f6f5f3;
+    border-radius: 3px;
+}
+
+.white-theme .page-reference .text-gray-500 {
+    opacity: 1;
+    color: #e6e4df;
+}
+
+
+/* block reference */
+
+.white-theme .block-ref {
+    background: rgba(40, 142, 111, 0.1);
+    color: var(--ls-primary-text-color);
+    border-bottom-color: rgba(40, 142, 111, .3);
+}
+
+.white-theme .block-ref a {
+    color: var(--ls-primary-text-color);
+}
+
+
+/* checkbox */
+
+.white-theme .form-checkbox {
+    background-color: var(--ls-page-checkbox-color);
+}
+
+.white-theme .marker-switch {
+    color: #504d47;
+    background: #f3f2ed;
+}
+
+.white-theme .marker-switch:hover {
+    background: #eae8e0;
+}
+
+
+/***************************************************************
+************************ RIGHT SIDEBAR *************************
+***************************************************************/
+
+.white-theme .cp__right-sidebar.is-open {
+    background: rgba(128, 122, 92, 0.05);
+}
+
+
+/***************************************************************
+**************************** MISC ******************************
+***************************************************************/
+
+.white-theme textarea {
+    caret-color: #0075E1;
+}
+
+
+/* dotted bg */
+
+
+/*.white-theme #app-container {
+    background-image: radial-gradient(#e0e0e0 5%, #fff 5%);
+    background-position: 0 0;
+    background-size: 25px 25px;
+}*/
+
+
+/* === CodeMirror === */
+
+.CodeMirror {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background: var(--ls-codeblock-background-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 25px 10px 24px 14px;
+}
+
+.extensions__code-lang {
+    background: var(--ls-codeblock-background-color);
+    margin-right: 5px;
+}
+
+.CodeMirror-gutters {
+    background-color: var(--ls-codeblock-background-color);
+}
+
+.CodeMirror-code {
+    outline: 0;
+    font-size: 0.85em;
+}
+
+.CodeMirror-hscrollbar {
+    cursor: default;
+}
+
+.CodeMirror.cm-s-default {
+    padding: 25px 10px 24px 20px;
+}
+
+.cm-s-default.CodeMirror,
+.cm-s-default .CodeMirror-gutters {
+    color: white !important;
+    border: none;
+}
+
+.white-theme .cm-s-default.CodeMirror,
+.white-theme .cm-s-default .CodeMirror-gutters {
+    color: black !important;
+    border: none;
+}
+
+.cm-s-default .CodeMirror-cursor {
+    border-left: solid thin white;
+}
+
+.white-theme .cm-s-default .CodeMirror-cursor {
+    border-left: solid thin black;
+}
+
+.cm-s-default .CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.white-theme .cm-s-default .CodeMirror-selected {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.cm-s-default .CodeMirror-line {
+    box-shadow: none;
+}
+
+.cm-s-default .CodeMirror-line::selection,
+.cm-s-default .CodeMirror-line>span::selection,
+.cm-s-default .CodeMirror-line>span>span::selection {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-default .CodeMirror-line::-moz-selection,
+.cm-s-default .CodeMirror-line>span::-moz-selection,
+.cm-s-default .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-default span.cm-comment {
+    color: #a0a0a0;
+}
+
+.cm-s-default span.cm-string,
+.cm-s-default span.cm-string-2 {
+    color: #e6c963;
+}
+
+.white-theme .cm-s-default span.cm-string,
+.white-theme .cm-s-default span.cm-string-2 {
+    color: orange;
+}
+
+.cm-s-default span.cm-number {
+    color: #978ade;
+}
+
+.cm-s-default span.cm-variable {
+    color: #82aaff;
+}
+
+.cm-s-default span.cm-variable-2 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.white-theme .cm-s-default span.cm-variable-2 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cm-s-default span.cm-def {
+    color: #fff;
+}
+
+.white-theme .cm-s-default span.cm-def {
+    color: black;
+}
+
+.cm-s-default span.cm-operator {
+    color: #f15f60;
+}
+
+.cm-s-default span.cm-keyword {
+    color: #f15f60;
+}
+
+.cm-s-default span.cm-atom {
+    color: #978ade;
+}
+
+.cm-s-default span.cm-meta {
+    color: white;
+}
+
+.white-theme .cm-s-default span.cm-meta {
+    color: black;
+}
+
+.cm-s-default span.cm-tag {
+    color: #f07178;
+}
+
+.cm-s-default span.cm-attribute {
+    color: #c792ea;
+}
+
+.cm-s-default span.cm-qualifier {
+    color: #41b394;
+}
+
+.cm-s-default span.cm-property {
+    color: #9bd174;
+}
+
+.cm-s-default span.cm-builtin {
+    color: #45add6;
+}
+
+.cm-s-default span.cm-variable-3,
+.cm-s-default span.cm-type {
+    color: orange;
+}
+
+.cm-s-default .CodeMirror-activeline-background {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-default .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}
+
+#right-sidebar pre.CodeMirror-line {
+    background: transparent;
+}
+
+
+/***************************************************************
+****************************************************************
+****************************************************************
+************************ GRAPH *********************************
+****************************************************************
+****************************************************************
+***************************************************************/
+
+.graph-tooltip {
+    background-color: rgb(43 137 206 / 65%);
+}
