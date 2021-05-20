@@ -28,7 +28,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 **Bug fix**
 
-- Fix code block overflow bug, see 👉 [details](./blob/master/docs/fix-codemirror.md)
+- Fix code block overflow bug, see 👉 [details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/fix-codemirror.md)
 
 **Improvements**
 
