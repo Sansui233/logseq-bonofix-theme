@@ -46,6 +46,9 @@ html.is-electron.is-mac .cp__header {
     #head {
         position: fixed;
     }
+    #main-content {
+        padding-top: 34px;
+    }
 }
 
 
