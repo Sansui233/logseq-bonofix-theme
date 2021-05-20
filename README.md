@@ -38,6 +38,8 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - Mobile: full width search lists
 
+- Mobile: fixed top bar
+
 - Mobile: larger sync dot to be pressed
 
 - Mobile: More stable scrolling experience
