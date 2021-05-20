@@ -30,7 +30,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - Fix code block overflow bug, see 👉 [details](./blob/master/docs/fix-codemirror.md)
 
-**Enchancement**
+**Improvements**
 
 - Code block style for both dark theme and white theme
 
