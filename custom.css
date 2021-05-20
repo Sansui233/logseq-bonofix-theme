@@ -183,10 +183,23 @@ a[title="Go Forward"] {
 }
 
 
-/* funcional page */
+/* funcional page layout*/
 
 .file {
     margin: 0 auto;
+}
+
+
+/* normal page padding layout*/
+
+#main-content-container {
+    padding: 1rem 2.5rem;
+}
+
+@media screen and (max-width: 640px) {
+    #main-content-container {
+        padding: 1rem 1.4rem 1rem 1rem;
+    }
 }
 
 
