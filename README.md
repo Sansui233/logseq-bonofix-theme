@@ -13,7 +13,7 @@ This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI
   Copy this one-line-installation into your logseq/custom.css file
   
   ```css
-  @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
+  @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme@latest/custom.css')
   ```
 
 ## Screenshots
