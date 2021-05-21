@@ -737,10 +737,6 @@ html[data-theme=light] {
     --color-level-2: #f3f3f3;
 }
 
-html[data-theme=light] .cp__right-sidebar .block-content {
-    --ls-page-inline-code-bg-color: var(--ls-page-inline-code-bg-color);
-}
-
 
 /***************************************************************
 ***************************** TOP ******************************
