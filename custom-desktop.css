@@ -1,4 +1,4 @@
-:root {
+    :root {
     --ls-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     --ls-main-content-max-width: 900px;
     --ls-tag-text-opacity: 0.6;
@@ -400,6 +400,11 @@ svg.note {
     border: none;
     margin-bottom: 10px;
     border-radius: 4px;
+}
+
+.cp__right-sidebar {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.37, 0.16, 0.16, 0.99);
 }
 
 
@@ -1079,4 +1084,4 @@ html[data-theme=light] {
 
 .graph-tooltip {
     background-color: rgb(43 137 206 / 65%);
-}
+    /* } */
