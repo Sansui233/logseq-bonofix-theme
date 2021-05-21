@@ -183,13 +183,6 @@ a[title="Go Forward"] {
 }
 
 
-/* funcional page layout*/
-
-.file {
-    margin: 0 auto;
-}
-
-
 /* normal page padding layout*/
 
 #main-content-container {
@@ -200,6 +193,13 @@ a[title="Go Forward"] {
     #main-content-container {
         padding: 1rem 1.4rem 1rem 1rem;
     }
+}
+
+
+/* funcional page layout*/
+
+#main-content-container .file {
+    margin: 0 auto;
 }
 
 
@@ -661,10 +661,6 @@ html[data-theme=dark] {
 ************************ RIGHT SIDEBAR *************************
 ***************************************************************/
 
-.dark-theme .cp__right-sidebar.is-open {
-    background: rgba(92, 112, 128, 0.05);
-}
-
 html[data-theme=dark] .cp__right-sidebar-settings a {
     color: var(--ls-secondary-text-color);
     opacity: 0.8;
@@ -866,8 +862,16 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 ************************ RIGHT SIDEBAR *************************
 ***************************************************************/
 
-.white-theme .cp__right-sidebar.is-open {
-    background: rgba(128, 122, 92, 0.05);
+.white-theme .cp__right-sidebar {
+    background-color: var(--ls-primary-background-color);
+}
+
+.white-theme .cp__right-sidebar-topbar {
+    background: var(--ls-secondary-background-color);
+}
+
+.white-theme .cp__right-sidebar .block-content {
+    background-color: unset;
 }
 
 
@@ -892,21 +896,27 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 
 /* === CodeMirror === */
 
+.CodeMirror-gutters,
+.CodeMirror,
+.extensions__code-lang {
+    background-color: var(--ls-codeblock-background-color);
+}
+
+.white-theme .cp__right-sidebar .CodeMirror,
+.white-theme .cp__right-sidebar .CodeMirror-gutters,
+.white-theme .cp__right-sidebar .extensions__code-lang {
+    background-color: rgba(242, 241, 238, 0.95);
+}
+
 .CodeMirror {
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background: var(--ls-codeblock-background-color);
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 25px 10px 24px 14px;
 }
 
 .extensions__code-lang {
-    background: var(--ls-codeblock-background-color);
     margin-right: 5px;
-}
-
-.CodeMirror-gutters {
-    background-color: var(--ls-codeblock-background-color);
 }
 
 .CodeMirror-code {
