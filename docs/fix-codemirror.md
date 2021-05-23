@@ -1,12 +1,12 @@
 This is a bug that heavily affects small screen viewing.
 
-With the default theme, the content won't fit the screen when the window width is not wide enough. And the left side content is unreachable.
+With the default theme, the content won't fit the screen when the window width is not wide enough. And content on the left side is unreachable.
 
 ![Overflow](../media/codemirror-overflow.gif) 
 
 
 
-And when using a mobile phone, things getting worse because you can scroll the screen in any direction (the expected scroll behavior is restricted to vertical only or horizontal only), resulting in a weak UI experience that make user feel the page not robust enough.
+When using a mobile phone, things getting worse because users can scroll the screen in any direction (the expected scroll behavior is restricted to vertical only or horizontal only), resulting in a weak UI experience that make user feel the page not robust enough.
 
 It's caused by flex child element's width overflows its parents. Here two potential overflowing
 
@@ -30,5 +30,7 @@ The flaw still exists. The most weird thing is that the first and second level `
 
 This flaw is not on the current web version (Chrome and Safari have been confirmed). So `custom.css` works well. And if you are using desktop app, you may never encounter this problem because your screen is always wide enough. 
 
-![Overflow](../media/codemirror-fix.gif)
+Fixed:
+
+![fix](../media/codemirror-fix.gif)
 
