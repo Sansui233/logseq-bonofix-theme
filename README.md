@@ -46,6 +46,14 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - No online fonts to work perfectly offline (for Google fonts service is not available in some area such as China)
 
+**Style**
+
+- add calender emoji before journal title 
+  ![Journal Title Emoji](./media/journal-title-emoji.png)
+
+- style tag as label
+  ![Tags](./media/tag-label.png)
+  
 ## Bug on Logseq Desktop Version & Untested platform
 
  The Code block width of Desktop version is slightly different from modern browser (Chrome and Safari are tested), which might lead to code block overflow. For most cases it works well. If you do care about it, use `custom-desktop.css` file.
