@@ -48,12 +48,11 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 **Style**
 
-- add calender emoji before journal title 
-  ![Journal Title Emoji](./media/journal-title-emoji.png)
+- add calender emoji before journal title  
+  <img src="./media/journal-title-emoji.png" alt="Journal Title Emoji" style="zoom:75%;" />
 
-- style tag as label
-  ![Tags](./media/tag-label.png)
-  
+- style tags as labels  
+  <img src="./media/tag-label.png" alt="Tags" style="zoom:50%;" />
 ## Bug on Logseq Desktop Version & Untested platform
 
  The Code block width of Desktop version is slightly different from modern browser (Chrome and Safari are tested), which might lead to code block overflow. For most cases it works well. If you do care about it, use `custom-desktop.css` file.
