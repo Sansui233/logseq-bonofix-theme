@@ -780,6 +780,8 @@ html[data-theme=light] {
     --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
     --color-level-1: rgba(235, 236, 237, 0.3);
     --color-level-2: #f3f3f3;
+    --color-level-3: #eaeaea;
+    --color-level-4: #ddd;
 }
 
 
