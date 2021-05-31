@@ -153,9 +153,16 @@ a[title="Go Forward"] {
     width: 100%;
 }
 
+.CodeMirror-sizer {
+    min-width: unset !important;
+}
+
+.CodeMirror-line {
+    width: 0;
+}
+
 @media screen and (max-width:640px) {
     #main-content {
-        overflow: hidden;
         text-overflow: ellipsis;
     }
     /* Canary Version */
@@ -318,8 +325,16 @@ a {
     color: var(--ls-alink-color);
 }
 
+a:hover {
+    border: unset
+}
+
 .ui__modal-panel {
     background-color: var(--ls-primary-background-color);
+}
+
+blockquote {
+    background-color: unset;
 }
 
 
@@ -751,8 +766,8 @@ html[data-theme=dark] .cp__right-sidebar-settings a:hover {
 html[data-theme=light] {
     --ls-search-background-color: #fff;
     --ls-secondary-background-color: rgba(244, 245, 246);
-    --ls-tertiary-background-color: #fff;
-    --ls-quaternary-background-color: #e8e5de;
+    --ls-tertiary-background-color: rgb(240, 240, 241);
+    --ls-quaternary-background-color: #e1e1e1;
     --ls-codeblock-background-color: rgb(247, 246, 243);
     --ls-table-tr-even-background-color: #f4f4f4;
     --ls-callout-background-color: rgba(235, 236, 237, 0.3);
@@ -775,7 +790,6 @@ html[data-theme=light] {
     --ls-tag-background-hover-color: #84bdf4;
     --ls-icon-color: #c1bdb7;
     --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
-    --ls-page-blockquote-bg-color: rgba(235, 236, 237, 0);
     --ls-page-blockquote-border-color: var(--ls-primary-text-color);
     --ls-page-checkbox-color: #9dbbd8;
     --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
@@ -927,7 +941,7 @@ html[data-theme=light] {
 ***************************************************************/
 
 .white-theme .cp__right-sidebar {
-    background-color: var(-ls-secondary-background-color);
+    background-color: var(--ls-secondary-background-color);
 }
 
 .white-theme .sidebar-item-list {
@@ -1174,5 +1188,14 @@ html[data-theme=light] {
 ***************************************************************/
 
 .graph-tooltip {
-    background-color: rgb(43 137 206 / 65%);
+    background-color: rgb(43, 137, 206, 0.65);
 }
+
+
+/***************************************************************
+****************************************************************
+****************************************************************
+************************ Popup Tips ****************************
+****************************************************************
+****************************************************************
+***************************************************************/
