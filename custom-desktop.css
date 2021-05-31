@@ -159,6 +159,8 @@ a[title="Go Forward"] {
 
 .CodeMirror-line {
     width: 0;
+    /* Safari version */
+    /* width: 70vw; */
 }
 
 @media screen and (max-width:640px) {
@@ -326,7 +328,7 @@ a {
 }
 
 a:hover {
-    border: unset
+    border: unset;
 }
 
 .ui__modal-panel {
@@ -1195,5 +1197,5 @@ html[data-theme=light] {
 ***************************************************************/
 
 .graph-tooltip {
-    background-color: rgb(43, 137, 206, 0.65);
+    background-color: rgba(43, 137, 206, 0.65);
 }

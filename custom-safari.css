@@ -158,9 +158,9 @@ a[title="Go Forward"] {
 }
 
 .CodeMirror-line {
-    width: 0;
+    /* width: 0; */
     /* Safari version */
-    /* width: 70vw; */
+    width: 70vw;
 }
 
 @media screen and (max-width:640px) {
