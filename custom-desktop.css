@@ -65,7 +65,8 @@ html.is-electron.is-mac .cp__header {
     z-index: 1;
 }
 
-.cp__sidebar-main-content:after {
+
+/* .cp__sidebar-main-content:after {
     content: "";
     display: block;
     position: fixed;
@@ -74,7 +75,7 @@ html.is-electron.is-mac .cp__header {
     bottom: 0;
     left: 0;
     z-index: 1;
-}
+} */
 
 .cp__header-logo,
 .fade-link {
