@@ -505,7 +505,7 @@ html[data-theme=dark] {
     --ls-codeblock-background-color: rgb(63, 68, 71);
     --ls-active-primary-color: var(--ls-link-text-color);
     --ls-active-secondary-color: var(--ls-link-text-hover-color);
-    --ls-block-properties-background-color: #272727;
+    --ls-block-properties-background-color: #2a2d2d;
     --ls-block-ref-link-text-color: #761a3f;
     --ls-search-background-color: var(--ls-primary-background-color);
     --ls-border-color: #292323;
@@ -566,9 +566,13 @@ html[data-theme=dark] {
     background: linear-gradient(to bottom, rgba(24, 24, 24, .7) 0%, rgba(24, 24, 24, 0) 100%);
 }
 
-.dark-theme .cp__sidebar-main-content:after {
+
+/* This will affect the help icon */
+
+
+/* .dark-theme .cp__sidebar-main-content:after {
     background: linear-gradient(to top, rgba(24, 24, 24, .7) 0%, rgba(24, 24, 24, 0) 100%);
-}
+} */
 
 
 /* left side bar for mobile */
@@ -814,9 +818,13 @@ html[data-theme=light] {
     background: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.white-theme .cp__sidebar-main-content:after {
+
+/* This will effect the help icon*/
+
+
+/* .white-theme .cp__sidebar-main-content:after {
     background: linear-gradient(to top, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0) 100%);
-}
+} */
 
 
 /* left side bar for mobile */
