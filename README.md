@@ -6,7 +6,7 @@ This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI
 
 Check your Version
 
-### If you are using Chrome or desktop version:
+### If you are using Chrome(chromium) or desktop version:
 
 - General installation
 
@@ -26,6 +26,16 @@ Copy this one-line-installation into your logseq/custom.css file
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme@latest/custom-safari.css')
+```
+
+### If you use Chrome(chromium) on desktop and Safari(webkit) on mobile
+
+Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), and add this line to logseq.com:
+
+```css
+.CodeMirror-line {
+    width: 0;
+}
 ```
 
 ## Screenshots
@@ -66,13 +76,8 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 - style tags as labels  
   <img src="./media/tag-label.png" alt="Tags" width="300px" />
 
-## Bug on Safari
-
-The code block width is just tempoprary adjusted to 70% width device. Not a perfect solution.
-
 ## Thanks
 
 - [Logseq](https://github.com/logseq/logseq)
-
 - [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme) by PiotrSss
 - Dark mode of [Notion](https://notion.so)
