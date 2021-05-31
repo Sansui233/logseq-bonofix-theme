@@ -996,7 +996,7 @@ html[data-theme=light] {
     text-shadow: unset;
 }
 
-.cm-s-solarized .CodeMirror {
+.cm-s-solarized.CodeMirror {
     -moz-box-shadow: unset;
     -webkit-box-shadow: unset;
     box-shadow: unset;
