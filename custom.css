@@ -501,13 +501,13 @@ html[data-theme=dark] {
     --ls-link-text-hover-color: #f29191;
     --ls-alink-color: var(--ls-link-text-color);
     --ls-link-ref-text-color: #6fc2ef;
-    --ls-link-ref-text-color: #6fc2ef;
     --ls-link-ref-text-hover-color: #8cd2f8;
     --ls-tag-text-color: white;
     --ls-tag-text-hover-color: white;
     --ls-tag-background-color: #407fab;
     --ls-tag-background-hover-color: #6fabd5;
     --ls-mark-text-background-color: #86bada8f;
+    --ls-marker-text-color: #988c8c;
     --ls-slide-background-color: var(--ls-primary-background-color);
     --ls-block-bullet-border-color: #ffffff14;
     --ls-block-bullet-color: #ffffff1c;
@@ -520,6 +520,7 @@ html[data-theme=dark] {
     --ls-page-blockquote-border-color: var(--ls-primary-text-color);
     --ls-page-inline-code-color: #EB5757;
     --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+    --ls-page-properties-background-color: #adadad1c;
     --ls-scrollbar-foreground-color: rgba(192, 202, 223, 0.15);
     --ls-scrollbar-background-color: rgba(42, 46, 49, 0.9);
     --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
@@ -670,7 +671,7 @@ html[data-theme=dark] {
 /* checkbox */
 
 .dark-theme .marker-switch {
-    color: #000;
+    color: var(--ls-marker-text-color);
     background: #52373a;
 }
 
@@ -778,6 +779,7 @@ html[data-theme=light] {
     --ls-page-blockquote-border-color: var(--ls-primary-text-color);
     --ls-page-checkbox-color: #9dbbd8;
     --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
+    --ls-page-properties-background-color: #adadad1c;
     --color-level-1: rgba(235, 236, 237, 0.3);
     --color-level-2: #f3f3f3;
     --color-level-3: #eaeaea;
@@ -957,6 +959,34 @@ html[data-theme=light] {
 
 
 /* === CodeMirror === */
+
+
+/* border unset*/
+
+.cm-s-solarized.CodeMirror {
+    -moz-box-shadow: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+
+
+/* unset cm-s-solarized box */
+
+.cm-s-solarized.cm-s-dark {
+    background-color: var(--ls-codeblock-background-color);
+    text-shadow: unset;
+}
+
+.cm-s-solarized.cm-s-dark .CodeMirror-gutters {
+    background-color: var(--ls-codeblock-background-color);
+}
+
+.cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
+    text-shadow: unset;
+}
+
+
+/* theme general*/
 
 .CodeMirror-gutters,
 .CodeMirror,
