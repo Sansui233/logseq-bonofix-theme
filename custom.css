@@ -326,7 +326,7 @@ a {
 }
 
 a:hover {
-    border: unset
+    border: unset;
 }
 
 .ui__modal-panel {
