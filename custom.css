@@ -1195,5 +1195,5 @@ html[data-theme=light] {
 ***************************************************************/
 
 .graph-tooltip {
-    background-color: rgb(43, 137, 206, 0.65);
+    background-color: rgba(43, 137, 206, 0.65);
 }
