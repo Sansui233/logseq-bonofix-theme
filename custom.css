@@ -267,7 +267,7 @@ html.is-electron.is-mac .cp__header {
   color: #c75252;
 }
 .content .admonitionblock .admonition-icon svg.caution {
-  color: #eea3b4;
+  color: #e08d5c;
 }
 .content .admonitionblock .admonition-icon svg.tip {
   color: #edc987;
@@ -376,6 +376,9 @@ html.is-electron.is-mac .cp__header {
 /*****************************************
   Dark Theme
 *****************************************/
+.dark-theme ::selection {
+  background: var(--ls-block-highlight-color);
+}
 .dark-theme #main-content-container .cp__sidebar-main-content:before {
   background: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 0%, rgba(24, 24, 24, 0) 100%);
 }
@@ -397,6 +400,10 @@ html.is-electron.is-mac .cp__header {
 .dark-theme .content a.tag:hover {
   opacity: 1;
 }
+.dark-theme .content mark {
+  background: var(--ls-mark-text-background-color);
+  color: var(--ls-primary-text-color);
+}
 .dark-theme .content .external-link {
   border-bottom: 0.05em solid rgba(255, 255, 255, 0.4);
 }
@@ -405,7 +412,7 @@ html.is-electron.is-mac .cp__header {
   border-bottom-color: rgba(134, 134, 95, 0.5);
 }
 .dark-theme .content .marker-switch {
-  color: #988c8c;
+  color: #b5a7a7;
   background: #52373a;
 }
 .dark-theme .content .marker-switch:hover {
@@ -435,7 +442,7 @@ html.is-electron.is-mac .cp__header {
   text-shadow: unset;
 }
 
-/* theme general*/
+/* theme general */
 .extensions__code .extensions__code-lang {
   background-color: var(--ls-codeblock-background-color);
   margin-right: 5px;
@@ -444,21 +451,20 @@ html.is-electron.is-mac .cp__header {
   color: var(--ls-primary-text-color);
   background-color: var(--ls-codeblock-background-color);
 }
-
-.CodeMirror {
+.extensions__code .CodeMirror {
   color: var(--ls-secondary-text-color);
   font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 25px 10px 24px 20px;
 }
-.CodeMirror .CodeMirror-gutters {
+.extensions__code .CodeMirror .CodeMirror-gutters {
   background-color: var(--ls-codeblock-background-color);
 }
-.CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-cursors .CodeMirror-cursor {
+.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-cursors .CodeMirror-cursor {
   border-left: solid thin white;
 }
-.CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-code {
+.extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-code {
   outline: 0;
   font-size: 0.85em;
 }
@@ -467,6 +473,85 @@ html.is-electron.is-mac .cp__header {
 .white-theme .cp__right-sidebar .CodeMirror-gutters,
 .white-theme .cp__right-sidebar .extensions__code-lang {
   background-color: rgba(242, 241, 238, 0.95);
+}
+
+/* Rewrite .cm-s-solarized */
+.cm-s-solarized .CodeMirror-activeline-background {
+  background: rgba(255, 255, 255, 0.1);
+}
+.cm-s-solarized.cm-s-dark div.CodeMirror-selected {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.cm-s-solarized .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+.cm-s-solarized span.cm-comment {
+  color: #a0a0a0;
+}
+.cm-s-solarized span.cm-string,
+.cm-s-solarized span.cm-string-2 {
+  color: #e6c963;
+}
+.cm-s-solarized span.cm-number {
+  color: #978ade;
+}
+.cm-s-solarized span.cm-variable {
+  color: #82aaff;
+}
+.cm-s-solarized span.cm-variable-2 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.cm-s-solarized span.cm-def {
+  color: var(--ls-secondary-text-color);
+}
+.cm-s-solarized span.cm-operator {
+  color: #f15f60;
+}
+.cm-s-solarized span.cm-keyword {
+  color: #f15f60;
+}
+.cm-s-solarized span.cm-atom {
+  color: #978ade;
+}
+.cm-s-solarized span.cm-meta {
+  color: white;
+}
+.cm-s-solarized span.cm-tag {
+  color: #f07178;
+}
+.cm-s-solarized span.cm-attribute {
+  color: #c792ea;
+}
+.cm-s-solarized span.cm-qualifier {
+  color: #41b394;
+}
+.cm-s-solarized span.cm-property {
+  color: #9bd174;
+}
+.cm-s-solarized span.cm-builtin {
+  color: #45add6;
+}
+.cm-s-solarized span.cm-variable-3,
+.cm-s-solarized span.cm-type {
+  color: orange;
+}
+
+.white-theme .cm-s-solarized .CodeMirror-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.white-theme .cm-s-solarized span.cm-string,
+.white-theme .cm-s-solarized span.cm-string-2 {
+  color: orange;
+}
+.white-theme .cm-s-solarized span.cm-variable-2 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.white-theme .cm-s-solarized span.cm-def {
+  color: var(--ls-secondary-text-color);
+}
+.white-theme .cm-s-solarized span.cm-meta {
+  color: var(--ls-secondary-text-color);
 }
 
 /* Old Version */
