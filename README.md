@@ -95,11 +95,11 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
   ```shell
   npm install -g sass
   ```
-3. clone repo
+3. Clone repo
   ```shell
   git clone https://github.com/Sansui233/logseq-bonofix-theme.git && cd logseq-bonofix-theme
   ```
-4. run build
+4. Run build
   ```shell
   npm run build
   ```
