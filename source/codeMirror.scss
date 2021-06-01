@@ -1,3 +1,5 @@
+@import "var.scss";
+
 /*****************************************
   Code Mirror
 *****************************************/
@@ -61,6 +63,51 @@
             background-color: rgba(242, 241, 238, 0.95);
         }
     }
+}
+
+
+/* IMPORTANT
+  Replace scrollbar to fix incomplete code scrolling
+  This strategy will also make line number scroll
+  It'll be deprecated if Logseq fix the code scolling issue
+*/
+
+.extensions__code {
+    .CodeMirror {
+        background-color: unset;
+        padding: 0;
+        .CodeMirror-gutters {
+            width: 0;
+        }
+        .CodeMirror-sizer {
+            min-width: unset !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .CodeMirror-hscrollbar {
+            visibility: hidden;
+        }
+         ::-webkit-scrollbar {
+            background-color: $codeblock-bg-dark;
+        }
+        .CodeMirror-lines {
+            overflow-x: scroll;
+            padding: 25px 8px 16px 40px;
+            background-color: var(--ls-codeblock-background-color);
+            span[role="presentation"] {
+                padding-right: 20px !important;
+            }
+            .CodeMirror-code {
+                .CodeMirror-gutter-wrapper {
+                    left: -32px !important;
+                }
+            }
+        }
+    }
+}
+
+.white-theme .extensions__code .CodeMirror ::-webkit-scrollbar {
+    background-color: $codeblock-bg-white;
 }
 
 

@@ -91,15 +91,15 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 ## How to build
 
 1. Install [node](https://nodejs.org/)
-2. Install sass
+2. Install sass  
   ```shell
   npm install -g sass
   ```
-3. Clone repo
+3. Clone repo  
   ```shell
   git clone https://github.com/Sansui233/logseq-bonofix-theme.git && cd logseq-bonofix-theme
   ```
-4. Run build
+4. Run build  
   ```shell
   npm run build
   ```

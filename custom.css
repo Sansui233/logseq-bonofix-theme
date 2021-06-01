@@ -22,7 +22,7 @@ html[data-theme=dark] {
   --ls-quaternary-background-color: rgb(148 158 164);
   --ls-table-tr-even-background-color: #0404061c;
   --ls-callout-background-color: rgba(69, 75, 78, 0.3);
-  --ls-codeblock-background-color: rgb(63, 68, 71);
+  --ls-codeblock-background-color: #3f4447;
   --ls-active-primary-color: var(--ls-link-text-color);
   --ls-active-secondary-color: var(--ls-link-text-hover-color);
   --ls-block-properties-background-color: #2a2d2d;
@@ -80,7 +80,7 @@ html[data-theme=light] {
   --ls-secondary-background-color: rgba(244, 245, 246);
   --ls-tertiary-background-color: rgb(240, 240, 241);
   --ls-quaternary-background-color: #e1e1e1;
-  --ls-codeblock-background-color: rgb(247, 246, 243);
+  --ls-codeblock-background-color: #f7f6f3;
   --ls-table-tr-even-background-color: #f4f4f4;
   --ls-callout-background-color: rgba(235, 236, 237, 0.3);
   --ls-active-primary-color: rgb(64, 150, 213);
@@ -196,6 +196,7 @@ html.is-electron.is-mac .cp__header {
 
 #left-bar #repo-name {
   max-width: 16ch;
+  opacity: 1;
 }
 #left-bar a.nav-item:hover {
   background-color: var(--ls-table-tr-even-background-color);
@@ -473,6 +474,45 @@ html.is-electron.is-mac .cp__header {
 .white-theme .cp__right-sidebar .CodeMirror-gutters,
 .white-theme .cp__right-sidebar .extensions__code-lang {
   background-color: rgba(242, 241, 238, 0.95);
+}
+
+/* IMPORTANT
+  Replace scrollbar to fix incomplete code scrolling
+  This strategy will also make line number scroll
+  It'll be deprecated if Logseq fix the code scolling issue
+*/
+.extensions__code .CodeMirror {
+  background-color: unset;
+  padding: 0;
+}
+.extensions__code .CodeMirror .CodeMirror-gutters {
+  width: 0;
+}
+.extensions__code .CodeMirror .CodeMirror-sizer {
+  min-width: unset !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.extensions__code .CodeMirror .CodeMirror-hscrollbar {
+  visibility: hidden;
+}
+.extensions__code .CodeMirror ::-webkit-scrollbar {
+  background-color: #3f4447;
+}
+.extensions__code .CodeMirror .CodeMirror-lines {
+  overflow-x: scroll;
+  padding: 25px 8px 16px 40px;
+  background-color: var(--ls-codeblock-background-color);
+}
+.extensions__code .CodeMirror .CodeMirror-lines span[role=presentation] {
+  padding-right: 20px !important;
+}
+.extensions__code .CodeMirror .CodeMirror-lines .CodeMirror-code .CodeMirror-gutter-wrapper {
+  left: -32px !important;
+}
+
+.white-theme .extensions__code .CodeMirror ::-webkit-scrollbar {
+  background-color: #f7f6f3;
 }
 
 /* Rewrite .cm-s-solarized */
