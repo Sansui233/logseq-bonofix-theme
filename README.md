@@ -1,4 +1,16 @@
-# logseq-bonofix-theme
+<h1 align="center">
+  <br>logseq-bonofix-theme<br>
+</h1>
+
+<p align="center">
+  <a href="#install">📦 Install</a>
+   | 
+  <a href="#screenshots">🌠 Screenshots</a>
+   | 
+  <a href="#whats-improved">✨ What's improved</a>
+   | 
+  <a href="#how-to-build">🔨 How to build</a>
+</p>
 
 This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI bug fixes** with massive mobile experience improvements.
 
@@ -56,7 +68,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - Code block style for both dark theme and white theme
 
-- Better typography on narrow screen
+- Better spacing to show the heading's outline
 
 - Mobile: full width search lists
 
@@ -76,8 +88,26 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 - style tags as labels  
   <img src="./media/tag-label.png" alt="Tags" width="300px" />
 
+## How to build
+
+1. Install [node](https://nodejs.org/)
+2. Install sass
+  ```shell
+  npm install -g sass
+  ```
+3. clone repo
+  ```shell
+  git clone https://github.com/Sansui233/logseq-bonofix-theme.git && cd logseq-bonofix-theme
+  ```
+4. run build
+  ```shell
+  npm run build
+  ```
+
+
 ## Thanks
 
 - [Logseq](https://github.com/logseq/logseq)
 - [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme) by PiotrSss
 - Dark mode of [Notion](https://notion.so)
+- All feedbacks from email and discord
