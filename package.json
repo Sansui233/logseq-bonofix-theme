@@ -1,0 +1,12 @@
+{
+    "name": "logseq-bonofix-theme-sass",
+    "version": "1.0.0",
+    "description": "",
+    "main": "source/index.sass",
+    "scripts": {
+        "watch": "sass --watch source:css",
+        "build": "sass source/index.scss custom.css --no-source-map"
+    },
+    "author": "",
+    "license": "ISC"
+}

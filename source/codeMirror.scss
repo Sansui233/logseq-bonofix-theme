@@ -1,0 +1,196 @@
+/*****************************************
+  Code Mirror
+*****************************************/
+
+// unset solarized
+.cm-s-solarized,
+.cm-s-solarized.cm-s-dark {
+    background-color: var(--ls-codeblock-background-color);
+    text-shadow: unset;
+    &.CodeMirror {
+        -moz-box-shadow: unset;
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+    }
+    .CodeMirror-gutters {
+        background-color: var(--ls-codeblock-background-color);
+    }
+    .CodeMirror-linenumber {
+        text-shadow: unset;
+    }
+}
+
+
+/* theme general*/
+
+.extensions__code {
+    .extensions__code-lang {
+        background-color: var(--ls-codeblock-background-color);
+        margin-right: 5px;
+    }
+}
+
+.CodeMirror {
+    color: var(--ls-secondary-text-color);
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 25px 10px 24px 20px;
+    .CodeMirror-gutters {
+        background-color: var(--ls-codeblock-background-color);
+    }
+    .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines {
+        .CodeMirror-cursors .CodeMirror-cursor {
+            border-left: solid thin white;
+        }
+        .CodeMirror-code {
+            outline: 0;
+            font-size: 0.85em;
+        }
+    }
+}
+
+.white-theme {
+    .cp__right-sidebar {
+        .CodeMirror,
+        .CodeMirror-gutters,
+        .extensions__code-lang {
+            background-color: rgba(242, 241, 238, 0.95);
+        }
+    }
+}
+
+// Old Version
+.white-theme .cm-s-default.CodeMirror,
+.white-theme .cm-s-default .CodeMirror-gutters {
+    color: black !important;
+    border: none;
+}
+
+.cm-s-default .CodeMirror-cursor {
+    border-left: solid thin white;
+}
+
+.white-theme .cm-s-default .CodeMirror-cursor {
+    border-left: solid thin black;
+}
+
+.cm-s-default .CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.white-theme .cm-s-default .CodeMirror-selected {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.cm-s-default .CodeMirror-line {
+    box-shadow: none;
+}
+
+.cm-s-default .CodeMirror-line::selection,
+.cm-s-default .CodeMirror-line>span::selection,
+.cm-s-default .CodeMirror-line>span>span::selection {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-default .CodeMirror-line::-moz-selection,
+.cm-s-default .CodeMirror-line>span::-moz-selection,
+.cm-s-default .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-default span.cm-comment {
+    color: #a0a0a0;
+}
+
+.cm-s-default span.cm-string,
+.cm-s-default span.cm-string-2 {
+    color: #e6c963;
+}
+
+.white-theme .cm-s-default span.cm-string,
+.white-theme .cm-s-default span.cm-string-2 {
+    color: orange;
+}
+
+.cm-s-default span.cm-number {
+    color: #978ade;
+}
+
+.cm-s-default span.cm-variable {
+    color: #82aaff;
+}
+
+.cm-s-default span.cm-variable-2 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.white-theme .cm-s-default span.cm-variable-2 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cm-s-default span.cm-def {
+    color: #fff;
+}
+
+.white-theme .cm-s-default span.cm-def {
+    color: black;
+}
+
+.cm-s-default span.cm-operator {
+    color: #f15f60;
+}
+
+.cm-s-default span.cm-keyword {
+    color: #f15f60;
+}
+
+.cm-s-default span.cm-atom {
+    color: #978ade;
+}
+
+.cm-s-default span.cm-meta {
+    color: white;
+}
+
+.white-theme .cm-s-default span.cm-meta {
+    color: black;
+}
+
+.cm-s-default span.cm-tag {
+    color: #f07178;
+}
+
+.cm-s-default span.cm-attribute {
+    color: #c792ea;
+}
+
+.cm-s-default span.cm-qualifier {
+    color: #41b394;
+}
+
+.cm-s-default span.cm-property {
+    color: #9bd174;
+}
+
+.cm-s-default span.cm-builtin {
+    color: #45add6;
+}
+
+.cm-s-default span.cm-variable-3,
+.cm-s-default span.cm-type {
+    color: orange;
+}
+
+.cm-s-default .CodeMirror-activeline-background {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-default .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}
+
+#right-sidebar pre.CodeMirror-line {
+    background: transparent;
+}
