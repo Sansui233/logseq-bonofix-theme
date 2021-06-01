@@ -114,7 +114,7 @@ html[data-theme=light] {
 
 /*****************************************
   This section is for global layout
-  DO NOTHING TO ANY COLOR DESIGN
+  DO NOTHING TO COLOR DESIGN
 *****************************************/
 html.is-electron.is-mac .cp__header {
   height: calc(2.6rem + var(--frame-top-height));
@@ -440,6 +440,10 @@ html.is-electron.is-mac .cp__header {
   background-color: var(--ls-codeblock-background-color);
   margin-right: 5px;
 }
+.extensions__code textarea {
+  color: var(--ls-primary-text-color);
+  background-color: var(--ls-codeblock-background-color);
+}
 
 .CodeMirror {
   color: var(--ls-secondary-text-color);
@@ -465,6 +469,7 @@ html.is-electron.is-mac .cp__header {
   background-color: rgba(242, 241, 238, 0.95);
 }
 
+/* Old Version */
 .white-theme .cm-s-default.CodeMirror,
 .white-theme .cm-s-default .CodeMirror-gutters {
   color: black !important;
