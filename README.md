@@ -29,7 +29,7 @@ Check your Version
   Copy this one-line-installation into your logseq/custom.css file
   
   ```css
-  @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme@latest/custom.css')
+  @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
   ```
 
 ### If you are using Safari(webkit):
@@ -37,7 +37,7 @@ Check your Version
 Copy this one-line-installation into your logseq/custom.css file
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme@latest/custom-safari.css')
+@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom-safari.css')
 ```
 
 ### If you use Chrome(chromium) on desktop and Safari(webkit) on mobile
