@@ -93,7 +93,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 1. Install [node](https://nodejs.org/)
 2. Install sass  
   ```shell
-  npm install -g sass
+  npm install
   ```
 3. Clone repo  
   ```shell
