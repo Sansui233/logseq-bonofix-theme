@@ -70,6 +70,8 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - Better spacing to show the heading's outline
 
+- Make tippy window like responsive card instead of filling the screen and obscuring text
+
 - Mobile: full width search lists
 
 - Mobile: fixed top bar

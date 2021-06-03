@@ -5,7 +5,7 @@
     "main": "source/index.sass",
     "scripts": {
         "watch": "sass --watch source:css",
-        "build": "sass source/index.scss custom.css --no-source-map"
+        "build": "sass source/index.scss custom.css --no-source-map && cp css/index.css ./custom.css"
     },
     "author": "",
     "license": "ISC",

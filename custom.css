@@ -327,6 +327,11 @@ html.is-electron.is-mac .cp__header {
   color: #EB5757;
 }
 
+.tippy-wrapper {
+  max-height: 40vh !important;
+  max-width: 500px !important;
+}
+
 @media screen and (max-width: 640px) {
   #head {
     position: fixed;
@@ -728,3 +733,5 @@ html.is-electron.is-mac .cp__header {
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
 }
+
+/*# sourceMappingURL=index.css.map */

@@ -208,6 +208,11 @@
     }
 }
 
+.tippy-wrapper {
+    max-height: 40vh !important;
+    max-width: 500px !important;
+}
+
 // ************** Mobile layout **************
 @media screen and (max-width: 640px) {
     #head {
