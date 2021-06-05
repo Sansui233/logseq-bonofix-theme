@@ -1,5 +1,8 @@
 <h1 align="center">
   <br>logseq-bonofix-theme<br>
+  <p style="font-size: 14px; letter-spacing: 0.02em;">
+    more than a style
+  </p>
 </h1>
 
 <p align="center">
@@ -12,7 +15,8 @@
   <a href="#how-to-build">🔨 How to build</a>
 </p>
 
-This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI bug fixes** with massive mobile experience improvements.
+
+This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI bug fixes and typography** with massive mobile experience improvements.
 
 ## Install
 
@@ -68,7 +72,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - Code block style for both dark theme and white theme
 
-- Better spacing to show the heading's outline
+- **Better typography for headings and blocks**, see 👉 [design details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/better-typography.md)
 
 - Make tippy window like responsive card instead of filling the screen and obscuring text
 
@@ -82,7 +86,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - No online fonts to work perfectly offline (for Google fonts service is not available in some area such as China)
 
-**Style**
+**Additional Style**
 
 - add calender emoji before journal title  
   <img src="./media/journal-title-emoji.png" alt="Journal Title Emoji" width="600px" />
