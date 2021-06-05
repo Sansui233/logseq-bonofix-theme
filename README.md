@@ -1,10 +1,7 @@
 <h1 align="center">
   <br>logseq-bonofix-theme<br>
-  <p style="font-size: 14px; letter-spacing: 0.02em;">
-    more than a style
-  </p>
+  
 </h1>
-
 <p align="center">
   <a href="#install">📦 Install</a>
    | 
