@@ -20,7 +20,7 @@ You can see a clear section divide space when you unfold your content. Notice th
 
 ## \<ul\> and \<ol\>
 
-If unordered list and ordered list are adjacent, there is large space between theme…… I don't know why it turns out this, so I fix it.
+If unordered list and ordered list are adjacent, there is large space between them…… I don't know why it turns out this, so I fix it.
 
 ![Lists](../media/lists.png)
 
