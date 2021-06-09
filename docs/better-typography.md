@@ -10,7 +10,7 @@ In fact, I set all margins to 0 for headings because the 1.5 line-height can't b
 
 ## Child Blocks
 
-For the headings' spacing above, it's not just a simple space compress of heading. Why logseq make the space of heading so wide is that they have to make enough space before the child blocks following (but I think it's overdone). However besides headings, all the blocks with children means more than a sentence. To tell apart those blocks from one sentence block, it's neccessary to add more space for those who have child blocks.
+For the headings' spacing above, it's not just a simple space compress of heading. Why logseq makes the space of heading so wide is that they have to make enough space before the child blocks following (but I think it's overdone). However besides headings, all the blocks with children means more than a sentence. To tell apart those blocks from one sentence block, it's neccessary to add more space for those who have child blocks.
 
 You may found little difference in daily usage.  However if you collapse the first heading in the picture above, you'll find two heading level 1 don't have so much spacing. It keeps compact. And when you unfold the content, they will be  apart from each other.
 
