@@ -472,7 +472,7 @@ html.is-electron.is-mac .cp__header {
   background-color: var(--ls-codeblock-background-color);
 }
 .extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-cursors .CodeMirror-cursor {
-  border-left: solid thin white;
+  border-left: solid thin #82aaff;
 }
 .extensions__code .CodeMirror .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines .CodeMirror-code {
   outline: 0;
@@ -587,7 +587,7 @@ html.is-electron.is-mac .cp__header {
 }
 
 .white-theme .cm-s-solarized .CodeMirror-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(168, 175, 255, 0.2);
 }
 .white-theme .cm-s-solarized span.cm-string,
 .white-theme .cm-s-solarized span.cm-string-2 {

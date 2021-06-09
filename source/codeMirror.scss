@@ -45,7 +45,7 @@
         }
         .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines {
             .CodeMirror-cursors .CodeMirror-cursor {
-                border-left: solid thin white;
+                border-left: solid thin #82aaff;
             }
             .CodeMirror-code {
                 outline: 0;
@@ -178,7 +178,7 @@
 
 .white-theme .cm-s-solarized {
     .CodeMirror-selected {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(168, 175, 255, 0.2);
     }
     span.cm-string,
     span.cm-string-2 {
