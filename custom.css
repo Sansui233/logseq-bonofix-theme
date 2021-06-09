@@ -281,8 +281,8 @@ html.is-electron.is-mac .cp__header {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.content ul li::marker,
-.content ol li::marker {
+.content ul > li > p:first-child,
+.content ol > li > p:first-child {
   display: inline;
 }
 .content h1,

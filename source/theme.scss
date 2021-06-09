@@ -156,7 +156,8 @@
     ol {
         margin-top: 5px;
         margin-bottom: 5px;
-        li::marker {
+        // fix breakline bug
+        &>li>p:first-child {
             display: inline;
         }
     }
