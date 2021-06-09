@@ -738,4 +738,30 @@ html.is-electron.is-mac .cp__header {
   background: transparent;
 }
 
+
+/* mobile test*/
+
+@media screen and (max-width: 640px) {
+    .block-children {
+        margin-left: 0px !important;
+        border-left: 2px solid rgba(146, 146, 146, 0.24);
+    }
+    div[haschild="false"] .bullet {
+        width: 0;
+    }
+    #main-content #main-content-container {
+        padding: 0 28px 16px 14px;
+    }
+    .mr-2.flex.flex-row.items-center {
+        margin-left: -6px;
+        margin-right: 5px;
+    }
+    .cp__sidebar-main-content>div>div>div:last-child {
+        margin-left: 0px !important;
+    }
+    .ref-children {
+        margin-left: 10px;
+        border-left: 2px solid rgba(146, 146, 146, 0.15);
+    }
+}
 /*# sourceMappingURL=index.css.map */
