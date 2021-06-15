@@ -153,9 +153,6 @@ html.is-electron.is-mac .cp__header {
   opacity: 1;
   transition: 0.3s;
 }
-.cp__header #repo-name {
-  margin-top: -4px;
-}
 .cp__header #search #search-wrapper {
   opacity: 0;
   transition: 0.3s;
