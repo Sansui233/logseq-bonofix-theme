@@ -118,9 +118,10 @@
         padding: 16px 16px 16px 12px;
         background-color: var(--ls-callout-background-color);
         margin: unset;
-        .is-paragraph {
-            font-size: 0.8em;
-            margin-left: -0.6rem;
+        .text-lg {
+            font-size: 0.9em;
+            margin-left: 0;
+            line-height: 1.35rem;
         }
         .admonition-icon {
             padding-right: 0.65em;

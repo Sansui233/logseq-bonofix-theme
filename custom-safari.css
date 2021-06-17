@@ -246,7 +246,7 @@ html.is-electron.is-mac .cp__header {
   margin: unset;
 }
 .content .admonitionblock .is-paragraph {
-  font-size: 0.8em;
+  font-size: 0.9rem;
   margin-left: -0.6rem;
 }
 .content .admonitionblock .admonition-icon {
@@ -326,6 +326,9 @@ html.is-electron.is-mac .cp__header {
   font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
   padding: 0.2em 0.4em !important;
   color: #EB5757;
+}
+.content .text-lg {
+  font-size: 0.9em;
 }
 
 .tippy-wrapper {
