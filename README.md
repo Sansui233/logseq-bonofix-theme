@@ -83,13 +83,20 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 - No online fonts to work perfectly offline (for Google fonts service is not available in some area such as China)
 
-**Additional Style**
+**Additional Styles**
 
-- add calender emoji before journal title  
+- Add calender emoji before journal title  
   <img src="./media/journal-title-emoji.png" alt="Journal Title Emoji" width="600px" />
 
-- style tags as labels  
+- Style tags as labels  
   <img src="./media/tag-label.png" alt="Tags" width="300px" />
+
+**Experimental Features**
+
+These features are not included in the current custom.css.
+
+- Fixed-width left bar  
+  Move the right sidebar to the left side. To enable this feature, append the content in [experimental/left-bar.css](./experimental/left-bar.css) to your custom.css.
 
 ## How to build
 
