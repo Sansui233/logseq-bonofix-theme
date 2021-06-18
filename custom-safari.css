@@ -3,7 +3,8 @@
 ************** Root ***********
 *******************************/
 :root {
-  --ls-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --ls-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+    "Segoe UI Emoji", "Segoe UI Symbol";
   --ls-main-content-max-width: 840px;
   --ls-tag-text-opacity: 0.6;
   --ls-tag-text-hover-opacity: 0.8;
@@ -26,7 +27,7 @@ html[data-theme=dark] {
   --ls-active-primary-color: var(--ls-link-text-color);
   --ls-active-secondary-color: var(--ls-link-text-hover-color);
   --ls-block-properties-background-color: #2a2d2d;
-  --ls-block-ref-link-text-color: #761a3f;
+  --ls-block-ref-link-text-color: #73d2f6;
   --ls-search-background-color: var(--ls-primary-background-color);
   --ls-border-color: #292323;
   --ls-guideline-color: var(--ls-tertiary-background-color);
@@ -43,22 +44,21 @@ html[data-theme=dark] {
   --ls-tag-text-hover-color: white;
   --ls-tag-background-color: #407fab;
   --ls-tag-background-hover-color: #6fabd5;
-  --ls-mark-text-background-color: #86bada8f;
   --ls-slide-background-color: var(--ls-primary-background-color);
   --ls-block-bullet-border-color: #ffffff14;
   --ls-block-bullet-color: #ffffff1c;
   --ls-block-highlight-color: #fbfbfb23;
-  --ls-selection-background-color: #AB3641;
+  --ls-selection-background-color: #ab3641;
   --ls-page-checkbox-color: #935c62;
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
-  --ls-page-inline-code-color: #EB5757;
+  --ls-page-inline-code-color: #eb5757;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-properties-background-color: #adadad1c;
   --ls-scrollbar-foreground-color: rgba(192, 202, 223, 0.15);
   --ls-scrollbar-background-color: rgba(42, 46, 49, 0.9);
   --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
-  --ls-head-text-color: #FFE27C;
+  --ls-head-text-color: #ffe27c;
   --ls-icon-color: var(--ls-quaternary-background-color);
   --ls-search-icon-color: var(--ls-quaternary-background-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
@@ -89,7 +89,7 @@ html[data-theme=light] {
   --ls-block-bullet-border-color: #dedede85;
   --ls-block-bullet-color: #494a4b21;
   --ls-guideline-color: rgba(62, 62, 63, 0.08);
-  --ls-primary-text-color: #433F38;
+  --ls-primary-text-color: #433f38;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: rgb(234, 110, 110);
   --ls-link-text-hover-color: #ac434c;
@@ -326,12 +326,16 @@ html.is-electron.is-mac .cp__header {
   font-size: 85%;
   font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
   padding: 0.2em 0.4em !important;
-  color: #EB5757;
+  color: #eb5757;
 }
 
 .tippy-wrapper {
   max-height: 40vh !important;
   max-width: 500px !important;
+}
+
+.ui__ac .ui__ac-group-name {
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 640px) {
@@ -408,16 +412,21 @@ html.is-electron.is-mac .cp__header {
 .dark-theme .content a.tag:hover {
   opacity: 1;
 }
+.dark-theme .content b,
+.dark-theme .content strong {
+  font-weight: bolder;
+  color: #fff;
+}
 .dark-theme .content mark {
-  background: var(--ls-mark-text-background-color);
+  background: #59563b;
   color: var(--ls-primary-text-color);
 }
 .dark-theme .content .external-link {
   border-bottom: 0.05em solid rgba(255, 255, 255, 0.4);
 }
 .dark-theme .content .block-ref {
-  background: rgba(111, 89, 90, 0.5);
-  border-bottom-color: rgba(134, 134, 95, 0.5);
+  background: #1f535878;
+  border-bottom-color: #53d2d280;
 }
 .dark-theme .content .marker-switch {
   color: #b5a7a7;
