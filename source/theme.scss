@@ -215,6 +215,12 @@
     max-width: 500px !important;
 }
 
+.ui__ac {
+    .ui__ac-group-name {
+        font-weight: bolder;
+    }
+}
+
 // ************** Mobile layout **************
 @media screen and (max-width: 640px) {
     #head {
