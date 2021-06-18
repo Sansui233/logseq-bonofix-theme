@@ -3,64 +3,66 @@
 *****************************************/
 
 .dark-theme {
-    // Global
-     ::selection {
-        background: var(--ls-block-highlight-color);
+  // Global
+  ::selection {
+    background: var(--ls-block-highlight-color);
+  }
+  // Area
+  #main-content-container {
+    .cp__sidebar-main-content:before {
+      background: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 0%, rgba(24, 24, 24, 0) 100%);
     }
-    // Area
-    #main-content-container {
-        .cp__sidebar-main-content:before {
-            background: linear-gradient(to bottom, rgba(24, 24, 24, .7) 0%, rgba(24, 24, 24, 0) 100%);
-        }
+  }
+  #left-bar {
+    .close-panel-btn {
+      color: var(--ls-primary-text-color);
+      opacity: 0.6;
     }
-    #left-bar {
-        .close-panel-btn {
-            color: var(--ls-primary-text-color);
-            opacity: .6;
-        }
+  }
+  .cp__header {
+    .cp__header-left-menu {
+      color: var(--ls-primary-text-color);
+      opacity: 0.6;
     }
-    .cp__header {
-        .cp__header-left-menu {
-            color: var(--ls-primary-text-color);
-            opacity: .6;
-        }
+  }
+  .cp__right-sidebar {
+    .cp__right-sidebar-settings a {
+      color: var(--ls-secondary-text-color);
+      opacity: 0.8;
     }
-    .cp__right-sidebar {
-        .cp__right-sidebar-settings a {
-            color: var(--ls-secondary-text-color);
-            opacity: 0.8;
+  }
+  .content {
+    a {
+      &.tag {
+        opacity: 0.83;
+        &:hover {
+          opacity: 1;
         }
+      }
     }
-    .content {
-        a {
-            &.tag {
-                opacity: .83;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
-        mark {
-            background: #2e9a90;
-            color: #fff;
-        }
-        .external-link {
-            border-bottom: 0.05em solid rgba(255, 255, 255, 0.4);
-        }
-        .block-ref {
-            background: #1f535878;
-            border-bottom-color: #53d2d280;
-        }
-        .marker-switch {
-            color: #b5a7a7;
-            background: #52373a;
-            &:hover {
-                background: #5d3e41;
-            }
-        }
-        b, strong {
-            font-weight: bolder;
-            color: #f5d069;
-        }
+    b,
+    strong {
+      font-weight: bolder;
+      // color: #beedff;
+      color: #fff;
     }
+    mark {
+      background: #257dd882;
+      color: #a2fffb;
+    }
+    .external-link {
+      border-bottom: 0.05em solid rgba(255, 255, 255, 0.4);
+    }
+    .block-ref {
+      background: #1f535878;
+      border-bottom-color: #53d2d280;
+    }
+    .marker-switch {
+      color: #b5a7a7;
+      background: #52373a;
+      &:hover {
+        background: #5d3e41;
+      }
+    }
+  }
 }
