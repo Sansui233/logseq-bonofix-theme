@@ -1,11 +1,11 @@
 <h1 align="center">
   <br>logseq-bonofix-theme<br>
-  
 </h1>
+
 <p align="center">
-  <a href="#install">📦 Install</a>
-   | 
   <a href="#screenshots">🌠 Screenshots</a>
+   | 
+  <a href="#install">📦 Install</a>
    | 
   <a href="#whats-improved">✨ What's improved</a>
    | 
@@ -13,7 +13,16 @@
 </p>
 
 
+
 This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI bug fixes and typography** with massive mobile experience improvements.
+
+## Screenshots
+
+The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme ) and [Notion](https://notion.so). The code is mainly based on bujo theme, and you may find the style really notion-like.
+
+![Desktop](./media/Desktop.png)
+
+![Mobile](./media/Mobile.png)
 
 ## Install
 
@@ -28,7 +37,7 @@ Check your Version
 - If you are always working online
 
   Copy this one-line-installation into your logseq/custom.css file
-  
+
   ```css
   @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
   ```
@@ -51,13 +60,19 @@ Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](htt
 }
 ```
 
-## Screenshots
+### (Dev Mode) Install Via Logseq Plugin
 
-The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme ) and [Notion](https://notion.so). The code is mainly based on bujo theme, and you may find the style really notion-like.
+<img src="./media/plugin.jpg" alt="Tags" width="450px" />
 
-![Desktop](./media/Desktop.png)
+- Download the source code and unpack it into a directory
 
-![Mobile](./media/Mobile.png)
+- Open Logseq→Settings, enable developer mode
+
+- Open Logseq→Plugins, load unpacked plugin
+
+- Open Logseq→Themes, choose your theme
+
+  > DON'T MOVE THE PLUGININ DIRECTORY ON YOUR DISK
 
 ## What's improved
 
@@ -93,23 +108,24 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 **Experimental Features**
 
-These features are not included in the current custom.css.
+These features are included in the [custom-exp.css](./custom-exp.css).
 
 - Fixed-width left bar  
-  Move the right sidebar to the left side. To enable this feature, append the content in [experimental/left-bar.css](./experimental/left-bar.css) to your custom.css.
+  Move the right sidebar to the left side. To enable the single feature, append the content in [experimental/left-bar.css](./experimental/left-bar.css) to your custom.css.
 
 ## How to build
 
 1. Install [node](https://nodejs.org/)
-2. Install sass  
-  ```shell
-  npm install
-  ```
-3. Clone repo  
+2. Clone repo  
   ```shell
   git clone https://github.com/Sansui233/logseq-bonofix-theme.git && cd logseq-bonofix-theme
   ```
+3. Install sass  
+  ```shell
+npm install
+  ```
 4. Run build  
+
   ```shell
   npm run build
   ```

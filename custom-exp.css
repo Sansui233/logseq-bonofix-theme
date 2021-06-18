@@ -735,3 +735,47 @@ html.is-electron.is-mac .cp__header {
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
 }
+/** 
+* Fixed-width left bar
+*/
+@media screen and (min-width: 640px) {
+  #app-container {
+    flex-direction: row-reverse;
+  }
+  
+  .cp__right-sidebar.open {
+    width: 260px !important;
+  }
+  
+  #head:last-child {
+    order: 1;
+  }
+  
+  
+  #head .cp__header-logo,
+  #head #search,
+  #head .refresh,
+  #head .repos,
+  #head .ml-1.relative,
+  #head a[title="Go Back"],
+  #head a[title="Go Forward"]
+  {
+    order: 2;
+  }
+  
+  .cp__right-sidebar-topbar {
+    flex-direction: row-reverse;
+  }
+  
+  .cp__right-sidebar-topbar a.ml-4{
+    margin-left:0;
+  }
+  
+  .cp__right-sidebar-settings {
+    padding-right: 20px;
+  }
+  
+  .cp__right-sidebar-inner .resizer {
+    right: 0;
+  }
+}
