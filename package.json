@@ -1,31 +1,31 @@
 {
-	"name": "logseq-bonofix-theme",
-	"version": "3.2.5",
-	"author": "Sansui233",
-	"description": "A logseq theme focus on UI bug fix and mobile improvement",
-	"main": "source/index.sass",
-	"scripts": {
-		"watch": "sass --watch source:css",
-		"build": "sass source/index.scss custom.css --no-source-map",
-		"add-exp": "cat custom.css > custom-exp.css && cat experimental/left-bar.css >> custom-exp.css"
-	},
-	"devDependencies": {
-		"sass": "^1.34.1"
-	},
-	"logseq": {
-		"themes": [
-			{
-				"name": "Bonofix Theme",
-				"url": "./custom.css",
-				"description": "A custom theme focus on UI bug fix and mobile improvement"
-			},
-			{
-				"name": "Bonofix Theme(experimental)",
-				"url": "./custom-exp.css",
-				"description": "Left bar feature"
-			}
-		],
-		"id": "sansui233_bonofix_theme",
-		"icon": "./icon.png"
-	}
+  "name": "logseq-bonofix-theme",
+  "version": "3.2.5",
+  "author": "Sansui233",
+  "description": "A logseq theme focus on UI bug fix and mobile improvement",
+  "main": "source/index.sass",
+  "scripts": {
+    "watch": "sass --watch source:css",
+    "build": "sass source/index.scss custom.css --no-source-map",
+    "add-exp": "cat custom.css > custom-exp.css && cat experimental/left-bar.css >> custom-exp.css"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1"
+  },
+  "logseq": {
+    "themes": [
+      {
+        "name": "Bonofix Theme",
+        "url": "./custom.css",
+        "description": "A custom theme focus on UI bug fix and mobile improvement"
+      },
+      {
+        "name": "Bonofix Theme(experimental)",
+        "url": "./custom-exp.css",
+        "description": "Left bar feature"
+      }
+    ],
+    "id": "sansui233_bonofix_theme",
+    "icon": "./icon.png"
+  }
 }
