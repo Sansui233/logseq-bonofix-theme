@@ -291,6 +291,9 @@ html.is-electron.is-mac .cp__header {
   margin-top: 0;
   margin-bottom: 0;
 }
+.content .editor-inner textarea {
+  margin: 0 0 !important;
+}
 .content a.tag {
   padding: 0px 7px;
   border-radius: 10px;

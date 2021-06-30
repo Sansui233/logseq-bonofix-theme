@@ -168,6 +168,9 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  .editor-inner textarea {
+    margin: 0 0 !important;
+  }
   a {
     &.tag {
       padding: 0px 7px;
