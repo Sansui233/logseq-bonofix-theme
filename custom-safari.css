@@ -132,9 +132,9 @@ html.is-electron.is-mac .cp__header {
   min-width: unset !important;
 }
 .CodeMirror .CodeMirror-line {
-  /* width: 0; */
+  width: 0;
   /* Safari version */
-  max-width: 70vw;
+  /* max-width: 70vw; */
 }
 
 /*****************************************

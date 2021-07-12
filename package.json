@@ -1,6 +1,6 @@
 {
   "name": "logseq-bonofix-theme",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "author": "Sansui233",
   "description": "A logseq theme focus on UI bug fix and mobile improvement",
   "main": "source/index.sass",

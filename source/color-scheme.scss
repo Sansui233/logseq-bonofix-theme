@@ -80,6 +80,7 @@ html[data-theme="dark"] {
 
 .white-theme,
 html[data-theme="light"] {
+  --ls-primary-background-color: #fff;
   --ls-search-background-color: #fff;
   --ls-secondary-background-color: rgba(244, 245, 246);
   --ls-tertiary-background-color: rgb(240, 240, 241);

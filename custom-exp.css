@@ -76,6 +76,7 @@ html[data-theme=dark] {
 *******************************/
 .white-theme,
 html[data-theme=light] {
+  --ls-primary-background-color: #fff;
   --ls-search-background-color: #fff;
   --ls-secondary-background-color: rgba(244, 245, 246);
   --ls-tertiary-background-color: rgb(240, 240, 241);
@@ -754,40 +755,61 @@ html.is-electron.is-mac .cp__header {
   #app-container {
     flex-direction: row-reverse;
   }
-  
+
   .cp__right-sidebar.open {
-    width: 260px !important;
+    width: 294px !important;
   }
-  
+
   #head:last-child {
     order: 1;
   }
-  
-  
+
   #head .cp__header-logo,
   #head #search,
   #head .refresh,
   #head .repos,
   #head .ml-1.relative,
   #head a[title="Go Back"],
-  #head a[title="Go Forward"]
-  {
+  #head a[title="Go Forward"] {
     order: 2;
   }
-  
+
   .cp__right-sidebar-topbar {
     flex-direction: row-reverse;
   }
-  
-  .cp__right-sidebar-topbar a.ml-4{
-    margin-left:0;
+
+  .cp__right-sidebar-topbar a.ml-4 {
+    margin-left: 0;
   }
-  
+
   .cp__right-sidebar-settings {
     padding-right: 20px;
   }
-  
+
   .cp__right-sidebar-inner .resizer {
     right: 0;
+  }
+
+  .is-mac.is-electron .cp__right-sidebar-topbar {
+    flex-direction: column-reverse;
+    height: unset;
+    width: 100%;
+  }
+
+  /* icon */
+  .is-mac.is-electron .cp__right-sidebar-topbar .flex.align-items {
+    align-self: flex-end;
+    background: var(--ls-secondary-background-color);
+  }
+
+  .is-mac.is-electron .cp__right-sidebar-settings {
+    padding-top: 3px;
+    padding-bottom: 10px;
+    align-self: flex-start;
+    overflow-x: scroll;
+  }
+
+  .is-mac.is-electron .cp__right-sidebar-settings::-webkit-scrollbar {
+    width: 0 !important;
   }
 }
