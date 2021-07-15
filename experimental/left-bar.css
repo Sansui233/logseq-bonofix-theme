@@ -19,8 +19,7 @@
   #head .refresh,
   #head .repos,
   #head .ml-1.relative,
-  #head a[title="Go Back"],
-  #head a[title="Go Forward"] {
+  #head div.flex.flex-row {
     order: 2;
   }
 
