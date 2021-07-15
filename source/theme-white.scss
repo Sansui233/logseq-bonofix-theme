@@ -3,6 +3,9 @@
 *****************************************/
 
 .white-theme {
+  .cp__header {
+    color: var(--ls-primary-text-color);
+  }
   #left-bar {
     nav > a,
     svg {

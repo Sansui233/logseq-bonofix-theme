@@ -76,6 +76,7 @@ html[data-theme=dark] {
 *******************************/
 .white-theme,
 html[data-theme=light] {
+  --ls-primary-background-color: #fff;
   --ls-search-background-color: #fff;
   --ls-secondary-background-color: rgba(244, 245, 246);
   --ls-tertiary-background-color: rgb(240, 240, 241);
@@ -100,7 +101,7 @@ html[data-theme=light] {
   --ls-tag-text-hover-color: white;
   --ls-tag-background-color: #2883df;
   --ls-tag-background-hover-color: #84bdf4;
-  --ls-icon-color: #c1bdb7;
+  --ls-icon-color: #ada9a2;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
   --ls-page-checkbox-color: #9dbbd8;
@@ -132,26 +133,43 @@ html.is-electron.is-mac .cp__header {
   min-width: unset !important;
 }
 .CodeMirror .CodeMirror-line {
-  width: 0;
+  /* width: 0; */
   /* Safari version */
-  /* max-width: 70vw; */
+  max-width: 70vw;
 }
 
 /*****************************************
   Common Theme
 *****************************************/
-.cp__header .cp__header-logo,
-.cp__header .fade-link {
-  opacity: 0.6;
-}
 .cp__header a {
   color: var(--ls-primary-text-color);
 }
-.cp__header a[title="Go Back"],
-.cp__header a[title="Go Forward"] {
-  border-radius: 3px;
-  opacity: 1;
+.cp__header a:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
   transition: 0.3s;
+}
+.cp__header a[title="Go Back"] {
+  padding: 0.15rem 0.15rem;
+  margin: 0.35rem 0 0.35rem 0.35rem;
+}
+.cp__header a[title="Go Forward"] {
+  padding: 0.15rem 0.15rem;
+  margin: 0.35rem 0.35rem 0.35rem 0;
+}
+.cp__header .p-2 {
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  border-radius: 3px;
+}
+.cp__header #search.p-2 {
+  padding: 0.5rem;
+}
+.cp__header .cp__header-logo,
+.cp__header .cp__right-menu-button {
+  padding: 0.15rem;
+  margin: 0 0.35rem;
+  border-radius: 3px;
 }
 .cp__header #search #search-wrapper {
   opacity: 0;
@@ -365,6 +383,9 @@ html.is-electron.is-mac .cp__header {
 /*****************************************
   White Theme
 *****************************************/
+.white-theme .cp__header {
+  color: var(--ls-primary-text-color);
+}
 .white-theme #left-bar nav > a,
 .white-theme #left-bar svg {
   color: var(--ls-priamary-text-color);

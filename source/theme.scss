@@ -3,19 +3,38 @@
 *****************************************/
 
 .cp__header {
-  .cp__header-logo,
-  .fade-link {
-    opacity: 0.6;
-  }
   a {
     color: var(--ls-primary-text-color);
+    &:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      transition: 0.3s;
+    }
   }
-  a[title="Go Back"],
+  a[title="Go Back"] {
+    padding: 0.15rem 0.15rem;
+    margin: 0.35rem 0 0.35rem 0.35rem;
+    
+  }
   a[title="Go Forward"] {
-    border-radius: 3px;
-    opacity: 1;
-    transition: 0.3s;
+    padding: 0.15rem 0.15rem;
+    margin: 0.35rem 0.35rem 0.35rem 0;
   }
+  .p-2 {
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+    border-radius: 3px;
+  }
+  #search.p-2 {
+    padding: .5rem;
+  }
+  .cp__header-logo,
+  .cp__right-menu-button {
+    padding: 0.15rem;
+    margin: 0 0.35rem;
+    border-radius: 3px;
+  }
+
   #search {
     #search-wrapper {
       opacity: 0;
