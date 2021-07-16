@@ -11,6 +11,18 @@
       transition: 0.3s;
     }
   }
+  .p-2 {
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+    border-radius: 3px;
+  }
+  // v0.2.6 START
+  a.button {
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+    border-radius: 3px;
+  }
+  // v0.2.6 END 
   a[title="Go Back"] {
     padding: 0.15rem 0.15rem;
     margin: 0.35rem 0 0.35rem 0.35rem;
@@ -19,11 +31,6 @@
   a[title="Go Forward"] {
     padding: 0.15rem 0.15rem;
     margin: 0.35rem 0.35rem 0.35rem 0;
-  }
-  .p-2 {
-    padding: 0.25rem;
-    margin: 0 0.25rem;
-    border-radius: 3px;
   }
   #search.p-2 {
     padding: .5rem;

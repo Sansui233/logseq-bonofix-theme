@@ -149,6 +149,16 @@ html.is-electron.is-mac .cp__header {
   cursor: pointer;
   transition: 0.3s;
 }
+.cp__header .p-2 {
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  border-radius: 3px;
+}
+.cp__header a.button {
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  border-radius: 3px;
+}
 .cp__header a[title="Go Back"] {
   padding: 0.15rem 0.15rem;
   margin: 0.35rem 0 0.35rem 0.35rem;
@@ -156,11 +166,6 @@ html.is-electron.is-mac .cp__header {
 .cp__header a[title="Go Forward"] {
   padding: 0.15rem 0.15rem;
   margin: 0.35rem 0.35rem 0.35rem 0;
-}
-.cp__header .p-2 {
-  padding: 0.25rem;
-  margin: 0 0.25rem;
-  border-radius: 3px;
 }
 .cp__header #search.p-2 {
   padding: 0.5rem;
