@@ -145,7 +145,6 @@ html.is-electron.is-mac .cp__header {
   color: var(--ls-primary-text-color);
 }
 .cp__header a:hover {
-  background-color: #f1f1f1;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -391,6 +390,9 @@ html.is-electron.is-mac .cp__header {
 .white-theme .cp__header {
   color: var(--ls-primary-text-color);
 }
+.white-theme .cp__header a:hover {
+  background-color: #f1f1f1;
+}
 .white-theme #left-bar nav > a,
 .white-theme #left-bar svg {
   color: var(--ls-priamary-text-color);
@@ -426,6 +428,9 @@ html.is-electron.is-mac .cp__header {
 .dark-theme #left-bar .close-panel-btn {
   color: var(--ls-primary-text-color);
   opacity: 0.6;
+}
+.dark-theme .cp__header a:hover {
+  background-color: #3e4144;
 }
 .dark-theme .cp__header .cp__header-left-menu {
   color: var(--ls-primary-text-color);
@@ -569,7 +574,7 @@ html.is-electron.is-mac .cp__header {
 }
 .cm-s-solarized .CodeMirror-matchingbracket {
   text-decoration: underline;
-  color: white !important;
+  color: #5bdfdf !important;
 }
 .cm-s-solarized span.cm-comment {
   color: #a0a0a0;
@@ -767,7 +772,7 @@ html.is-electron.is-mac .cp__header {
 
 .cm-s-default .CodeMirror-matchingbracket {
   text-decoration: underline;
-  color: white !important;
+  color: #5bdfdf !important;
 }
 
 #right-sidebar pre.CodeMirror-line {

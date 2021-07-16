@@ -5,6 +5,9 @@
 .white-theme {
   .cp__header {
     color: var(--ls-primary-text-color);
+    a:hover {
+      background-color: #f1f1f1;
+    }
   }
   #left-bar {
     nav > a,

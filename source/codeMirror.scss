@@ -119,7 +119,7 @@
   }
   .CodeMirror-matchingbracket {
     text-decoration: underline;
-    color: white !important;
+    color: rgb(91, 223, 223) !important;
   }
   span.cm-comment {
     color: #a0a0a0;
@@ -321,7 +321,7 @@
 
 .cm-s-default .CodeMirror-matchingbracket {
   text-decoration: underline;
-  color: white !important;
+  color: rgb(91, 223, 223) !important;
 }
 
 #right-sidebar pre.CodeMirror-line {

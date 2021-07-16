@@ -20,6 +20,9 @@
     }
   }
   .cp__header {
+    a:hover {
+      background-color: #3e4144;
+    }
     .cp__header-left-menu {
       color: var(--ls-primary-text-color);
       opacity: 0.6;
