@@ -360,9 +360,18 @@ html.is-electron.is-mac .cp__header {
   padding: 0.2em 0.4em !important;
   color: #eb5757;
 }
-.content table tr td.whitespace-nowrap {
-  white-space: pre-wrap;
-  max-width: 50vw;
+.content .custom-query .overflow-x-auto {
+  width: calc(100% - 38px) !important;
+}
+.content .custom-query .overflow-x-auto table th {
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-left: 1em;
+  border-bottom: 0px;
+}
+.content .custom-query .overflow-x-auto table tr td {
+  font-size: 0.95em;
+  padding: 0.5em 0.3em 0.5em 0.9em;
 }
 
 .tippy-wrapper {
@@ -392,7 +401,7 @@ html.is-electron.is-mac .cp__header {
     padding-top: 34px;
   }
   #main-content #main-content-container {
-    padding: 0 28px 16px 24px !important;
+    padding: 1rem 24px 16px 20px !important;
   }
 }
 /*****************************************
@@ -425,6 +434,9 @@ html.is-electron.is-mac .cp__header {
 }
 .white-theme .content .marker-switch:hover {
   opacity: 0.7;
+}
+.white-theme .content table th {
+  background-color: #efefef;
 }
 
 /*****************************************
@@ -479,6 +491,9 @@ html.is-electron.is-mac .cp__header {
 }
 .dark-theme .content .marker-switch:hover {
   background: #5d3e41;
+}
+.dark-theme .content table th {
+  background-color: #414248;
 }
 
 /*****************************************
@@ -788,68 +803,4 @@ html.is-electron.is-mac .cp__header {
 
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
-}
-/** 
-* Fixed-width left bar
-*/
-@media screen and (min-width: 640px) {
-  #app-container {
-    flex-direction: row-reverse;
-  }
-
-  .cp__right-sidebar.open {
-    width: 294px !important;
-  }
-
-  #head:last-child {
-    order: 1;
-  }
-
-  #head .cp__header-logo,
-  #head #search,
-  #head .refresh,
-  #head .repos,
-  #head .ml-1.relative,
-  #head div.flex.flex-row {
-    order: 2;
-  }
-
-  .cp__right-sidebar-topbar {
-    flex-direction: row-reverse;
-  }
-
-  .cp__right-sidebar-topbar a.ml-4 {
-    margin-left: 0;
-  }
-
-  .cp__right-sidebar-settings {
-    padding-right: 20px;
-  }
-
-  .cp__right-sidebar-inner .resizer {
-    right: 0;
-  }
-
-  .is-mac.is-electron .cp__right-sidebar-topbar {
-    flex-direction: column-reverse;
-    height: unset;
-    width: 100%;
-  }
-
-  /* icon */
-  .is-mac.is-electron .cp__right-sidebar-topbar .flex.align-items {
-    align-self: flex-end;
-    background: var(--ls-secondary-background-color);
-  }
-
-  .is-mac.is-electron .cp__right-sidebar-settings {
-    padding-top: 3px;
-    padding-bottom: 10px;
-    align-self: flex-start;
-    overflow-x: scroll;
-  }
-
-  .is-mac.is-electron .cp__right-sidebar-settings::-webkit-scrollbar {
-    width: 0 !important;
-  }
 }

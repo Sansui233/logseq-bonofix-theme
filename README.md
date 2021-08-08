@@ -80,6 +80,8 @@ Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](htt
 
 - Fix code block overflow bug, see 👉 [details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/fix-codemirror.md)
 
+- Fix query table overflow bug, see 👉 [details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/table-overflow.md)
+
 **Improvements**
 
 - Code block style for both dark theme and white theme

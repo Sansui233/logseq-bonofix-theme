@@ -243,12 +243,26 @@
     padding: 0.2em 0.4em !important;
     color: #eb5757;
   }
-  table tr td.whitespace-nowrap {
-    white-space: pre-wrap;
-    max-width: 50vw;
-  }  
+  .custom-query {
+    .overflow-x-auto {
+      width: calc(100% - 38px) !important; // Fix table overflow
+      table {
+        th {
+          font-weight: bold;
+          text-transform: capitalize;
+          padding-left: 1em;
+          border-bottom: 0px;
+        }
+        tr td {
+          font-size: 0.95em;
+          padding: 0.5em 0.3em 0.5em 0.9em;
+          // white-space: pre-wrap;
+          // max-width: 50vw;
+        }
+      }
+    }
+  }
 }
-
 
 .tippy-wrapper {
   max-height: 40vh !important;
@@ -279,7 +293,7 @@
   #main-content {
     padding-top: 34px;
     #main-content-container {
-      padding: 0 28px 16px 24px !important;
+      padding: 1rem 24px 16px 20px !important;
     }
   }
 }
