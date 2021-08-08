@@ -375,9 +375,13 @@ html.is-electron.is-mac .cp__header {
   padding: 0.5em 0.3em 0.5em 0.9em;
 }
 
+.tippy-popper,
+.tippy-popper .html-template,
 .tippy-wrapper {
-  max-height: 40vh !important;
-  max-width: min(85%, 600px) !important;
+  max-height: 45vh !important;
+  max-width: min(90vw, 600px) !important;
+  perspective: min(90vw, 600px) !important;
+  -webkit-perspective: min(90vw, 600px) !important;
 }
 
 .ui__ac .ui__ac-group-name {
