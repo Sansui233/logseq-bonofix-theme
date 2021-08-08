@@ -98,8 +98,6 @@ Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](htt
 
 - Mobile: More stable scrolling experience
 
-- No online fonts to work perfectly offline (for Google fonts service is not available in some area such as China)
-
 **Additional Styles**
 
 - Add calender emoji before journal title  
