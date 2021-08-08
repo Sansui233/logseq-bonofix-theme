@@ -78,7 +78,7 @@ html[data-theme=dark] {
 html[data-theme=light] {
   --ls-primary-background-color: #fff;
   --ls-search-background-color: #fff;
-  --ls-secondary-background-color: rgba(244, 245, 246);
+  --ls-secondary-background-color: #f8f8f8;
   --ls-tertiary-background-color: rgb(240, 240, 241);
   --ls-quaternary-background-color: #e1e1e1;
   --ls-codeblock-background-color: #f7f6f3;
@@ -212,6 +212,9 @@ html.is-electron.is-mac .cp__header {
   margin-bottom: 10px;
   border-radius: 4px;
 }
+.cp__right-sidebar .recent-pages {
+  margin-left: 26px;
+}
 
 #left-bar #repo-name {
   max-width: 16ch;
@@ -221,24 +224,24 @@ html.is-electron.is-mac .cp__header {
   background-color: var(--ls-table-tr-even-background-color);
 }
 
-#main-content-container {
-  padding: 1rem 2.5rem;
+#main-content #main-content-container {
+  padding: 1rem 2.5rem !important;
 }
-#main-content-container .journal .flex-row.foldable-title {
+#main-content #main-content-container .journal .flex-row.foldable-title {
   margin-left: 10px;
 }
-#main-content-container .journal .flex-row.foldable-title h1.title:before {
+#main-content #main-content-container .journal .flex-row.foldable-title h1.title:before {
   content: "🗓";
   vertical-align: text-bottom;
   margin-right: 0.3em;
   font-size: 0.75em;
 }
-#main-content-container .cp__sidebar-main-content h1.title {
+#main-content #main-content-container .cp__sidebar-main-content h1.title {
   font-weight: 700;
   font-size: 33px;
   margin-bottom: 1rem;
 }
-#main-content-container .cp__sidebar-main-content:before {
+#main-content #main-content-container .cp__sidebar-main-content:before {
   content: "";
   display: block;
   position: fixed;
@@ -312,9 +315,13 @@ html.is-electron.is-mac .cp__header {
 .content h5 {
   margin-top: 0;
   margin-bottom: 0;
+  border-bottom: 0;
 }
 .content .editor-inner textarea {
   margin: 0 0 !important;
+}
+.content .editor-inner textarea.h2, .content .editor-inner textarea.h1 {
+  border-bottom: unset;
 }
 .content a.tag {
   padding: 0px 7px;
@@ -353,10 +360,14 @@ html.is-electron.is-mac .cp__header {
   padding: 0.2em 0.4em !important;
   color: #eb5757;
 }
+.content table tr td.whitespace-nowrap {
+  white-space: pre-wrap;
+  max-width: 50vw;
+}
 
 .tippy-wrapper {
   max-height: 40vh !important;
-  max-width: 500px !important;
+  max-width: min(85%, 600px) !important;
 }
 
 .ui__ac .ui__ac-group-name {
@@ -381,7 +392,7 @@ html.is-electron.is-mac .cp__header {
     padding-top: 34px;
   }
   #main-content #main-content-container {
-    padding: 0 28px 16px 24px;
+    padding: 0 28px 16px 24px !important;
   }
 }
 /*****************************************
@@ -777,4 +788,68 @@ html.is-electron.is-mac .cp__header {
 
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
+}
+/** 
+* Fixed-width left bar
+*/
+@media screen and (min-width: 640px) {
+  #app-container {
+    flex-direction: row-reverse;
+  }
+
+  .cp__right-sidebar.open {
+    width: 294px !important;
+  }
+
+  #head:last-child {
+    order: 1;
+  }
+
+  #head .cp__header-logo,
+  #head #search,
+  #head .refresh,
+  #head .repos,
+  #head .ml-1.relative,
+  #head div.flex.flex-row {
+    order: 2;
+  }
+
+  .cp__right-sidebar-topbar {
+    flex-direction: row-reverse;
+  }
+
+  .cp__right-sidebar-topbar a.ml-4 {
+    margin-left: 0;
+  }
+
+  .cp__right-sidebar-settings {
+    padding-right: 20px;
+  }
+
+  .cp__right-sidebar-inner .resizer {
+    right: 0;
+  }
+
+  .is-mac.is-electron .cp__right-sidebar-topbar {
+    flex-direction: column-reverse;
+    height: unset;
+    width: 100%;
+  }
+
+  /* icon */
+  .is-mac.is-electron .cp__right-sidebar-topbar .flex.align-items {
+    align-self: flex-end;
+    background: var(--ls-secondary-background-color);
+  }
+
+  .is-mac.is-electron .cp__right-sidebar-settings {
+    padding-top: 3px;
+    padding-bottom: 10px;
+    align-self: flex-start;
+    overflow-x: scroll;
+  }
+
+  .is-mac.is-electron .cp__right-sidebar-settings::-webkit-scrollbar {
+    width: 0 !important;
+  }
 }

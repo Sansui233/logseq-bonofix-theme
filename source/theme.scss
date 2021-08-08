@@ -21,18 +21,17 @@
     margin: 0 0.25rem;
     border-radius: 3px;
   }
-  // v0.2.6 END 
+  // v0.2.6 END
   a[title="Go Back"] {
     padding: 0.15rem 0.15rem;
     margin: 0.35rem 0 0.35rem 0.35rem;
-    
   }
   a[title="Go Forward"] {
     padding: 0.15rem 0.15rem;
     margin: 0.35rem 0.35rem 0.35rem 0;
   }
   #search.p-2 {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .cp__header-logo,
   .cp__right-menu-button {
@@ -80,6 +79,9 @@
     margin-bottom: 10px;
     border-radius: 4px;
   }
+  .recent-pages {
+    margin-left: 26px;
+  }
 }
 
 #left-bar {
@@ -92,8 +94,8 @@
   }
 }
 
-#main-content-container {
-  padding: 1rem 2.5rem;
+#main-content #main-content-container {
+  padding: 1rem 2.5rem !important;
   // journal title emoji
   .journal .flex-row.foldable-title {
     margin-left: 10px;
@@ -192,9 +194,14 @@
   h5 {
     margin-top: 0;
     margin-bottom: 0;
+    border-bottom: 0;
   }
   .editor-inner textarea {
     margin: 0 0 !important;
+    &.h2,
+    &.h1 {
+      border-bottom: unset;
+    }
   }
   a {
     &.tag {
@@ -236,11 +243,16 @@
     padding: 0.2em 0.4em !important;
     color: #eb5757;
   }
+  table tr td.whitespace-nowrap {
+    white-space: pre-wrap;
+    max-width: 50vw;
+  }  
 }
+
 
 .tippy-wrapper {
   max-height: 40vh !important;
-  max-width: 500px !important;
+  max-width: min(85%, 600px) !important;
 }
 
 .ui__ac {
@@ -267,7 +279,7 @@
   #main-content {
     padding-top: 34px;
     #main-content-container {
-      padding: 0 28px 16px 24px;
+      padding: 0 28px 16px 24px !important;
     }
   }
 }
