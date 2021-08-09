@@ -28,10 +28,26 @@
       opacity: 0.6;
     }
   }
+
   .cp__right-sidebar {
-    .cp__right-sidebar-settings a {
-      color: var(--ls-secondary-text-color);
-      opacity: 0.8;
+    .cp__right-sidebar-topbar {
+      .cp__right-sidebar-settings {
+        .cp__right-sidebar-settings-btn {
+          color: var(--ls-secondary-text-color);
+          opacity: 0.8;
+          &:hover {
+            background-color: #535558;
+            color: white;
+          }
+        }
+      }
+    }
+    .sidebar-item-list {
+      background-color: var(--ls-secondary-background-color,#d8e1e8);
+      .sidebar-item{
+        background-color: var(--ls-secondary-background-color,#d8e1e8);
+        border-bottom: 2px solid #484d52;
+      }
     }
   }
   .content {
@@ -50,7 +66,7 @@
       color: #fff;
     }
     mark {
-      background: rgb(89,86,59);
+      background: rgb(89, 86, 59);
       color: var(--ls-primary-text-color);
     }
     .external-link {

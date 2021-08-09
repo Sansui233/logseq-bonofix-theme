@@ -40,4 +40,25 @@
       }
     }
   }
+
+  .cp__right-sidebar {
+    .cp__right-sidebar-topbar {
+      .cp__right-sidebar-settings {
+        .cp__right-sidebar-settings-btn {
+          color: #6b6b6b;
+          &:hover {
+            color: var(--ls-primary-text-color);
+            background-color: #e6e6e6;
+          }
+        }
+      }
+    }
+    .sidebar-item-list {
+      background-color: var(--ls-secondary-background-color,#d8e1e8);
+      .sidebar-item{
+        background-color: var(--ls-secondary-background-color,#d8e1e8);
+        border-bottom: 2px solid #e6e6e6;
+      }
+    }
+  }
 }

@@ -20,7 +20,7 @@ This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI
 
 The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme ) and [Notion](https://notion.so). The code is mainly based on bujo theme, and you may find the style really notion-like.
 
-![Desktop](./media/Desktop.png)
+![Desktop](./media/Desktop-2021-08-09.png)
 
 ![Mobile](./media/Mobile.png)
 
