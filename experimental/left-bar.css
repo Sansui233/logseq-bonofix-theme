@@ -7,7 +7,7 @@
   }
 
   .cp__right-sidebar.open {
-    width: 294px !important;
+    width: 300px !important;
   }
 
   #head:last-child {
@@ -39,6 +39,16 @@
     right: 0;
   }
 
+  .cp__right-sidebar-topbar a.button {
+    margin-left: 10px;
+  }
+
+  .cp__right-sidebar .cp__right-sidebar-topbar .cp__right-sidebar-settings {
+    margin-left: 0px;
+  }
+
+  /* ====== Mac Electron ========*/
+
   .is-mac.is-electron .cp__right-sidebar-topbar {
     flex-direction: column-reverse;
     height: unset;
@@ -50,10 +60,17 @@
     align-self: flex-end;
     background: var(--ls-secondary-background-color);
   }
+  .is-mac.is-electron .cp__right-sidebar .cp__right-sidebar-topbar a.button {
+    margin: 10px 0 0 0;
+  }
+
+  /* top-menu */
+  .is-mac.is-electron .cp__right-sidebar .cp__right-sidebar-topbar .cp__right-sidebar-settings {
+    margin-left: 5px;
+  }
 
   .is-mac.is-electron .cp__right-sidebar-settings {
     padding-top: 3px;
-    padding-bottom: 10px;
     align-self: flex-start;
     overflow-x: scroll;
   }
@@ -61,4 +78,5 @@
   .is-mac.is-electron .cp__right-sidebar-settings::-webkit-scrollbar {
     width: 0 !important;
   }
+  
 }
