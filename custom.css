@@ -80,8 +80,8 @@ html[data-theme=light] {
   --ls-primary-background-color: #fff;
   --ls-search-background-color: #fff;
   --ls-secondary-background-color: #f8f8f8;
-  --ls-tertiary-background-color: rgb(240, 240, 241);
-  --ls-quaternary-background-color: #e1e1e1;
+  --ls-tertiary-background-color: #f2f2f3;
+  --ls-quaternary-background-color: #ebeaea;
   --ls-codeblock-background-color: #f7f6f3;
   --ls-table-tr-even-background-color: #f4f4f4;
   --ls-callout-background-color: rgba(235, 236, 237, 0.3);
@@ -562,7 +562,7 @@ html ::-webkit-scrollbar {
   background: #5d3e41;
 }
 .dark-theme .content table th {
-  background-color: #414248;
+  background-color: #414548;
 }
 
 /*****************************************
