@@ -88,11 +88,11 @@
       }
     }
     a.button {
-      background-color: var(--ls-secondary-background-color,#d8e1e8);
+      background-color: var(--ls-secondary-background-color, #d8e1e8);
       &:hover {
         background: var(--ls-tertiary-background-color);
       }
-  }
+    }
   }
   .sidebar-item-list {
     .sidebar-item {
@@ -105,15 +105,18 @@
         padding-top: 0.15rem;
         padding-bottom: 0.45rem;
         .font-medium {
-          font-size: 1.1em;
-          font-weight: bold;
-      }
+          font-size: 0.88em;
+          font-weight: 600;
+          text-transform: uppercase;
+          opacity: 0.7;
+          letter-spacing: 0.02em;
+        }
       }
       .content {
         font-size: 0.95rem;
       }
     }
-    
+
     .recent-pages {
       margin-left: 26px;
     }

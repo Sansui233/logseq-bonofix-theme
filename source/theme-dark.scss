@@ -34,10 +34,11 @@
       .cp__right-sidebar-settings {
         .cp__right-sidebar-settings-btn {
           color: var(--ls-secondary-text-color);
-          opacity: 0.8;
+          opacity: .7;
           &:hover {
             background-color: #535558;
             color: white;
+            opacity: 1;
           }
         }
       }

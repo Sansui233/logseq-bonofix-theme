@@ -241,8 +241,11 @@ html.is-electron.is-mac .cp__header {
   padding-bottom: 0.45rem;
 }
 .cp__right-sidebar .sidebar-item-list .sidebar-item .flex.flex-row.justify-between .font-medium {
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 0.88em;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+  letter-spacing: 0.02em;
 }
 .cp__right-sidebar .sidebar-item-list .sidebar-item .content {
   font-size: 0.95rem;
@@ -483,7 +486,7 @@ html ::-webkit-scrollbar {
   background-color: #efefef;
 }
 .white-theme .cp__right-sidebar .cp__right-sidebar-topbar .cp__right-sidebar-settings .cp__right-sidebar-settings-btn {
-  color: #6b6b6b;
+  color: #7b7b7b;
 }
 .white-theme .cp__right-sidebar .cp__right-sidebar-topbar .cp__right-sidebar-settings .cp__right-sidebar-settings-btn:hover {
   color: var(--ls-primary-text-color);
@@ -519,11 +522,12 @@ html ::-webkit-scrollbar {
 }
 .dark-theme .cp__right-sidebar .cp__right-sidebar-topbar .cp__right-sidebar-settings .cp__right-sidebar-settings-btn {
   color: var(--ls-secondary-text-color);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .dark-theme .cp__right-sidebar .cp__right-sidebar-topbar .cp__right-sidebar-settings .cp__right-sidebar-settings-btn:hover {
   background-color: #535558;
   color: white;
+  opacity: 1;
 }
 .dark-theme .cp__right-sidebar .sidebar-item-list {
   background-color: var(--ls-secondary-background-color, #d8e1e8);
