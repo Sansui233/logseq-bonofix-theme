@@ -5,11 +5,6 @@
   #app-container {
     flex-direction: row-reverse;
   }
-
-  .cp__right-sidebar.open {
-    width: 300px !important;
-  }
-
   #head:last-child {
     order: 1;
   }
@@ -23,6 +18,10 @@
     order: 2;
   }
 
+  .cp__right-sidebar.open {
+    width: 280px !important;
+  }
+
   .cp__right-sidebar-topbar {
     flex-direction: row-reverse;
   }
@@ -33,6 +32,7 @@
 
   .cp__right-sidebar-settings {
     padding-right: 20px;
+    width: 260px;
   }
 
   .cp__right-sidebar-inner .resizer {
