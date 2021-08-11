@@ -72,6 +72,9 @@ html[data-theme="dark"] {
   --color-level-4: #632f46;
   --color-level-5: #865673;
   --color-level-6: #9e6889;
+  // Not in default theme.
+  --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
+  --ls-block-bullet-active-color: #4a99b9; // in log-seq dev theme
 }
 
 /* *****************************
@@ -116,4 +119,7 @@ html[data-theme="light"] {
   --color-level-2: #f3f3f3;
   --color-level-3: #eaeaea;
   --color-level-4: #ddd;
+  // Not in default theme.
+  --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
+  --ls-block-bullet-active-color: #6ea7eead; // in log-seq dev theme
 }
