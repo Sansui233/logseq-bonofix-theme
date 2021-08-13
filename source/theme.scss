@@ -221,10 +221,6 @@ html ::-webkit-scrollbar {
       }
     }
   }
-  svg.add-button>.circle {
-    transition: .2s;
-    fill: var(--ls-block-bullet-color);
-  }
   ul,
   ol {
     margin-top: 5px;
@@ -310,6 +306,11 @@ html ::-webkit-scrollbar {
       }
     }
   }
+}
+
+svg.add-button>.circle {
+  transition: .2s;
+  fill: var(--ls-block-bullet-color);
 }
 
 .tippy-popper,

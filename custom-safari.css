@@ -346,9 +346,6 @@ html ::-webkit-scrollbar {
 .content .admonitionblock .admonition-icon svg.note {
   color: var(--ls-secondary-text-color);
 }
-.content svg.add-button > .circle {
-  transition: 0.2s;
-}
 .content ul,
 .content ol {
   margin-top: 5px;
@@ -422,6 +419,11 @@ html ::-webkit-scrollbar {
 .content .custom-query .overflow-x-auto table tr td {
   font-size: 0.95em;
   padding: 0.5em 0.3em 0.5em 0.9em;
+}
+
+svg.add-button > .circle {
+  transition: 0.2s;
+  fill: var(--ls-block-bullet-color);
 }
 
 .tippy-popper,
