@@ -346,6 +346,10 @@ html ::-webkit-scrollbar {
 .content .admonitionblock .admonition-icon svg.note {
   color: var(--ls-secondary-text-color);
 }
+.content svg.add-button > .circle {
+  transition: 0.2s;
+  fill: var(--ls-block-bullet-color);
+}
 .content ul,
 .content ol {
   margin-top: 5px;
@@ -571,6 +575,9 @@ html ::-webkit-scrollbar {
 }
 .dark-theme .content table th {
   background-color: #414548;
+}
+.dark-theme .content svg.add-button > .circle {
+  fill: var(--ls-block-bullet-color, #394b59);
 }
 
 /*****************************************
