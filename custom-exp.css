@@ -135,15 +135,6 @@ html.is-electron.is-mac .cp__header {
   margin: 0 auto;
 }
 
-.CodeMirror .CodeMirror-sizer {
-  min-width: unset !important;
-}
-.CodeMirror .CodeMirror-line {
-  width: 0;
-  /* Safari version */
-  /* max-width: 70vw; */
-}
-
 /*****************************************
   Common Theme
 *****************************************/
@@ -407,16 +398,13 @@ html ::-webkit-scrollbar {
   padding: 0.2em 0.4em !important;
   color: #eb5757;
 }
-.content .custom-query .overflow-x-auto {
-  width: calc(100% - 38px) !important;
-}
-.content .custom-query .overflow-x-auto table th {
+.content .custom-query table th {
   font-weight: bold;
   text-transform: capitalize;
   padding-left: 1em;
   border-bottom: 0px;
 }
-.content .custom-query .overflow-x-auto table tr td {
+.content .custom-query table tr td {
   font-size: 0.95em;
   padding: 0.5em 0.3em 0.5em 0.9em;
 }
@@ -639,45 +627,6 @@ svg.add-button > .circle {
 .white-theme .cp__right-sidebar .CodeMirror-gutters,
 .white-theme .cp__right-sidebar .extensions__code-lang {
   background-color: rgba(242, 241, 238, 0.95);
-}
-
-/* IMPORTANT
-  Replace scrollbar to fix incomplete code scrolling
-  This strategy will also make line number scroll
-  It'll be deprecated if Logseq fix the code scolling issue
-*/
-.extensions__code .CodeMirror {
-  background-color: unset;
-  padding: 0;
-}
-.extensions__code .CodeMirror .CodeMirror-gutters {
-  width: 0;
-}
-.extensions__code .CodeMirror .CodeMirror-sizer {
-  min-width: unset !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.extensions__code .CodeMirror .CodeMirror-hscrollbar {
-  visibility: hidden;
-}
-.extensions__code .CodeMirror ::-webkit-scrollbar {
-  background-color: #3f4447;
-}
-.extensions__code .CodeMirror .CodeMirror-lines {
-  overflow-x: scroll;
-  padding: 25px 8px 16px 40px;
-  background-color: var(--ls-codeblock-background-color);
-}
-.extensions__code .CodeMirror .CodeMirror-lines span[role=presentation] {
-  padding-right: 20px !important;
-}
-.extensions__code .CodeMirror .CodeMirror-lines .CodeMirror-code .CodeMirror-gutter-wrapper {
-  left: -32px !important;
-}
-
-.white-theme .extensions__code .CodeMirror ::-webkit-scrollbar {
-  background-color: #f7f6f3;
 }
 
 /* Rewrite .cm-s-solarized */

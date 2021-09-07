@@ -14,15 +14,3 @@ html.is-electron.is-mac .cp__header {
 #main-content-container .file {
   margin: 0 auto;
 }
-
-// Fix code mirror overflow bug
-.CodeMirror {
-  .CodeMirror-sizer {
-    min-width: unset !important;
-  }
-  .CodeMirror-line {
-    width: 0;
-    /* Safari version */
-    /* max-width: 70vw; */
-  }
-}

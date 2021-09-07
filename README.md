@@ -13,8 +13,7 @@
 </p>
 
 
-
-This is a theme for [Logseq](https://github.com/logseq/logseq), focusing on **UI bug fixes and typography** with massive mobile experience improvements.
+This is a clean theme for [Logseq](https://github.com/logseq/logseq), focusing on bullet journal and long time writing experience. Sometimes it fixes some UI bugs for Logseq.
 
 ## Screenshots
 
@@ -26,9 +25,9 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 ## Install
 
-Check your Version
+Here a two ways of installing theme in Logseq.
 
-### If you are using Chrome(chromium) or desktop version:
+### Install custome.css:
 
 - General installation
 
@@ -41,26 +40,7 @@ Check your Version
   ```css
   @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
   ```
-
-### If you are using Safari(webkit):
-
-Copy this one-line-installation into your logseq/custom.css file
-
-```css
-@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom-safari.css')
-```
-
-### If you use Chrome(chromium) on desktop and Safari(webkit) on mobile
-
-Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), and add this line to logseq.com:
-
-```css
-.CodeMirror-line {
-    width: 0;
-}
-```
-
-### (Dev Mode) Install Via Logseq Plugin
+### (Dev Mode) Install plugin
 
 <img src="./media/plugin.png" alt="Tags" width="450px" />
 
@@ -76,17 +56,9 @@ Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](htt
 
 ## What's improved
 
-**Bug fix**
+**Functional style**
 
-- Fix code block overflow bug, see 👉 [details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/fix-codemirror.md)
-
-- Fix query table overflow bug, see 👉 [details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/table-overflow.md)
-
-**Improvements**
-
-- Code block style for both dark theme and white theme
-
-- ~~**Better typography for headings and blocks**, see 👉 [design details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/better-typography.md)~~(Legacy for the old version of logseq)
+- **Better typography for headings and blocks**, ~~see 👉 [design details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/better-typography.md)~~(The doc is for the legacy version of logseq)
 
 - Make tippy window like responsive card instead of filling the screen and obscuring text
 

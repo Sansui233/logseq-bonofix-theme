@@ -1,9 +1,9 @@
 {
   "name": "logseq-bonofix-theme",
-  "version": "3.4.6",
-  "logseq-version": "v0.3.3",
+  "version": "3.4.8",
+  "logseq-version": "v0.3.7",
   "author": "Sansui233",
-  "description": "A logseq theme focus on UI bug fix and mobile improvement",
+  "description": "A clean theme for Logseq, focusing on bullet journal and long time writing experience. Sometimes it fixes some UI bugs.",
   "main": "source/index.sass",
   "scripts": {
     "watch": "sass --watch source:css",

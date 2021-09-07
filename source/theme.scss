@@ -288,8 +288,6 @@ html ::-webkit-scrollbar {
     color: #eb5757;
   }
   .custom-query {
-    .overflow-x-auto {
-      width: calc(100% - 38px) !important; // Fix table overflow
       table {
         th {
           font-weight: bold;
@@ -304,7 +302,6 @@ html ::-webkit-scrollbar {
           // max-width: 50vw;
         }
       }
-    }
   }
 }
 
