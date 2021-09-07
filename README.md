@@ -62,9 +62,9 @@ Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](htt
 
 ### (Dev Mode) Install Via Logseq Plugin
 
-<img src="./media/plugin.jpg" alt="Tags" width="450px" />
+<img src="./media/plugin.png" alt="Tags" width="450px" />
 
-- Download the source code and unpack it into a directory
+- Download the [plugin release](https://github.com/Sansui233/logseq-bonofix-theme/releases) and unpack it into a directory
 
 - Open Logseq→Settings, enable developer mode
 
@@ -86,7 +86,7 @@ Recommend to use `custom-safari.css`. Then install Chrome extension [Stylus](htt
 
 - Code block style for both dark theme and white theme
 
-- **Better typography for headings and blocks**, see 👉 [design details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/better-typography.md)
+- ~~**Better typography for headings and blocks**, see 👉 [design details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/better-typography.md)~~(Legacy for the old version of logseq)
 
 - Make tippy window like responsive card instead of filling the screen and obscuring text
 
