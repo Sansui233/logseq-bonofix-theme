@@ -308,6 +308,12 @@ html ::-webkit-scrollbar {
   }
 }
 
+.document-mode {
+  .ls-block {
+    margin-bottom: 0.35rem;
+  }
+}
+
 svg.add-button>.circle {
   transition: .2s;
   fill: var(--ls-block-bullet-color);
