@@ -398,13 +398,16 @@ html ::-webkit-scrollbar {
   padding: 0.2em 0.4em !important;
   color: #eb5757;
 }
-.content .custom-query table th {
+.content .custom-query .overflow-x-auto {
+  cursor: default;
+}
+.content .custom-query .overflow-x-auto table th {
   font-weight: bold;
   text-transform: capitalize;
   padding-left: 1em;
   border-bottom: 0px;
 }
-.content .custom-query table tr td {
+.content .custom-query .overflow-x-auto table tr td {
   font-size: 0.95em;
   padding: 0.5em 0.3em 0.5em 0.9em;
 }
@@ -467,6 +470,8 @@ svg.add-button > .circle {
 }
 .white-theme #left-bar #repo-name {
   opacity: 1;
+  height: 22px;
+  transform: translateY(-1px);
 }
 .white-theme .content .external-link {
   border-bottom: 0.05em solid rgba(55, 53, 47, 0.25);
@@ -490,7 +495,6 @@ svg.add-button > .circle {
   color: #7b7b7b;
 }
 .white-theme .cp__right-sidebar .cp__right-sidebar-topbar .cp__right-sidebar-settings .cp__right-sidebar-settings-btn:hover {
-  color: var(--ls-primary-text-color);
   background-color: #e6e6e6;
 }
 .white-theme .cp__right-sidebar .sidebar-item-list {

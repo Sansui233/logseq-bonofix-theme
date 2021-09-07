@@ -16,6 +16,8 @@
     }
     #repo-name {
       opacity: 1;
+      height: 22px;
+      transform: translateY(-1px);
     }
   }
   .content {
@@ -47,7 +49,6 @@
         .cp__right-sidebar-settings-btn {
           color: #7b7b7b;
           &:hover {
-            color: var(--ls-primary-text-color);
             background-color: #e6e6e6;
           }
         }

@@ -288,6 +288,8 @@ html ::-webkit-scrollbar {
     color: #eb5757;
   }
   .custom-query {
+    .overflow-x-auto{
+      cursor: default;
       table {
         th {
           font-weight: bold;
@@ -302,6 +304,7 @@ html ::-webkit-scrollbar {
           // max-width: 50vw;
         }
       }
+    }
   }
 }
 
