@@ -25,7 +25,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 ## Install
 
-Here a two ways of installing theme in Logseq.
+Here are two ways of installing theme in Logseq.
 
 ### Install custome.css:
 
