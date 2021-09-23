@@ -96,7 +96,7 @@ html[data-theme=light] {
   --ls-primary-text-color: #433f38;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: rgb(234, 110, 110);
-  --ls-link-text-hover-color: #ac434c;
+  --ls-link-text-hover-color: #e6515e;
   --ls-link-ref-text-color: #3d88ce;
   --ls-link-ref-text-hover-color: #5d9cd6;
   --ls-alink-color: var(--ls-link-text-color);
@@ -138,6 +138,9 @@ html.is-electron.is-mac .cp__header {
 /*****************************************
   Common Theme
 *****************************************/
+.cp__header {
+  justify-content: flex-end;
+}
 .cp__header a {
   color: var(--ls-primary-text-color);
 }
@@ -430,10 +433,27 @@ svg.add-button > .circle {
   -webkit-perspective: min(90vw, 600px) !important;
 }
 
+.panel-content .cp__palette-main {
+  width: unset;
+}
+.panel-content .cp__palette-main .chosen {
+  background-color: var(--ls-quaternary-background-color);
+}
+
 .ui__ac .ui__ac-group-name {
   font-weight: bolder;
 }
 
+@media (min-width: 1024px) {
+  .panel-content {
+    min-width: 640px;
+  }
+}
+@media (min-width: 640px) {
+  .panel-content .cp__palette-main {
+    width: 640px;
+  }
+}
 @media screen and (max-width: 640px) {
   #head {
     position: fixed;
@@ -866,8 +886,17 @@ svg.add-button > .circle {
   #head .refresh,
   #head .repos,
   #head .ml-1.relative,
+  #head div[aria-describedby='tippy-tooltip-1'],   /* Search icon */
   #head div.flex.flex-row {
     order: 2;
+  }
+
+  .cp__header > a.button:last-child {
+    margin-right: auto;
+  }
+
+  .cp__header > div.flex-1.flex {
+    flex: unset;
   }
 
   .cp__right-sidebar.open {

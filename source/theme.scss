@@ -3,6 +3,7 @@
 *****************************************/
 
 .cp__header {
+  justify-content: flex-end;
   a {
     color: var(--ls-primary-text-color);
     &:hover {
@@ -288,7 +289,7 @@ html ::-webkit-scrollbar {
     color: #eb5757;
   }
   .custom-query {
-    .overflow-x-auto{
+    .overflow-x-auto {
       cursor: default;
       table {
         th {
@@ -314,8 +315,8 @@ html ::-webkit-scrollbar {
   }
 }
 
-svg.add-button>.circle {
-  transition: .2s;
+svg.add-button > .circle {
+  transition: 0.2s;
   fill: var(--ls-block-bullet-color);
 }
 
@@ -328,11 +329,35 @@ svg.add-button>.circle {
   -webkit-perspective: min(90vw, 600px) !important;
 }
 
+.panel-content {
+  .cp__palette-main {
+    width: unset;
+    .chosen {
+      background-color: var(--ls-quaternary-background-color);
+    }
+  }
+}
+
 .ui__ac {
   .ui__ac-group-name {
     font-weight: bolder;
   }
 }
+
+@media (min-width: 1024px){
+  .panel-content {
+    min-width: 640px;
+  }
+}
+
+@media (min-width: 640px) {
+  .panel-content {
+    .cp__palette-main {
+      width: 640px;
+    }
+  }
+}
+
 
 // ************** Mobile layout **************
 @media screen and (max-width: 640px) {

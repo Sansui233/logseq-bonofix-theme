@@ -14,8 +14,17 @@
   #head .refresh,
   #head .repos,
   #head .ml-1.relative,
+  #head div[aria-describedby='tippy-tooltip-1'],   /* Search icon */
   #head div.flex.flex-row {
     order: 2;
+  }
+
+  .cp__header > a.button:last-child {
+    margin-right: auto;
+  }
+
+  .cp__header > div.flex-1.flex {
+    flex: unset;
   }
 
   .cp__right-sidebar.open {
