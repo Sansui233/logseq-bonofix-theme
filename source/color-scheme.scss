@@ -23,13 +23,13 @@ html[data-theme="dark"] {
   --ls-primary-background-color: rgb(47, 52, 55);
   --ls-secondary-background-color: rgb(55, 60, 63);
   --ls-tertiary-background-color: rgb(67, 72, 75);
-  --ls-quaternary-background-color: rgb(148 158 164);
+  --ls-quaternary-background-color: rgb(71, 79, 82);
   --ls-table-tr-even-background-color: #0404061c;
   --ls-callout-background-color: rgba(69, 75, 78, 0.3);
   --ls-codeblock-background-color: #{$codeblock-bg-dark};
   --ls-active-primary-color: var(--ls-link-text-color);
   --ls-active-secondary-color: var(--ls-link-text-hover-color);
-  --ls-block-properties-background-color: #2a2d2d;
+  --ls-block-properties-background-color: #2a2d2d91;
   --ls-block-ref-link-text-color: #73d2f6;
   --ls-search-background-color: var(--ls-primary-background-color);
   --ls-border-color: #3f3f3f;
@@ -62,7 +62,7 @@ html[data-theme="dark"] {
   --ls-scrollbar-background-color: rgba(42, 46, 49, 0.9);
   --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
   --ls-head-text-color: #ffe27c;
-  --ls-icon-color: var(--ls-quaternary-background-color);
+  --ls-icon-color: rgb(154 161 165);
   --ls-search-icon-color: var(--ls-quaternary-background-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
   --ls-right-sidebar-code-bg-color: #3c041f;

@@ -62,11 +62,7 @@ Here are two ways of installing theme in Logseq.
 
 - Make tippy window like responsive card instead of filling the screen and obscuring text
 
-- Mobile: full width search lists
-
-- Mobile: fixed top bar
-
-- Mobile: larger sync dot to be pressed
+- Mobile: fixed-height bottom search panel
 
 - Mobile: More stable scrolling experience
 

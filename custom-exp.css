@@ -21,13 +21,13 @@ html[data-theme=dark] {
   --ls-primary-background-color: rgb(47, 52, 55);
   --ls-secondary-background-color: rgb(55, 60, 63);
   --ls-tertiary-background-color: rgb(67, 72, 75);
-  --ls-quaternary-background-color: rgb(148 158 164);
+  --ls-quaternary-background-color: rgb(71, 79, 82);
   --ls-table-tr-even-background-color: #0404061c;
   --ls-callout-background-color: rgba(69, 75, 78, 0.3);
   --ls-codeblock-background-color: #3f4447;
   --ls-active-primary-color: var(--ls-link-text-color);
   --ls-active-secondary-color: var(--ls-link-text-hover-color);
-  --ls-block-properties-background-color: #2a2d2d;
+  --ls-block-properties-background-color: #2a2d2d91;
   --ls-block-ref-link-text-color: #73d2f6;
   --ls-search-background-color: var(--ls-primary-background-color);
   --ls-border-color: #3f3f3f;
@@ -60,7 +60,7 @@ html[data-theme=dark] {
   --ls-scrollbar-background-color: rgba(42, 46, 49, 0.9);
   --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
   --ls-head-text-color: #ffe27c;
-  --ls-icon-color: var(--ls-quaternary-background-color);
+  --ls-icon-color: rgb(154 161 165);
   --ls-search-icon-color: var(--ls-quaternary-background-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
   --ls-right-sidebar-code-bg-color: #3c041f;
@@ -123,10 +123,6 @@ html[data-theme=light] {
   This section is for global layout
   DO NOTHING TO COLOR DESIGN
 *****************************************/
-html.is-electron.is-mac .cp__header {
-  height: calc(2.6rem + var(--frame-top-height));
-}
-
 .cp__sidebar-main-content {
   width: 100%;
 }
@@ -220,6 +216,7 @@ html.is-electron.is-mac .cp__header {
   padding: 2px 10px;
   border-radius: 15px;
   font-size: 0.93rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 .cp__right-sidebar .cp__right-sidebar-topbar a.button {
   background-color: var(--ls-secondary-background-color, #d8e1e8);
@@ -277,15 +274,9 @@ html.is-electron.is-mac .cp__header {
   font-size: 33px;
   margin-bottom: 1rem;
 }
-#main-content #main-content-container .cp__sidebar-main-content:before {
-  content: "";
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 80px;
-  top: 0;
-  left: 0;
-  z-index: 1;
+
+#journals > div > a {
+  opacity: 0.3;
 }
 
 html ::-webkit-scrollbar {
@@ -439,9 +430,6 @@ svg.add-button > .circle {
 .panel-content .cp__palette-main .search-results-wrap {
   min-height: 62vh;
 }
-.panel-content .cp__palette-main .chosen {
-  background-color: var(--ls-table-tr-even-background-color);
-}
 
 .ui__ac .ui__ac-group-name {
   font-weight: bolder;
@@ -479,6 +467,13 @@ svg.add-button > .circle {
   }
   #main-content #main-content-container {
     padding: 1rem 24px 16px 20px !important;
+  }
+
+  .cp__settings-inner > aside {
+    border-right: unset;
+  }
+  .cp__settings-inner > aside ul {
+    border-bottom: 1px solid var(--ls-quaternary-background-color);
   }
 }
 /*****************************************
@@ -536,9 +531,6 @@ svg.add-button > .circle {
 *****************************************/
 .dark-theme ::selection {
   background: var(--ls-block-highlight-color);
-}
-.dark-theme #main-content-container .cp__sidebar-main-content:before {
-  background: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 0%, rgba(24, 24, 24, 0) 100%);
 }
 .dark-theme #left-bar .close-panel-btn {
   color: var(--ls-primary-text-color);
