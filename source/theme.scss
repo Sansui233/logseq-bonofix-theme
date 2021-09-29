@@ -332,8 +332,11 @@ svg.add-button > .circle {
 .panel-content {
   .cp__palette-main {
     width: unset;
+    .search-results-wrap {
+      min-height: 62vh;
+    }
     .chosen {
-      background-color: var(--ls-quaternary-background-color);
+      background-color: var(--ls-table-tr-even-background-color);
     }
   }
 }
@@ -344,7 +347,7 @@ svg.add-button > .circle {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .panel-content {
     min-width: 640px;
   }
@@ -354,10 +357,12 @@ svg.add-button > .circle {
   .panel-content {
     .cp__palette-main {
       width: 640px;
+      .search-results-wrap {
+        min-height: unset;
+      }
     }
   }
 }
-
 
 // ************** Mobile layout **************
 @media screen and (max-width: 640px) {

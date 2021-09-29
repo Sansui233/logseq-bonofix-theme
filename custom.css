@@ -436,8 +436,11 @@ svg.add-button > .circle {
 .panel-content .cp__palette-main {
   width: unset;
 }
+.panel-content .cp__palette-main .search-results-wrap {
+  min-height: 62vh;
+}
 .panel-content .cp__palette-main .chosen {
-  background-color: var(--ls-quaternary-background-color);
+  background-color: var(--ls-table-tr-even-background-color);
 }
 
 .ui__ac .ui__ac-group-name {
@@ -452,6 +455,9 @@ svg.add-button > .circle {
 @media (min-width: 640px) {
   .panel-content .cp__palette-main {
     width: 640px;
+  }
+  .panel-content .cp__palette-main .search-results-wrap {
+    min-height: unset;
   }
 }
 @media screen and (max-width: 640px) {
