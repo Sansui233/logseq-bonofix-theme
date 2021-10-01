@@ -58,8 +58,8 @@ html[data-theme="dark"] {
   --ls-page-inline-code-color: #eb5757;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-properties-background-color: #adadad1c;
-  --ls-scrollbar-foreground-color: rgba(192, 202, 223, 0.15);
-  --ls-scrollbar-background-color: rgba(42, 46, 49, 0.9);
+  --ls-scrollbar-foreground-color: var(--ls-block-bullet-color);
+  --ls-scrollbar-background-color: #fff0;
   --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
   --ls-head-text-color: #ffe27c;
   --ls-icon-color: rgb(154 161 165);
@@ -95,7 +95,7 @@ html[data-theme="light"] {
   --ls-active-secondary-color: rgb(46, 118, 170);
   --ls-block-properties-background-color: #f5f5f5;
   --ls-block-bullet-border-color: #dedede85;
-  --ls-block-bullet-color: #494a4b21;
+  --ls-block-bullet-color: #00000018;
   --ls-guideline-color: rgba(62, 62, 63, 0.08);
   --ls-primary-text-color: #433f38;
   --ls-title-text-color: var(--ls-primary-text-color);
@@ -114,6 +114,7 @@ html[data-theme="light"] {
   --ls-page-checkbox-color: #9dbbd8;
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
   --ls-page-properties-background-color: #adadad1c;
+  --ls-scrollbar-foreground-color:#00000021;
   --ls-scrollbar-background-color: #fff0;
   --color-level-1: rgba(235, 236, 237, 0.3);
   --color-level-2: #f3f3f3;
