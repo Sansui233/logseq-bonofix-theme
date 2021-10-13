@@ -191,7 +191,9 @@ html ::-webkit-scrollbar-thumb:hover {
   border: 4px solid transparent;
 }
 
-// ************** Content **************
+/******************************************
+ **************  Content  *****************
+ ******************************************/
 .content {
   div[haschild="true"] > div.flex-row {
     margin-bottom: 0.3rem;
@@ -317,6 +319,9 @@ html ::-webkit-scrollbar-thumb:hover {
           text-transform: capitalize;
           padding-left: 1em;
           border-bottom: 0px;
+          a span{
+            color: var(--ls-primary-text-color);
+          }
         }
         tr td {
           font-size: 0.95em;
@@ -326,6 +331,9 @@ html ::-webkit-scrollbar-thumb:hover {
         }
       }
     }
+  }
+  .block-content.inline .inline .embed-header div.mr-3{
+    margin-right: .25rem;
   }
 }
 
