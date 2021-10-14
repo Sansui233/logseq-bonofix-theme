@@ -7,9 +7,8 @@
   }
 
   #head div[aria-describedby="tippy-tooltip-3"],
-  #head div[aria-describedby$="7"] {
+  #head div[aria-describedby*="tippy-tooltip-"]:last-of-type {
     order: 1;
-    margin-left: 78px;
   }
   #head #left-menu {
     margin-left: 4px !important;
@@ -56,7 +55,7 @@
     width: 100%;
   }
 
-  .is-mac.is-electron #head div[aria-describedby="tippy-tooltip-3"] {
+  .is-mac.is-electron #head div[aria-describedby*="tippy-tooltip-"]:last-of-type {
     margin-left: 78px;
   }
 
