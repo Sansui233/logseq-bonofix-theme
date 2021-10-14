@@ -29,20 +29,16 @@
     }
   }
 
-  .cp__right-sidebar {
-    .cp__right-sidebar-topbar {
-      .cp__right-sidebar-settings {
-        .cp__right-sidebar-settings-btn {
-          color: var(--ls-secondary-text-color);
-          opacity: .7;
-          &:hover {
-            background-color: #535558;
-            color: white;
-            opacity: 1;
-          }
-        }
+  .left-sidebar-inner {
+    a {
+      color: var(--ls-primary-text-color);
+      :hover {
+        color: #fff;
       }
     }
+  }
+
+  .cp__right-sidebar {
     .sidebar-item-list {
       background-color: var(--ls-secondary-background-color,#d8e1e8);
       .sidebar-item{

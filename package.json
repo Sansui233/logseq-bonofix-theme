@@ -1,7 +1,7 @@
 {
   "name": "logseq-bonofix-theme",
-  "version": "3.5.3",
-  "logseq-version": "v0.4.0",
+  "version": "3.5.4",
+  "logseq-version": "v0.4.3",
   "author": "Sansui233",
   "description": "A clean theme for Logseq, focusing on long time writing experience.",
   "main": "source/index.sass",
@@ -21,9 +21,9 @@
         "description": "A custom theme focus on UI bug fix and mobile improvement"
       },
       {
-        "name": "Bonofix Theme(experimental)",
+        "name": "Bonofix Theme - experimental",
         "url": "./custom-exp.css",
-        "description": "Left bar feature"
+        "description": "Left content sidebar feature"
       }
     ],
     "id": "sansui233_bonofix_theme",

@@ -5,26 +5,18 @@
   #app-container {
     flex-direction: row-reverse;
   }
-  #head:last-child {
+
+  #head div[aria-describedby="tippy-tooltip-3"],
+  #head div[aria-describedby$="7"] {
     order: 1;
+    margin-left: 78px;
+  }
+  #head #left-menu {
+    margin-left: 4px !important;
   }
 
-  #head .cp__header-logo,
-  #head #search,
-  #head .refresh,
-  #head .repos,
-  #head .ml-1.relative,
-  #head div[aria-describedby='tippy-tooltip-1'],   /* Search icon */
-  #head div.flex.flex-row {
+  #head div {
     order: 2;
-  }
-
-  .cp__header > a.button:last-child {
-    margin-right: auto;
-  }
-
-  .cp__header > div.flex-1.flex {
-    flex: unset;
   }
 
   .cp__right-sidebar.open {
@@ -62,6 +54,14 @@
     flex-direction: column-reverse;
     height: unset;
     width: 100%;
+  }
+
+  .is-mac.is-electron #head div[aria-describedby="tippy-tooltip-3"] {
+    margin-left: 78px;
+  }
+
+  .is-electron.is-mac .cp__header {
+    padding-left: unset;
   }
 
   /* icon */

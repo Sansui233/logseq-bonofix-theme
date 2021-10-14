@@ -49,16 +49,6 @@
   }
 
   .cp__right-sidebar {
-    .cp__right-sidebar-topbar {
-      .cp__right-sidebar-settings {
-        .cp__right-sidebar-settings-btn {
-          color: #7b7b7b;
-          &:hover {
-            background-color: #e6e6e6;
-          }
-        }
-      }
-    }
     .sidebar-item-list {
       background-color: var(--ls-secondary-background-color, #d8e1e8);
       .sidebar-item {
