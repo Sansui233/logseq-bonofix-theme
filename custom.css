@@ -487,6 +487,7 @@ svg.add-button > .circle {
 @media screen and (max-width: 640px) {
   #head {
     position: fixed;
+    background-color: var(--ls-primary-background-color);
   }
 
   .cp__header .cursor.sync-status {
