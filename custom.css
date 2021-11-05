@@ -260,10 +260,6 @@ html[data-theme=light] {
   background-color: var(--ls-table-tr-even-background-color);
 }
 
-.left-sidebar-inner .bd ul li {
-  font-size: 0.92rem;
-}
-
 #main-content #main-content-container {
   padding: 1rem 2.5rem !important;
 }
