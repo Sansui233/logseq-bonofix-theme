@@ -21,8 +21,6 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 ![Desktop](./media/Desktop-2021-08-09.png)
 
-![Mobile](./media/Mobile.png)
-
 ## Install
 
 Here are two ways of installing theme in Logseq.
