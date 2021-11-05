@@ -135,9 +135,6 @@ html[data-theme=light] {
 /*****************************************
   Common Theme
 *****************************************/
-.cp__header {
-  justify-content: flex-end;
-}
 .cp__header a {
   color: var(--ls-primary-text-color);
 }

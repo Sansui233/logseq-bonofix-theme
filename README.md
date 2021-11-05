@@ -74,13 +74,6 @@ Here are two ways of installing theme in Logseq.
 - Style tags as labels  
   <img src="./media/tag-label.png" alt="Tags" width="300px" />
 
-**Experimental Features**
-
-These features are included in the [custom-exp.css](./custom-exp.css).
-
-- Fixed-width left bar  
-  Move the right sidebar to the left side. To enable the single feature, append the content in [experimental/left-bar.css](./experimental/left-bar.css) to your custom.css.
-
 ## How to build
 
 1. Install [node](https://nodejs.org/)
@@ -97,7 +90,6 @@ npm install
   ```shell
   npm run build
   ```
-
 
 ## Thanks
 
