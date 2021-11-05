@@ -27,7 +27,7 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 Here are two ways of installing theme in Logseq.
 
-### Install custome.css:
+### Install custom.css:
 
 - General installation
 
@@ -44,15 +44,11 @@ Here are two ways of installing theme in Logseq.
 
 <img src="./media/plugin.png" alt="Tags" width="450px" />
 
-- Download the [plugin release](https://github.com/Sansui233/logseq-bonofix-theme/releases) and unpack it into a directory
+- Open Logseq → Settings, enable developer mode
 
-- Open Logseq→Settings, enable developer mode
+- Open Logseq → Plugins → Market Place, install **Bonofix Theme** plugin
 
-- Open Logseq→Plugins, load unpacked plugin
-
-- Open Logseq→Themes, choose your theme
-
-  > DON'T MOVE THE PLUGININ DIRECTORY ON YOUR DISK
+- Open Logseq → Themes, choose your theme
 
 ## What's improved
 
