@@ -7,6 +7,9 @@
   ::selection {
     background: var(--ls-block-highlight-color);
   }
+  #app-single-container ::selection {
+    background: var(--ls-selection-background-color);
+  }
   // Area
   // #main-content-container {
   //   .cp__sidebar-main-content:before {

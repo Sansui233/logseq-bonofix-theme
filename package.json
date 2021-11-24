@@ -1,14 +1,13 @@
 {
   "name": "logseq-bonofix-theme",
-  "version": "3.5.5",
+  "version": "3.5.6",
   "logseq-version": "v0.4.5",
   "author": "Sansui233",
   "description": "A clean theme for Logseq, focusing on long time writing experience.",
   "main": "source/index.sass",
   "scripts": {
     "watch": "sass --watch source:css",
-    "build": "sass source/index.scss custom.css --no-source-map",
-    "add-exp": "cat custom.css > custom-exp.css && cat experimental/left-bar.css >> custom-exp.css"
+    "build": "sass source/index.scss custom.css --no-source-map"
   },
   "devDependencies": {
     "sass": "^1.34.1"

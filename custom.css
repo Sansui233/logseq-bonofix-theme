@@ -48,7 +48,7 @@ html[data-theme=dark] {
   --ls-block-bullet-border-color: #ffffff14;
   --ls-block-bullet-color: #ffffff1c;
   --ls-block-highlight-color: #fbfbfb23;
-  --ls-selection-background-color: #ab3641;
+  --ls-selection-background-color: #64b4ff81;
   --ls-page-checkbox-color: #935c62;
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
@@ -554,6 +554,9 @@ svg.add-button > .circle {
 *****************************************/
 .dark-theme ::selection {
   background: var(--ls-block-highlight-color);
+}
+.dark-theme #app-single-container ::selection {
+  background: var(--ls-selection-background-color);
 }
 .dark-theme #left-bar .close-panel-btn {
   color: var(--ls-primary-text-color);
