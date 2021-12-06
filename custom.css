@@ -385,7 +385,6 @@ html ::-webkit-scrollbar-thumb:hover {
   background-color: var(--ls-tag-background-hover-color);
 }
 .content .block-ref {
-  padding: 2px 5px;
   border-radius: 3px;
   font-style: italic;
   color: var(--ls-primary-text-color);
