@@ -18,11 +18,6 @@
         "name": "Bonofix Theme",
         "url": "./custom.css",
         "description": "A custom theme focus on UI bug fix and mobile improvement"
-      },
-      {
-        "name": "Bonofix Theme - experimental",
-        "url": "./custom-exp.css",
-        "description": "Left content sidebar feature"
       }
     ],
     "id": "sansui233_bonofix_theme",
