@@ -440,7 +440,7 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-bottom: 0.35rem;
 }
 .document-mode .ls-block h1 {
-  margin-bottom: 0.1em 0;
+  margin: 0.1em 0;
 }
 .document-mode .ls-block h2 {
   margin: 0.15em 0;

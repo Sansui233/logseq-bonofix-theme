@@ -54,6 +54,10 @@ Here are two ways of installing theme in Logseq.
 
 - Better typography for headings and blocks
 
+- make doc mode dense for note taking
+
+- remove border-bottom for heading2, and make `<hr>` slim for title partition in blockbody. 
+
 - Make tippy window like responsive card instead of filling the screen and obscuring text
 
 - Mobile: fixed-height bottom search panel
