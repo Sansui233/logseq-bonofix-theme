@@ -198,6 +198,9 @@ html ::-webkit-scrollbar-thumb:hover {
  **************  Content  *****************
  ******************************************/
 .content {
+  hr {
+    margin: 0.1rem 0;
+  }
   div[haschild="true"] > div.flex-row {
     margin-bottom: 0.3rem;
   }
@@ -345,6 +348,24 @@ html ::-webkit-scrollbar-thumb:hover {
 .document-mode {
   .ls-block {
     margin-bottom: 0.35rem;
+    h1 {
+      margin-bottom: 0.1em 0;
+    }
+    h2 {
+      margin: 0.15em 0;
+    }
+    h3 {
+      margin: 0.35em 0;
+    }
+    h4 {
+      margin: 0.5em 0;
+    }
+    h5 {
+      margin: 0.55em 0;
+    }
+    h6 {
+      margin: 0.65em 0;
+    }
   }
 }
 

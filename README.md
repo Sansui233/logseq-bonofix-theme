@@ -52,7 +52,7 @@ Here are two ways of installing theme in Logseq.
 
 **Functional style**
 
-- **Better typography for headings and blocks**, ~~see 👉 [design details](https://github.com/Sansui233/logseq-bonofix-theme/blob/master/docs/better-typography.md)~~(The doc is for the legacy version of logseq)
+- Better typography for headings and blocks
 
 - Make tippy window like responsive card instead of filling the screen and obscuring text
 
