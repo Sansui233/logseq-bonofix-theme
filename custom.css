@@ -665,6 +665,7 @@ svg.add-button > .circle {
 .extensions__code .extensions__code-lang {
   background-color: var(--ls-codeblock-background-color);
   margin-right: 5px;
+  margin-top: 10px;
 }
 .extensions__code textarea {
   color: var(--ls-primary-text-color);
