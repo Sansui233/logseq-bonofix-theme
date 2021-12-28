@@ -472,43 +472,17 @@ svg.add-button > .circle {
   -webkit-perspective: min(90vw, 600px) !important;
 }
 
-.panel-content .cp__palette-main {
-  width: unset;
+#ui__ac #ui__ac-inner code {
+  color: var(--ls-primary-text-color);
 }
-.panel-content .cp__palette-main .search-results-wrap {
-  min-height: 62vh;
-}
-
-.ui__ac .ui__ac-group-name {
-  font-weight: bolder;
+#ui__ac a:hover {
+  color: var(--ls-link-ref-text-color);
 }
 
-@media (min-width: 1024px) {
-  .panel-content {
-    min-width: 640px;
-  }
-}
-@media (min-width: 640px) {
-  .panel-content .cp__palette-main {
-    width: 640px;
-  }
-  .panel-content .cp__palette-main .search-results-wrap {
-    min-height: unset;
-  }
-}
 @media screen and (max-width: 640px) {
   #head {
     position: fixed;
     background-color: var(--ls-primary-background-color);
-  }
-
-  .cp__header .cursor.sync-status {
-    padding: 5px;
-  }
-  .cp__header #search #ui__ac-inner {
-    left: 0px;
-    position: fixed;
-    width: 100vw;
   }
 
   #main-content {

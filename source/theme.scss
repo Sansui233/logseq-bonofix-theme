@@ -383,43 +383,12 @@ svg.add-button > .circle {
   -webkit-perspective: min(90vw, 600px) !important;
 }
 
-.panel-content {
-  .cp__palette-main {
-    width: unset;
-    .search-results-wrap {
-      min-height: 62vh;
-    }
-    // .chosen {
-    //   background-color: var(--ls-page-properties-background-color);
-    // }
+#ui__ac {
+  #ui__ac-inner code {
+      color: var(--ls-primary-text-color);
   }
-  // .settings-modal {
-  //   .cp__settings-inner>aside ul>li.active {
-  //     background-color: var(--ls-page-properties-background-color);
-  //   }
-  // }
-}
-
-.ui__ac {
-  .ui__ac-group-name {
-    font-weight: bolder;
-  }
-}
-
-@media (min-width: 1024px) {
-  .panel-content {
-    min-width: 640px;
-  }
-}
-
-@media (min-width: 640px) {
-  .panel-content {
-    .cp__palette-main {
-      width: 640px;
-      .search-results-wrap {
-        min-height: unset;
-      }
-    }
+  a:hover {
+    color: var(--ls-link-ref-text-color);
   }
 }
 
@@ -428,16 +397,6 @@ svg.add-button > .circle {
   #head {
     position: fixed;
     background-color: var(--ls-primary-background-color);
-  }
-  .cp__header {
-    .cursor.sync-status {
-      padding: 5px;
-    }
-    #search #ui__ac-inner {
-      left: 0px;
-      position: fixed;
-      width: 100vw;
-    }
   }
   #main-content {
     padding-top: 34px;
