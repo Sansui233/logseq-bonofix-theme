@@ -326,6 +326,12 @@ html ::-webkit-scrollbar-thumb:hover {
 .content .block-children {
   margin-bottom: 1em;
 }
+.content .block-children-left-border {
+  border-radius: 1.5px;
+  transition: background-color 0.3s;
+  width: 3px;
+  padding-right: 2px;
+}
 .content .block-properties {
   margin: 8px 0;
   padding: 10px 20px;
@@ -415,8 +421,7 @@ html ::-webkit-scrollbar-thumb:hover {
 .content .form-checkbox {
   border-radius: 50%;
   z-index: 1;
-  height: 1.1rem;
-  width: 1.1rem;
+  transform: scale(1.1);
   position: relative;
 }
 .content .marker-switch {
