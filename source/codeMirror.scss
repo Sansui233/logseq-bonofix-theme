@@ -6,6 +6,7 @@
 
 // unset solarized
 .cm-s-solarized,
+.cm-s-solarized.cm-s-light,
 .cm-s-solarized.cm-s-dark {
   background-color: var(--ls-codeblock-background-color);
   text-shadow: unset;
