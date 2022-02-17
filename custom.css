@@ -273,19 +273,19 @@ html[data-theme=light] {
   background-color: var(--ls-table-tr-even-background-color);
 }
 
-#main-content #main-content-container {
+#main-content-container {
   padding: 1rem 2.5rem !important;
 }
-#main-content #main-content-container .journal .flex-row.foldable-title {
+#main-content-container .journal .flex-row.foldable-title {
   margin-left: 10px;
 }
-#main-content #main-content-container .journal .flex-row.foldable-title h1.title:before {
+#main-content-container .journal .flex-row.foldable-title h1.title:before {
   content: "🗓";
   vertical-align: text-bottom;
   margin-right: 0.3em;
   font-size: 0.75em;
 }
-#main-content #main-content-container .cp__sidebar-main-content h1.title {
+#main-content-container .cp__sidebar-main-content h1.title {
   font-weight: 700;
   font-size: 33px;
   margin-bottom: 1rem;
@@ -657,21 +657,25 @@ svg.add-button > .circle {
   Code Mirror
 *****************************************/
 .cm-s-solarized,
+.cm-s-solarized.cm-s-light,
 .cm-s-solarized.cm-s-dark {
   background-color: var(--ls-codeblock-background-color);
   text-shadow: unset;
 }
 .cm-s-solarized.CodeMirror,
+.cm-s-solarized.cm-s-light.CodeMirror,
 .cm-s-solarized.cm-s-dark.CodeMirror {
   -moz-box-shadow: unset;
   -webkit-box-shadow: unset;
   box-shadow: unset;
 }
 .cm-s-solarized .CodeMirror-gutters,
+.cm-s-solarized.cm-s-light .CodeMirror-gutters,
 .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
   background-color: var(--ls-codeblock-background-color);
 }
 .cm-s-solarized .CodeMirror-linenumber,
+.cm-s-solarized.cm-s-light .CodeMirror-linenumber,
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
   text-shadow: unset;
 }
