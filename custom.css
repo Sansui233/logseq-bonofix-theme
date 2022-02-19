@@ -532,11 +532,8 @@ svg.add-button > .circle {
     background-color: var(--ls-primary-background-color);
   }
 
-  #main-content {
-    padding-top: 34px;
-  }
-  #main-content #main-content-container {
-    padding: 52px 32px 32px 20px !important;
+  #main-container #main-content-container {
+    padding: 48px 32px 32px 20px !important;
   }
 
   .cp__settings-inner > aside {
