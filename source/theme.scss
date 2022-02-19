@@ -327,6 +327,7 @@ html ::-webkit-scrollbar-thumb:hover {
     z-index: 1;
     transform: scale(1.1);
     position: relative;
+    margin-top: unset !important;
   }
   .marker-switch {
     opacity: 0.7;
