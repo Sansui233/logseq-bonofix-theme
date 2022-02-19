@@ -157,8 +157,8 @@
 #main-content-container {
   padding: 1rem 2.5rem !important;
   // journal title emoji
-  .journal .flex-row.foldable-title {
-    margin-left: 10px;
+  .journal,
+  .is-journals {
     h1.title:before {
       content: "🗓";
       vertical-align: text-bottom;
@@ -166,12 +166,12 @@
       font-size: 0.75em;
     }
   }
-  .cp__sidebar-main-content {
-    h1.title {
-      font-weight: 700;
-      font-size: 33px;
-      margin-bottom: 1rem;
-    }
+  .cp__sidebar-main-content h1.title{
+    font-weight: 700;
+    font-size: 33px;
+    margin-bottom: 1rem;
+    margin-left: 0px !important;
+  }
     //  gradient on top for aesthetics
     // &:before {
     //   content: "";
@@ -183,7 +183,6 @@
     //   left: 0;
     //   z-index: 1;
     // }
-  }
 }
 
 #journals > div > a {

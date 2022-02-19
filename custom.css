@@ -276,10 +276,8 @@ html[data-theme=light] {
 #main-content-container {
   padding: 1rem 2.5rem !important;
 }
-#main-content-container .journal .flex-row.foldable-title {
-  margin-left: 10px;
-}
-#main-content-container .journal .flex-row.foldable-title h1.title:before {
+#main-content-container .journal h1.title:before,
+#main-content-container .is-journals h1.title:before {
   content: "🗓";
   vertical-align: text-bottom;
   margin-right: 0.3em;
@@ -289,6 +287,7 @@ html[data-theme=light] {
   font-weight: 700;
   font-size: 33px;
   margin-bottom: 1rem;
+  margin-left: 0px !important;
 }
 
 #journals > div > a {
