@@ -26,31 +26,31 @@
 /* theme general */
 
 .extensions__code {
+  display: block;
+  background-color: var(--ls-codeblock-background-color);
+  & > div {
+    margin-top: 0.3rem;
+  }
   .extensions__code-lang {
-    background-color: var(--ls-codeblock-background-color);
     margin-right: 5px;
-    margin-top: 10px;
+    padding: unset;
   }
   textarea {
     color: var(--ls-primary-text-color);
-    background-color: var(--ls-codeblock-background-color);
   }
   .CodeMirror {
     color: var(--ls-secondary-text-color);
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding: 25px 10px 24px 20px;
-    .CodeMirror-gutters {
-      background-color: var(--ls-codeblock-background-color);
-    }
-    .CodeMirror-scroll .CodeMirror-sizer .CodeMirror-lines {
-      .CodeMirror-cursors .CodeMirror-cursor {
-        border-left: solid thin #82aaff;
-      }
-      .CodeMirror-code {
-        outline: 0;
-        font-size: 0.85em;
+    .CodeMirror-scroll .CodeMirror-sizer {
+      .CodeMirror-lines {
+        .CodeMirror-cursors .CodeMirror-cursor {
+          border-left: solid thin #82aaff;
+        }
+        .CodeMirror-code {
+          outline: 0;
+          font-size: 0.85em;
+        }
       }
     }
   }
