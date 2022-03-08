@@ -322,6 +322,9 @@ html ::-webkit-scrollbar-thumb:hover {
 .content div[haschild=true] > div.flex-row {
   margin-bottom: 0.3rem;
 }
+.content .block-children {
+  margin-bottom: 0.3rem;
+}
 .content .block-children-left-border {
   border-radius: 1.5px;
   transition: background-color 0.3s;
