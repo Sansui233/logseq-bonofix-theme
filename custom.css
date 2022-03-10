@@ -115,7 +115,7 @@ html[data-theme=light] {
   --ls-page-properties-background-color: #adadad1c;
   --ls-scrollbar-foreground-color:#00000021;
   --ls-scrollbar-background-color: #fff0;
-  --color-level-1: rgba(235, 236, 237, 0.3);
+  --color-level-1: rgba(236, 236, 236, 0.3);
   --color-level-2: #f3f3f3;
   --color-level-3: #eaeaea;
   --color-level-4: #ddd;
@@ -231,22 +231,14 @@ html[data-theme=light] {
   color: var(--ls-primary-text-color);
 }
 .cp__right-sidebar .sidebar-item-list .sidebar-item {
-  margin: 5px;
-  margin-bottom: 10px;
+  margin: 0px 5px;
   --tw-shadow: unset;
   padding: 10px 8px 10px 4px;
   border: none;
 }
 .cp__right-sidebar .sidebar-item-list .sidebar-item .flex.flex-row.justify-between {
-  padding-top: 0.15rem;
-  padding-bottom: 0.45rem;
-}
-.cp__right-sidebar .sidebar-item-list .sidebar-item .flex.flex-row.justify-between .font-medium {
-  font-size: 0.88em;
-  font-weight: 500;
-  text-transform: uppercase;
-  opacity: 0.7;
-  align-self: center;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 .cp__right-sidebar .sidebar-item-list .sidebar-item .content {
   font-size: 0.95rem;
