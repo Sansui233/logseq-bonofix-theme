@@ -19,7 +19,7 @@ This is a clean theme for [Logseq](https://github.com/logseq/logseq), focusing o
 
 The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme ) and [Notion](https://notion.so). The code is mainly based on bujo theme, and you may find the style really notion-like.
 
-![Desktop](./media/Desktop-2021-08-09.png)
+![Desktop](./media/Desktop-2020-03-30.png)
 
 ## Install
 
@@ -38,15 +38,15 @@ Here are two ways of installing theme in Logseq.
   ```css
   @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
   ```
-### (Dev Mode) Install plugin
+### Install plugin
 
 <img src="./media/plugin.png" alt="Tags" width="450px" />
-
-- Open Logseq → Settings, enable developer mode
 
 - Open Logseq → Plugins → Market Place, install **Bonofix Theme** plugin
 
 - Open Logseq → Themes, choose your theme
+
+> Themes installed via plugin is not compatible with your local `custom.css`. Only plugin theme works.
 
 ## What's improved
 
