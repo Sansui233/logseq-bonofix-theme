@@ -7,7 +7,7 @@
    | 
   <a href="#install">📦 Install</a>
    | 
-  <a href="#whats-improved">✨ What's improved</a>
+  <a href="#whats-improved">✨ What's different</a>
    | 
   <a href="#how-to-build">🔨 How to build</a>
 </p>
@@ -24,20 +24,6 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 ## Install
 
 Here are two ways of installing theme in Logseq.
-
-### Install custom.css:
-
-- General installation
-
-  Copy the whole content of [custom.css](https://raw.githubusercontent.com/Sansui233/logseq-bonofix-theme/master/custom.css) into your logseq/custom.css file.
-
-- If you are always working online
-
-  Copy this one-line-installation into your logseq/custom.css file
-
-  ```css
-  @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
-  ```
 ### Install plugin
 
 <img src="./media/plugin.png" alt="Tags" width="450px" />
@@ -47,30 +33,39 @@ Here are two ways of installing theme in Logseq.
 - Open Logseq → Themes, choose your theme
 
 > Themes installed via plugin is not compatible with your local `custom.css`. Only plugin theme works.
+### Install `custom.css`
 
-## What's improved
+- General installation
+
+  Copy the whole content of [custom.css](https://raw.githubusercontent.com/Sansui233/logseq-bonofix-theme/master/custom.css) into your `graphname/logseq/custom.css` file.
+
+- If you are always working online
+
+  Copy this one-line-installation into your logseq/custom.css file
+
+  ```css
+  @import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')
+  ```
+
+## What's different
 
 **Functional style**
 
-- Better typography for headings and blocks
+- Simple but functional colors
 
-- make doc mode dense for note taking
-
-- remove border-bottom for heading2, and make `<hr>` slim for title partition in blockbody. 
+- Remove border-bottom for heading2, and make `<hr>` slim for title partition in blockbody. 
 
 - Make tippy window like responsive card instead of filling the screen and obscuring text
 
-- Mobile: fixed-height bottom search panel
-
-- Mobile: More stable scrolling experience
-
 **Additional Styles**
 
-- Add calender emoji before journal title  
+- Calender emoji before journal title  
   <img src="./media/journal-title-emoji.png" alt="Journal Title Emoji" width="600px" />
 
-- Style tags as labels  
+- Rounded tags  
   <img src="./media/tag-label.png" alt="Tags" width="300px" />
+
+- Round checkbox 
 
 ## How to build
 

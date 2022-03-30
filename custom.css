@@ -103,6 +103,7 @@ html[data-theme=light] {
   --ls-link-text-hover-color: var(--ls-link-ref-text-hover-color);
   --bf-external-link-color: rgb(234, 110, 110);
   --bf-external-link-hover-color: #e6515e;
+  --ls-cloze-text-color: var(--ls-link-ref-text-color);
   --ls-alink-color: var(--ls-link-text-color);
   --ls-tag-text-color: white;
   --ls-tag-text-hover-color: white;
