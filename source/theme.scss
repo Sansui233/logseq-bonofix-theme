@@ -101,7 +101,7 @@
   }
   .sidebar-item-list {
     .sidebar-item {
-      margin: 0px 5px;
+      margin: 2px 5px;
       --tw-shadow: unset;
       padding: 10px 8px 10px 4px;
       border: none;
@@ -215,11 +215,9 @@ html ::-webkit-scrollbar-thumb:hover {
     margin-bottom: 0.3rem;
   }
   .block-children-left-border {
-    border-radius: 1.5px;
+    border-radius: unset;
     transition: background-color .3s;
-    // avoid rendering shaking
-    width: 3px;
-    padding-right: 2px;
+    padding: 0 1px;
   }
   .block-properties {
     margin: 8px 0;

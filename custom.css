@@ -40,6 +40,7 @@ html[data-theme=dark] {
   --ls-alink-color: var(--ls-link-text-color);
   --bf-external-link-color: #f67373;
   --bf-external-link-hover-color: #f29191;
+  --ls-cloze-text-color: var(--ls-link-ref-text-color);
   --ls-active-primary-color: var(--ls-link-ref-text-color);
   --ls-active-secondary-color: #6fc2efcc;
   --ls-tag-text-color: white;
@@ -231,7 +232,7 @@ html[data-theme=light] {
   color: var(--ls-primary-text-color);
 }
 .cp__right-sidebar .sidebar-item-list .sidebar-item {
-  margin: 0px 5px;
+  margin: 2px 5px;
   --tw-shadow: unset;
   padding: 10px 8px 10px 4px;
   border: none;
@@ -318,10 +319,9 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-bottom: 0.3rem;
 }
 .content .block-children-left-border {
-  border-radius: 1.5px;
+  border-radius: unset;
   transition: background-color 0.3s;
-  width: 3px;
-  padding-right: 2px;
+  padding: 0 1px;
 }
 .content .block-properties {
   margin: 8px 0;
