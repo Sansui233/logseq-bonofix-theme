@@ -28,12 +28,15 @@
 .extensions__code {
   display: block;
   background-color: var(--ls-codeblock-background-color);
-  & > div {
-    margin-top: 0.3rem;
+  .code-editor {
+    margin: .5rem 0;
   }
   .extensions__code-lang {
-    margin-right: 5px;
+    margin-right: 7px;
+    margin-top: 3px;
     padding: unset;
+    background-color: unset;
+    opacity: .6;
   }
   textarea {
     color: var(--ls-primary-text-color);

@@ -52,7 +52,7 @@ html[data-theme=dark] {
   --ls-block-bullet-color: #ffffff1c;
   --ls-block-highlight-color: #fbfbfb23;
   --ls-selection-background-color: #64b4ff81;
-  --ls-page-checkbox-color: #935c62;
+  --ls-page-checkbox-color: #588eac;
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
   --ls-page-inline-code-color: #eb5757;
@@ -416,6 +416,7 @@ html ::-webkit-scrollbar-thumb:hover {
   transform: scale(1.1);
   position: relative;
   margin-top: unset !important;
+  margin-left: 0.1em;
 }
 .content .marker-switch {
   opacity: 0.7;
@@ -633,11 +634,11 @@ svg.add-button > .circle {
   border-bottom-color: #53d2d280;
 }
 .dark-theme .content .marker-switch {
-  color: #b5a7a7;
-  background: #52373a;
+  color: var(--ls-primary-text-color);
+  background: #545454;
 }
 .dark-theme .content .marker-switch:hover {
-  background: #5d3e41;
+  background: #6e6e6e;
 }
 .dark-theme .content svg.add-button > .circle {
   fill: var(--ls-block-bullet-color, #394b59);
@@ -675,12 +676,15 @@ svg.add-button > .circle {
   display: block;
   background-color: var(--ls-codeblock-background-color);
 }
-.extensions__code > div {
-  margin-top: 0.3rem;
+.extensions__code .code-editor {
+  margin: 0.5rem 0;
 }
 .extensions__code .extensions__code-lang {
-  margin-right: 5px;
+  margin-right: 7px;
+  margin-top: 3px;
   padding: unset;
+  background-color: unset;
+  opacity: 0.6;
 }
 .extensions__code textarea {
   color: var(--ls-primary-text-color);

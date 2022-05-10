@@ -77,10 +77,10 @@
       border-bottom-color: #53d2d280;
     }
     .marker-switch {
-      color: #b5a7a7;
-      background: #52373a;
+      color: var(--ls-primary-text-color);
+      background: #545454;
       &:hover {
-        background: #5d3e41;
+        background: #6e6e6e;
       }
     }
     svg.add-button>.circle {
