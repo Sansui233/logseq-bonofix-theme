@@ -32,7 +32,7 @@ Here are two ways of installing theme in Logseq.
 
 - Open Logseq → Themes, choose your theme
 
-> Themes installed via plugin is not compatible with your local `custom.css`. Only plugin theme works.
+> The theme installed via plugin is not compatible with your local `custom.css`. Only plugin theme works.
 ### Install `custom.css`
 
 - General installation
