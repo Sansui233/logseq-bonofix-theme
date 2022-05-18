@@ -1,5 +1,3 @@
-@import "var.scss";
-
 /* ****************************
 ************** Root ***********
 *******************************/
@@ -26,7 +24,7 @@ html[data-theme="dark"] {
   --ls-quaternary-background-color: rgb(71, 79, 82);
   --ls-table-tr-even-background-color: #0404061c;
   --ls-callout-background-color: rgba(69, 75, 78, 0.3);
-  --ls-codeblock-background-color: #{$codeblock-bg-dark};
+  --bf-codeblock-background-color: rgb(63, 68, 71);
   --ls-block-properties-background-color: #2a2d2d91;
   --ls-block-ref-link-text-color: #73d2f6;
   --ls-search-background-color: var(--ls-primary-background-color);
@@ -48,8 +46,8 @@ html[data-theme="dark"] {
   --ls-active-secondary-color: #6fc2efcc;
   --ls-tag-text-color: white;
   --ls-tag-text-hover-color: white;
-  --ls-tag-background-color: #407fab;
-  --ls-tag-background-hover-color: #6fabd5;
+  --bf-tag-background-color: #407fab;
+  --bf-tag-background-hover-color: #6fabd5;
   --ls-slide-background-color: var(--ls-primary-background-color);
   --ls-block-bullet-border-color: #ffffff14;
   --ls-block-bullet-color: #ffffff1c;
@@ -61,20 +59,16 @@ html[data-theme="dark"] {
   --ls-page-inline-code-color: #eb5757;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-properties-background-color: #adadad1c;
-  --ls-scrollbar-foreground-color: var(--ls-block-bullet-color);
+  --ls-scrollbar-foreground-color: #8a8a8a3d;
   --ls-scrollbar-background-color: #fff0;
-  --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
+  --bf-scrollbar-thumb-hover-color: #8a8a8a61;
   --ls-head-text-color: #ffe27c;
   --ls-icon-color: rgb(154 161 165);
   --ls-search-icon-color: var(--ls-quaternary-background-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
-  --ls-right-sidebar-code-bg-color: #3c041f;
   --color-level-1: var(--ls-secondary-background-color);
   --color-level-2: var(--ls-tertiary-background-color);
   --color-level-3: var(--ls-quaternary-background-color);
-  --color-level-4: #632f46;
-  --color-level-5: #865673;
-  --color-level-6: #9e6889;
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
   --ls-block-bullet-active-color: #4a99b9; // in log-seq dev theme
@@ -87,11 +81,11 @@ html[data-theme="dark"] {
 .white-theme,
 html[data-theme="light"] {
   --ls-primary-background-color: #fff;
-  --ls-search-background-color: #fff;
   --ls-secondary-background-color: #f8f8f8;
   --ls-tertiary-background-color: #f2f2f3;
   --ls-quaternary-background-color: #ebeaea;
-  --ls-codeblock-background-color: #{$codeblock-bg-white};
+  --ls-search-background-color: #fff;
+  --bf-codeblock-background-color: rgb(247, 246, 243);
   --ls-table-tr-even-background-color: #f4f4f4;
   --ls-callout-background-color: rgba(235, 236, 237, 0.3);
   --ls-active-primary-color: rgb(64, 150, 213);
@@ -112,8 +106,8 @@ html[data-theme="light"] {
   --ls-alink-color: var(--ls-link-text-color);
   --ls-tag-text-color: white;
   --ls-tag-text-hover-color: white;
-  --ls-tag-background-color: #2883df;
-  --ls-tag-background-hover-color: #84bdf4;
+  --bf-tag-background-color: #2883df;
+  --bf-tag-background-hover-color: #84bdf4;
   --ls-icon-color: #ada9a2;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
