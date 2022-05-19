@@ -113,6 +113,7 @@ html[data-theme=light] {
   --ls-page-properties-background-color: #adadad1c;
   --ls-scrollbar-foreground-color:#00000021;
   --ls-scrollbar-background-color: #fff0;
+  --bf-scrollbar-thumb-hover-color: #8a8a8a61;
   --color-level-1: rgba(236, 236, 236, 0.3);
   --color-level-2: #f3f3f3;
   --color-level-3: #eaeaea;
