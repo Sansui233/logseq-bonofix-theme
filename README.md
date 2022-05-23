@@ -19,7 +19,7 @@ This is a clean theme for [Logseq](https://github.com/logseq/logseq), focusing o
 
 The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme ) and [Notion](https://notion.so). The code is mainly based on bujo theme, and you may find the style really notion-like.
 
-![Desktop](./media/Desktop-2020-03-30.png)
+![Desktop](./media/Desktop-2022-05-23.png)
 
 ## Install
 

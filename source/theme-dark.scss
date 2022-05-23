@@ -41,6 +41,10 @@
     }
   }
 
+  .menulink {
+    background-color: var(--ls-secondary-background-color);
+  }
+
   .cp__right-sidebar {
     .sidebar-item-list {
       background-color: var(--ls-secondary-background-color,#d8e1e8);
@@ -66,7 +70,7 @@
       color: #fff;
     }
     mark {
-      background: rgb(89, 86, 59);
+      background: #524b25;
       color: var(--ls-primary-text-color);
     }
     .external-link {
