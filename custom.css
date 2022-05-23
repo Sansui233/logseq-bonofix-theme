@@ -601,7 +601,7 @@ svg.add-button > .circle {
 .dark-theme .left-sidebar-inner a :hover {
   color: #fff;
 }
-.dark-theme .menulink {
+.dark-theme .menu-link {
   background-color: var(--ls-secondary-background-color);
 }
 .dark-theme .cp__right-sidebar .sidebar-item-list {
