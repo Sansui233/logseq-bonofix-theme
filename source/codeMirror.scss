@@ -27,14 +27,14 @@
   display: block;
   background-color: var(--bf-codeblock-background-color);
   .code-editor {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
   .extensions__code-lang {
     margin-right: 7px;
     margin-top: 3px;
     padding: unset;
     background-color: unset;
-    opacity: .6;
+    opacity: 0.6;
   }
   textarea {
     color: var(--ls-primary-text-color);
@@ -158,7 +158,7 @@
 }
 
 /* Old Version */
-
+/*
 .white-theme .cm-s-default.CodeMirror,
 .white-theme .cm-s-default .CodeMirror-gutters {
   color: black !important;
@@ -292,3 +292,4 @@
 #right-sidebar pre.CodeMirror-line {
   background: transparent;
 }
+*/
