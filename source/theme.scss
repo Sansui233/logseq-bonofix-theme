@@ -3,6 +3,9 @@
 *****************************************/
 
 .cp__header {
+  a {
+    color: var(--ls-primary-text-color) !important; // add important to override hover style in dark theme
+  }
   a[title="Go back"] {
     margin-right: 2px;
   }

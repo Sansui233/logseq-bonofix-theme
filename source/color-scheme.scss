@@ -64,7 +64,7 @@ html[data-theme="dark"] {
   --ls-scrollbar-background-color: #fff0;
   --bf-scrollbar-thumb-hover-color: #8a8a8a61;
   --ls-head-text-color: #ffe27c;
-  --ls-icon-color: rgb(154 161 165);
+  --ls-icon-color: #c0c0c098; // Primary text color * opacity
   --ls-search-icon-color: var(--ls-quaternary-background-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
   --color-level-1: var(--ls-secondary-background-color);
@@ -109,7 +109,7 @@ html[data-theme="light"] {
   --ls-tag-text-hover-color: white;
   --bf-tag-background-color: #2883df;
   --bf-tag-background-hover-color: #84bdf4;
-  --ls-icon-color: #ada9a2;
+  --ls-icon-color: #2b292680;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
   --ls-page-checkbox-color: #8ebce6;
