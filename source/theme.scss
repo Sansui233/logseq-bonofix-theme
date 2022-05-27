@@ -3,71 +3,16 @@
 *****************************************/
 
 .cp__header {
-  a {
-    color: var(--ls-primary-text-color);
-    &:hover {
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    svg {
-      color: var(--ls-primary-text-color);
-    }
+  a[title="Go back"] {
+    margin-right: 2px;
   }
-  .p-2 {
-    padding: 0.25rem;
-    margin: 0 0.25rem;
-    border-radius: 3px;
-  }
-  a[title="Go Back"] {
-    padding: 0.15rem 0.15rem;
-    margin: 0.35rem 0 0.35rem 0.35rem;
-  }
-  a[title="Go Forward"] {
-    padding: 0.15rem 0.15rem;
-    margin: 0.35rem 0.35rem 0.35rem 0;
-  }
-  #search.p-2 {
-    padding: 0.5rem;
-  }
-  .cp__header-logo,
-  .cp__right-menu-button {
-    padding: 0.15rem;
-    margin: 0 0.35rem;
-    border-radius: 3px;
-  }
-
-  #search {
-    #search-wrapper {
-      opacity: 0;
-      transition: 0.3s;
-    }
-    #search-wrapper:hover,
-    #search-wrapper:focus-within {
-      opacity: 1;
-    }
-    #search-wrapper > div:first-child {
-      left: 10px;
-    }
-    #search > .inner {
-      max-width: 100%;
-      border-radius: 4px;
-    }
-    #search_field:focus {
-      background: var(--ls-search-background-color);
-    }
-    #ui__ac-inner {
-      margin-top: -10px;
-      --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    }
-  }
-  .cp__sidebar-left-menu {
-    margin-right: unset;
+  a[title="Go forward"] {
+    margin-left: 2px;
   }
 }
 
 .cp__right-sidebar {
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.37, 0.16, 0.16, 0.99);
   .cp__right-sidebar-topbar {
     padding: 0;
@@ -105,17 +50,9 @@
       --tw-shadow: unset;
       padding: 10px 8px 10px 4px;
       border: none;
-      .flex.flex-row.justify-between {
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-      }
       .content {
         font-size: 0.95rem;
       }
-    }
-
-    .recent-pages {
-      margin-left: 26px;
     }
   }
 }
@@ -125,9 +62,23 @@
     a {
       color: var(--ls-primary-text-color);
     }
+    // Fix gap caused by sticky and content padding
+    // Weak compatibility for future logseq update
+    display: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -1rem;
+      width: 100%;
+      height: 1rem;
+      z-index: -1;
+      background-color: var(--ls-primary-background-color);
+    }
   }
   table {
-    th{
+    th {
       border-bottom: 1px solid var(--ls-border-color);
       a {
         color: var(--ls-primary-text-color);
@@ -136,18 +87,8 @@
   }
 }
 
-#left-bar {
-  #repo-name {
-    max-width: 16ch;
-    opacity: 1;
-  }
-  a.nav-item:hover {
-    background-color: var(--ls-table-tr-even-background-color);
-  }
-}
-
 #main-content-container {
-  padding: 1rem 2.5rem !important;
+  padding: 1rem 2.5rem;
   // journal title emoji
   .journal,
   .is-journals {
@@ -158,23 +99,23 @@
       font-size: 0.75em;
     }
   }
-  .cp__sidebar-main-content h1.title{
+  .cp__sidebar-main-content h1.title {
     font-weight: 700;
     font-size: 33px;
     margin-bottom: 1rem;
     margin-left: 0px !important;
   }
-    //  gradient on top for aesthetics
-    // &:before {
-    //   content: "";
-    //   display: block;
-    //   position: fixed;
-    //   width: 100%;
-    //   height: 5rem;
-    //   top: 0;
-    //   left: 0;
-    //   z-index: 1;
-    // }
+  //  gradient on top for aesthetics
+  // &:before {
+  //   content: "";
+  //   display: block;
+  //   position: fixed;
+  //   width: 100%;
+  //   height: 5rem;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 1;
+  // }
 }
 
 #journals > div > a {
@@ -216,7 +157,7 @@ html ::-webkit-scrollbar-thumb:hover {
   }
   .block-children-left-border {
     border-radius: unset;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
     padding: 0 1px;
   }
   .block-properties {
@@ -306,7 +247,7 @@ html ::-webkit-scrollbar-thumb:hover {
       }
     }
   }
-  .block-ref{
+  .block-ref {
     border-radius: 3px;
     font-style: italic;
     color: var(--ls-primary-text-color);
@@ -337,7 +278,7 @@ html ::-webkit-scrollbar-thumb:hover {
     color: #eb5757;
   }
   .custom-query {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     .custom-query-title {
       .query-title {
         border-radius: 20px;
@@ -426,7 +367,7 @@ svg.add-button > .circle {
 
 #ui__ac {
   #ui__ac-inner code {
-      color: var(--ls-primary-text-color);
+    color: var(--ls-primary-text-color);
   }
   a:hover {
     color: var(--ls-link-ref-text-color);

@@ -7,10 +7,11 @@
   "main": "source/index.sass",
   "scripts": {
     "watch": "sass --watch source:css",
-    "build": "sass source/index.scss custom.css --no-source-map"
+    "build": "sass source/index.scss custom.css --no-source-map && npx uglifycss custom.css --output custom.css"
   },
   "devDependencies": {
-    "sass": "^1.34.1"
+    "sass": "^1.34.1",
+    "uglifycss": "^0.0.29"
   },
   "logseq": {
     "themes": [
