@@ -20,7 +20,7 @@ html[data-theme=dark] {
   --ls-primary-background-color: rgb(32, 33, 36);
   --ls-secondary-background-color: rgb(39, 40, 43);
   --ls-tertiary-background-color: rgb(47, 48, 51);
-  --ls-quaternary-background-color:rgb(55, 56, 59);
+  --ls-quaternary-background-color: rgb(55, 56, 59);
   --ls-table-tr-even-background-color: #0404061c;
   --ls-callout-background-color: rgba(69, 75, 78, 0.3);
   --bf-codeblock-background-color: rgb(49, 53, 56);
@@ -31,6 +31,7 @@ html[data-theme=dark] {
   --ls-menu-hover-color: var(--ls-tertiary-background-color);
   --ls-primary-text-color: #ccc;
   --ls-secondary-text-color: #aaa;
+  --bf-strong-text-color: #dddddd;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-ref-text-color: #88c1fb;
   --ls-link-ref-text-hover-color: #afd6ff;
@@ -111,7 +112,7 @@ html[data-theme=light] {
   --ls-page-checkbox-color: #8ebce6;
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
   --ls-page-properties-background-color: #adadad1c;
-  --ls-scrollbar-foreground-color:#00000021;
+  --ls-scrollbar-foreground-color: #00000021;
   --ls-scrollbar-background-color: #fff0;
   --bf-scrollbar-thumb-hover-color: #8a8a8a61;
   --color-level-1: rgba(236, 236, 236, 0.3);
@@ -608,16 +609,24 @@ svg.add-button > .circle {
   background-color: var(--ls-secondary-background-color, #d8e1e8);
   border-bottom: 2px solid #484d52;
 }
+.dark-theme .content b,
+.dark-theme .content strong {
+  font-weight: bolder;
+  color: var(--bf-strong-text-color);
+}
 .dark-theme .content a.tag {
   opacity: 0.83;
 }
 .dark-theme .content a.tag:hover {
   opacity: 1;
 }
-.dark-theme .content b,
-.dark-theme .content strong {
-  font-weight: bolder;
-  color: #fff;
+.dark-theme .content a.external-link b,
+.dark-theme .content a.external-link strong {
+  color: var(--bf-external-link-color);
+}
+.dark-theme .content a.external-link b:hover,
+.dark-theme .content a.external-link strong:hover {
+  color: var(--bf-external-link-hover-color);
 }
 .dark-theme .content mark {
   background: #524b25;
