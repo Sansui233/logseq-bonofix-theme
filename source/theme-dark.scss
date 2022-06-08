@@ -16,19 +16,10 @@
   //     background: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 0%, rgba(24, 24, 24, 0) 100%);
   //   }
   // }
-  #left-bar {
-    .close-panel-btn {
-      color: var(--ls-primary-text-color);
-      opacity: 0.6;
-    }
-  }
+
   .cp__header {
     a:hover {
       background-color: #3e4144;
-    }
-    .cp__header-left-menu {
-      color: var(--ls-primary-text-color);
-      opacity: 0.6;
     }
   }
 
@@ -38,6 +29,10 @@
       :hover {
         color: #fff;
       }
+    }
+
+    .new-page-link {
+      background: var(--ls-tertiary-background-color);
     }
   }
 

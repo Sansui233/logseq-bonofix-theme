@@ -14,6 +14,44 @@
   }
 }
 
+.left-sidebar-inner {
+  // Fix the broken alignment in Logseq v0.7.1
+  nav > div > a.px-1,
+  nav > div > a.px-2 {
+    padding: 0.5rem;
+  }
+  .nav-content-item .bd ul a {
+    padding-left: 2.2rem;
+  }
+  // Unifed hover bg color
+  a.item:hover {
+    opacity: unset;
+    background-color: var(--ls-table-tr-even-background-color);
+  }
+  .nav-content-item .header:hover,
+  .nav-content-item .bd ul a:hover {
+    background-color: var(--ls-table-tr-even-background-color);
+  }
+  // font-size
+  .nav-content-item .header .wrap-th > span {
+    font-size: 0.8rem;
+  }
+  .new-page {
+    padding-top: 0px;
+    padding-bottom: 7px;
+    background: var(--ls-secondary-background-color);
+
+    @media screen and (max-width: 640px) {
+      padding: 6px 14px 0px 14px;
+      background: unset;
+    }
+  }
+  .new-page-link {
+    margin-bottom: unset;
+    padding-left: 1.25em;
+  }
+}
+
 .cp__right-sidebar {
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.37, 0.16, 0.16, 0.99);
