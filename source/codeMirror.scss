@@ -61,7 +61,7 @@
   }
 }
 
-/* Missing property in Logseq v0.7.x */
+/* Missing properties in Logseq v0.7.x */
 .CodeMirror-lines {
   padding: 4px 0; // rewrite in case of future changes
 }
@@ -75,7 +75,7 @@
   padding-top: 22px; // Code-Mirror-lines(4px) + Code-Mirror-scroll(18px)
 }
 
-/* Color scheme */
+/* Right side bar */
 .white-theme {
   .cp__right-sidebar {
 
@@ -87,6 +87,7 @@
   }
 }
 
+/* Rewrite .cm-s-solarized */
 /* Syntax colors */
 
 .cm-s-solarized {
@@ -185,9 +186,10 @@
   }
 }
 
-/* Rewrite .cm-s-solarized */
-// Fix code Mirror bug when switching between light and dark theme in current logseq
-// Heavy. hopefully we can remove the redundant part in the future
+// Fix a code Mirror bug when switching between light and dark theme in current logseq
+// For code mirror modifies selectors when initialization, not when switching theme, which makes .cs-s-light and .cs-s-dark not working properly
+// It'll be better for logseq to use only one way to manage all elements' styles, including code-mirror. dynamically modifying the styles instead of functional selectors is not a good idea.
+// Heavy. hope we can remove the redundant part in the future
 
 /* Active line */
 .dark-theme .cm-s-solarized.cm-s-light,
