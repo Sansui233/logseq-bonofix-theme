@@ -26,9 +26,6 @@
   .left-sidebar-inner {
     a {
       color: var(--ls-primary-text-color);
-      :hover {
-        color: #fff;
-      }
     }
 
     .new-page-link {
@@ -94,12 +91,14 @@
   }
 
   // Fix color scale in dark mode;
+  .absolute.absolute-modal, // Pop over
   .dropdown-wrapper,
   .menu-link {
     background-color: var(--ls-secondary-background-color);
   }
 
-  .menu-link:hover {
+  .menu-link:hover,
+  .menu-link.chosen {
     background-color: var(--ls-menu-hover-color);
   }
 

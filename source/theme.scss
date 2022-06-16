@@ -15,14 +15,6 @@
 }
 
 .left-sidebar-inner {
-  // Fix the broken alignment in Logseq v0.7.1
-  nav > div > a.px-1,
-  nav > div > a.px-2 {
-    padding: 0.5rem;
-  }
-  .nav-content-item .bd ul a {
-    padding-left: 2.2rem;
-  }
   // Unifed hover bg color
   a.item:hover {
     opacity: unset;
@@ -36,6 +28,7 @@
   .nav-content-item .header .wrap-th > span {
     font-size: 0.8rem;
   }
+  // TODO New page
   .new-page {
     padding-top: 0px;
     padding-bottom: 7px;
