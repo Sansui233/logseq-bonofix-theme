@@ -30,18 +30,29 @@
   }
   // TODO New page
   .new-page {
-    padding-top: 0px;
-    padding-bottom: 7px;
-    background: var(--ls-secondary-background-color);
-
-    @media screen and (max-width: 640px) {
-      padding: 6px 14px 0px 14px;
-      background: unset;
-    }
+    padding: unset;
+    background-color: var(--ls-secondary-background-color);
+    border-top: 1px solid #8883;
   }
   .new-page-link {
-    margin-bottom: unset;
-    padding-left: 1.25em;
+    background-color: unset;
+    padding: .7rem 1.3rem .85rem 1.3rem ;
+    box-shadow: unset;
+    border-radius: unset;
+    span {
+      opacity: .7;
+    }
+    &:hover {
+      background-color: var(--ls-table-tr-even-background-color);
+      span {
+        opacity: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .new-page{
+      background-color: var(--ls-primary-background-color); // overwrite in case of future changes in Logseq
+    }
   }
 }
 
@@ -121,6 +132,10 @@
   }
 }
 
+.cp__palette-main .chosen, .cp__select-main .chosen {
+  background-color: var(--ls-tertiary-background-color);
+}
+
 #main-content-container {
   padding: 1rem 2.5rem;
   // journal title emoji
@@ -150,11 +165,6 @@
   //   left: 0;
   //   z-index: 1;
   // }
-}
-
-#journals > div > a {
-  // 'Earlier'
-  opacity: 0.3;
 }
 
 html ::-webkit-scrollbar {
