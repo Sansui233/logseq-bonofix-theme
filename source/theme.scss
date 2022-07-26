@@ -320,6 +320,7 @@ html ::-webkit-scrollbar-thumb:hover {
     font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
     padding: 0.2em 0.4em !important;
     color: #eb5757;
+    background-color: var(--ls-page-inline-code-bg-color);
   }
   .custom-query {
     margin-top: 0.5rem;
