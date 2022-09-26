@@ -3,23 +3,9 @@
 *****************************************/
 
 .dark-theme {
-  // Global
-  ::selection {
-    background: var(--ls-block-highlight-color);
-  }
-  #app-single-container ::selection {
-    background: var(--ls-selection-background-color);
-  }
-  // Area
-  // #main-content-container {
-  //   .cp__sidebar-main-content:before {
-  //     background: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 0%, rgba(24, 24, 24, 0) 100%);
-  //   }
-  // }
-
   .cp__header {
     a:hover {
-      background-color: #3e4144;
+      background-color: #3e3e41;
     }
   }
 
@@ -87,8 +73,8 @@
   }
 
   // Fix color scale in dark mode;
-  .absolute.absolute-modal, // Pop over
-  .dropdown-wrapper,
+  .menu-links-wrapper,
+  .ui__modal-panel,
   .menu-link {
     background-color: var(--ls-secondary-background-color);
   }
