@@ -419,6 +419,10 @@ svg.add-button > .circle {
   }
 }
 
+.menu-links-wrapper {
+  background-color: var(--ls-secondary-background-color);
+}
+
 // ************** Mobile layout **************
 @media screen and (max-width: 640px) {
   #head {
