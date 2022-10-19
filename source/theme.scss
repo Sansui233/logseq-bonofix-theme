@@ -28,30 +28,17 @@
   .nav-content-item .header .wrap-th > span {
     font-size: 0.8rem;
   }
-  // New page button
-  .new-page {
-    padding: unset;
-    background-color: var(--ls-secondary-background-color);
-    border-top: 1px solid #8883;
+  // New page button, enlarge the click area
+  .create {
+    background-color: var(--ls-secondary-background-color); // overwrite in case of future changes in Logseq
+    padding: 0;
   }
   a.new-page-link {
     background-color: unset;
-    padding: .7rem 1.3rem .85rem 1.3rem ;
-    box-shadow: unset;
-    border-radius: unset;
-    span {
-      opacity: .7;
-    }
-    &:hover {
+    padding: 0.7rem 1.3rem 0.85rem 1.3rem;
+    border-top: 1px solid #8883;
+    &:hover{
       background-color: var(--ls-table-tr-even-background-color);
-      span {
-        opacity: 1;
-      }
-    }
-  }
-  @media screen and (max-width: 640px) {
-    .new-page{
-      background-color: var(--ls-primary-background-color); // overwrite in case of future changes in Logseq
     }
   }
 }
@@ -296,7 +283,6 @@ html ::-webkit-scrollbar-thumb:hover {
   .form-checkbox {
     border-radius: 50%;
     z-index: 1;
-    transform: scale(1.1);
     position: relative;
     margin-top: unset !important;
     margin-left: 0.1em;
