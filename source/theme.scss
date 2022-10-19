@@ -3,14 +3,13 @@
 *****************************************/
 
 .cp__header {
-  a {
-    color: var(--ls-primary-text-color) !important; // add important to override hover style in dark theme
-  }
-  a[title="Go back"] {
-    margin-right: 2px;
-  }
-  a[title="Go forward"] {
-    margin-left: 2px;
+  button.icon {
+    opacity: .5;
+    transition: opacity ease .5s;
+    &:hover {
+      opacity: 1;
+      background-color: var(--ls-tertiary-background-color);
+    }
   }
 }
 
