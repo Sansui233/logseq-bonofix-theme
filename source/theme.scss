@@ -120,16 +120,22 @@
 
 #main-content-container {
   padding: 1rem 2.5rem;
+  
   // journal title emoji
-  .journal,
-  .is-journals {
-    h1.title:before {
-      content: "🗓";
-      vertical-align: text-bottom;
-      margin-right: 0.3em;
-      font-size: 0.75em;
-    }
+  .journal.page h1.title:before {
+    content: "🗓";
+    vertical-align: text-bottom;
+    margin-right: 0.3em;
+    font-size: 0.75em;
   }
+  .is-journals h1.page-title:before {
+    content: "🗓";
+    vertical-align: text-bottom;
+    margin-right: 0.3em;
+    font-size: 0.75em;
+    align-self: center;
+  }
+
   .cp__sidebar-main-content h1.title {
     font-weight: 700;
     font-size: 33px;
