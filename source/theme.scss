@@ -14,6 +14,14 @@
 }
 
 .left-sidebar-inner {
+  // Layout
+  nav {
+    margin-bottom: .5rem;
+  }
+  .nav-contents-container {
+    gap: 1rem;
+  }
+
   // Unifed hover bg color
   a.item:hover {
     opacity: unset;
@@ -23,10 +31,14 @@
   .nav-content-item .bd ul a:hover {
     background-color: var(--ls-table-tr-even-background-color);
   }
-  // font-size
+
+  // block header Font
   .nav-content-item .header .wrap-th > span {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    opacity: .6;
+    transition: opacity ease .3s;
   }
+
   // New page button, enlarge the click area
   .create {
     background-color: var(--ls-secondary-background-color); // overwrite in case of future changes in Logseq
@@ -120,7 +132,7 @@
 
 #main-content-container {
   padding: 1rem 2.5rem;
-  
+
   // journal title emoji
   .journal.page h1.title:before {
     content: "🗓";
