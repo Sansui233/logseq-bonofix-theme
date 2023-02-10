@@ -401,13 +401,31 @@ svg.add-button > .circle {
 }
 
 .tippy-popper,
-.tippy-popper .html-template,
-.tippy-wrapper {
-  max-height: 45vh !important;
-  max-width: min(90vw, 600px) !important;
-  perspective: min(90vw, 600px) !important;
-  -webkit-perspective: min(90vw, 600px) !important;
+.tippy-popper .html-template {
+  .tippy-tooltip {
+    background-color: var(--ls-primary-background-color);
+  }
+
+  .tippy-popper[x-placement^=top] [x-arrow] {
+    border-color: var(--ls-primary-background-color);
+    z-index: 1;
+  }
+
+  .tippy-wrapper {
+    max-height: 45vh !important;
+    max-width: min(90vw, 600px) !important;
+    // perspective: min(90vw, 600px) !important;
+    // -webkit-perspective: min(90vw, 600px) !important;
+
+    border: 1px solid var(--ls-tertiary-background-color);
+    background-color: var(--ls-primary-background-color);
+    border-radius: 0.5rem;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  }
 }
+
 
 .cp__palette #ui__ac-inner {
   code {
