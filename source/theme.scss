@@ -403,7 +403,7 @@ svg.add-button > .circle {
 .tippy-popper,
 .tippy-popper .html-template {
   .tippy-tooltip {
-    background-color: var(--ls-primary-background-color);
+    border-radius: 0.5rem;
   }
 
   .tippy-popper[x-placement^=top] [x-arrow] {
