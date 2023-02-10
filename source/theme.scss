@@ -193,9 +193,9 @@ html ::-webkit-scrollbar-thumb:hover {
   hr {
     margin: 0.1rem 0;
   }
-  div[haschild="true"] > div.flex-row {
-    margin-bottom: 0.3rem;
-  }
+  // div[haschild="true"] > div.block-children-container {
+  //   margin-bottom: 0.3rem;
+  // }
   .block-children {
     margin-bottom: 0.3rem;
   }
