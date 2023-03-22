@@ -465,12 +465,11 @@ svg.add-button > .circle {
 // ************** Mobile layout **************
 @media screen and (max-width: 640px) {
   #head {
-    position: fixed;
     background-color: var(--ls-primary-background-color);
   }
   #main-container {
     #main-content-container {
-      padding: 48px 32px 32px 20px !important;
+      padding: 16px 20px;
     }
   }
 
