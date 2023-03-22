@@ -4,8 +4,8 @@
 
 .cp__header {
   button.icon {
-    opacity: .5;
-    transition: opacity ease .5s;
+    opacity: 0.5;
+    transition: opacity ease 0.5s;
     &:hover {
       opacity: 1;
       background-color: var(--ls-tertiary-background-color);
@@ -16,7 +16,7 @@
 .left-sidebar-inner {
   // Layout
   nav {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   .nav-contents-container {
     gap: 1rem;
@@ -35,23 +35,39 @@
   // block header Font
   .nav-content-item .header .wrap-th > span {
     font-size: 0.85rem;
-    opacity: .6;
-    transition: opacity ease .3s;
+    opacity: 0.6;
+    transition: opacity ease 0.3s;
   }
 
   // New page button, enlarge the click area
   .create {
-    background-color: var(--ls-secondary-background-color); // overwrite in case of future changes in Logseq
     padding: 0;
-  }
-  a.new-page-link {
-    background-color: unset;
-    padding: 0.7rem 1.3rem 0.85rem 1.3rem;
     border-top: 1px solid #8883;
-    &:hover{
-      background-color: var(--ls-table-tr-even-background-color);
+    #create-button {
+      border: none;
+      border-radius: 0;
+      padding: 0.65rem 0;
+      background-color: var(--ls-primary-background-color) !important; // I don't know why logseq add important here
+      &:hover {
+        background-color: var(--ls-table-tr-even-background-color) !important;
+      }
+    }
+    @media (min-width: 640px) {
+      #create-button {
+        background-color: var(--ls-secondary-background-color) !important;
+      }
     }
   }
+
+  // OLD
+  // a.new-page-link {
+  //   background-color: unset;
+  //   padding: 0.7rem 1.3rem 0.85rem 1.3rem;
+  //   border-top: 1px solid #8883;
+  //   &:hover{
+  //     background-color: var(--ls-table-tr-even-background-color);
+  //   }
+  // }
 }
 
 .cp__right-sidebar {
@@ -406,7 +422,7 @@ svg.add-button > .circle {
     border-radius: 0.5rem;
   }
 
-  .tippy-popper[x-placement^=top] [x-arrow] {
+  .tippy-popper[x-placement^="top"] [x-arrow] {
     border-color: var(--ls-primary-background-color);
     z-index: 1;
   }
@@ -420,12 +436,11 @@ svg.add-button > .circle {
     border: 1px solid var(--ls-tertiary-background-color);
     background-color: var(--ls-primary-background-color);
     border-radius: 0.5rem;
-    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
-    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
-
 
 .cp__palette #ui__ac-inner {
   code {
@@ -436,12 +451,14 @@ svg.add-button > .circle {
     color: var(--ls-link-ref-text-color);
   }
 
-  a>span { // fix logseq bug
+  a > span {
+    // fix logseq bug
     width: 100%;
   }
 }
 
-.cp__palette-main .chosen, .cp__select-main .chosen {
+.cp__palette-main .chosen,
+.cp__select-main .chosen {
   background-color: var(--ls-menu-hover-color);
 }
 
