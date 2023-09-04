@@ -40,24 +40,15 @@
   }
 
   // New page button, enlarge the click area
-  .create {
-    padding: 0;
-    border-top: 1px solid #8883;
-    #create-button {
-      border: none;
-      border-radius: 0;
-      padding: 0.65rem 0;
-      background-color: var(--ls-primary-background-color) !important; // I don't know why logseq add important here
-      &:hover {
-        background-color: var(--ls-table-tr-even-background-color) !important;
-      }
-    }
-    @media (min-width: 640px) {
-      #create-button {
-        background-color: var(--ls-secondary-background-color) !important;
-      }
-    }
-  }
+  // .create {
+  //   padding: 0;
+  //   border-top: 1px solid #8883;
+  //   #create-button {
+  //     border: none;
+  //     border-radius: 0;
+  //     padding: 0.65rem 0;
+  //   }
+  // }
 
   // OLD
   // a.new-page-link {
@@ -353,17 +344,23 @@ html ::-webkit-scrollbar-thumb:hover {
     background-color: var(--ls-tertiary-background-color);
   }
   div[data-refs-self*='"card"'] {
+
     box-shadow: unset;
-    .block-children-container {
+    .block-children {
+      margin-bottom: unset;
+    }
+
+    &>.block-children-container {
       background: var(--ls-block-properties-background-color);
       padding: 1em 0;
+      border-radius: 0.375rem;
+      border-bottom: 2px solid var(--bf-hard-shadow-color);
+
+      &>.block-children {
+        margin-bottom: 5px;
+      }
     }
-    .block-children-left-border {
-      background-color: unset;
-    }
-    .block-children {
-      margin-bottom: 5px;
-    }
+    
   }
 }
 
