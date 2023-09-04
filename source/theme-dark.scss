@@ -19,12 +19,9 @@
     .block-properties.page-properties {
       --ls-page-properties-background-color: #363739;
     }
-    .sidebar-item-list {
-      background-color: var(--ls-secondary-background-color, #d8e1e8);
-      .sidebar-item {
-        background-color: var(--ls-secondary-background-color, #d8e1e8);
-        border-bottom: 2px solid #484d52;
-      }
+    .sidebar-item {
+      // background-color: var(--ls-secondary-background-color, #d8e1e8);
+      border-bottom: 2px solid #1d1d1d;
     }
   }
   .content {
