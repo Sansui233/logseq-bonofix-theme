@@ -14,14 +14,6 @@
 }
 
 .left-sidebar-inner {
-  // Layout
-  nav {
-    margin-bottom: 0.5rem;
-  }
-  .nav-contents-container {
-    gap: 1rem;
-  }
-
   // Unifed hover bg color
   a.item:hover {
     opacity: unset;
@@ -39,26 +31,11 @@
     transition: opacity ease 0.3s;
   }
 
-  // New page button, enlarge the click area
-  // .create {
-  //   padding: 0;
-  //   border-top: 1px solid #8883;
-  //   #create-button {
-  //     border: none;
-  //     border-radius: 0;
-  //     padding: 0.65rem 0;
-  //   }
-  // }
-
-  // OLD
-  // a.new-page-link {
-  //   background-color: unset;
-  //   padding: 0.7rem 1.3rem 0.85rem 1.3rem;
-  //   border-top: 1px solid #8883;
-  //   &:hover{
-  //     background-color: var(--ls-table-tr-even-background-color);
-  //   }
-  // }
+  // icon baseline is not aligned with font.
+  // windows specific?
+  .create .ui__icon{
+    transform: translateY(-2px);
+  }
 }
 
 .cp__right-sidebar {
@@ -308,38 +285,6 @@ html ::-webkit-scrollbar-thumb:hover {
     color: #eb5757;
     background-color: var(--ls-page-inline-code-bg-color);
   }
-  .custom-query {
-    margin-top: 0.5rem;
-    .custom-query-title {
-      .query-title {
-        border-radius: 20px;
-        font-size: 0.85em;
-      }
-    }
-    .overflow-x-auto {
-      cursor: default;
-      table {
-        th {
-          font-weight: bold;
-          text-transform: capitalize;
-          padding-left: 1em;
-          border-bottom: solid 1px var(--ls-border-color);
-          a span {
-            color: var(--ls-primary-text-color);
-          }
-        }
-        tr td {
-          font-size: 0.95em;
-          padding: 0.5em 0.3em 0.5em 0.9em;
-          // white-space: pre-wrap;
-          // max-width: 50vw;
-        }
-      }
-    }
-  }
-  .block-content.inline .inline .embed-header div.mr-3 {
-    margin-right: 0.25rem;
-  }
   .page-reference:hover {
     background-color: var(--ls-tertiary-background-color);
   }
@@ -361,6 +306,41 @@ html ::-webkit-scrollbar-thumb:hover {
       }
     }
     
+  }
+
+
+  // table
+  table {
+    // word-break: break-word; is deprecated. 
+    word-break: normal; // avoid break on file name like xxx.js
+  }
+  th {
+    border-top: solid 1.5px var(--ls-secondary-border-color);
+    border-bottom: solid 1px var(--ls-secondary-border-color);
+    text-transform: capitalize;
+    color: #9f9f9f;
+    padding: 0.5em 0.5em 0.5em 0.875em;
+    a {
+      color: #9f9f9f;
+    }
+    a:hover {
+      color: var(--ls-primary-text-color);
+    }
+  }
+  th:not(:last-child) , td:not(:last-child) {
+    border-right: solid 1px var(--ls-secondary-border-color);
+  }
+  tr td {
+    font-size: 0.95em;
+    padding: 0.5em 0.5em 0.5em 0.875em;
+  }
+  tbody {
+      tr:not(:last-child) {
+        border-bottom: solid 1px var(--ls-secondary-border-color);
+      }
+      tr:last-child {
+        border-bottom: solid 1.5px var(--ls-secondary-border-color);
+      }
   }
 }
 
@@ -392,6 +372,10 @@ svg.add-button > .circle {
   transition: 0.2s;
   fill: var(--ls-block-bullet-color);
 }
+
+/******************************************
+ **************  tippy  *****************
+ ******************************************/
 
 .tippy-popper,
 .tippy-popper .html-template {
@@ -433,6 +417,10 @@ svg.add-button > .circle {
     width: 100%;
   }
 }
+
+/******************************************
+ **************  search  *****************
+ ******************************************/
 
 .cp__palette-main .chosen,
 .cp__select-main .chosen {

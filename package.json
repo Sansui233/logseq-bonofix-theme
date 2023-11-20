@@ -1,7 +1,7 @@
 {
   "name": "logseq-bonofix-theme",
-  "version": "3.8.7",
-  "logseq-version": "v0.9.15",
+  "version": "3.8.8",
+  "logseq-version": "v0.9.20",
   "author": "Sansui233",
   "description": "A clean theme for Logseq, focusing on long time writing experience.",
   "main": "source/index.sass",
