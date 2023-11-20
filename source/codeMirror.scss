@@ -28,7 +28,7 @@
 
 .extensions__code {
   display: block;
-  background-color: var(--bf-codeblock-background-color);
+  background-color: var(--bf-codeblock-background-color); // calculator result
 
   .code-editor {
     margin: 0.5rem 0;
@@ -44,6 +44,7 @@
 
   textarea {
     color: var(--ls-primary-text-color);
+    background-color: var(--bf-codeblock-background-color);
   }
 
   .CodeMirror {
@@ -187,16 +188,14 @@
   }
 }
 
-// Fix a code Mirror bug when switching between light and dark theme in current logseq
-// For code mirror modifies selectors when initialization, not when switching theme, which makes .cs-s-light and .cs-s-dark not working properly
-// It'll be better for logseq to use only one way to manage all elements' styles, including code-mirror. dynamically modifying the styles instead of functional selectors is not a good idea.
-// Heavy. hope we can remove the redundant part in the future
-
 /* Active line */
 .dark-theme .cm-s-solarized.cm-s-light,
 .cm-s-solarized.cm-s-dark {
   .CodeMirror-activeline-background {
     background: rgba(0, 0, 0, 0.1);
+  }
+  .CodeMirror-linenumber {
+    color: #586375;
   }
 }
 
