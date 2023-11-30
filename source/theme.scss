@@ -3,13 +3,8 @@
 *****************************************/
 
 .cp__header {
-  button.icon {
-    opacity: 0.5;
-    transition: opacity ease 0.5s;
-    &:hover {
-      opacity: 1;
-      background-color: var(--ls-tertiary-background-color);
-    }
+  a { // missing selector
+    color: var(--ls-header-button-text-color);
   }
 }
 
