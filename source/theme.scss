@@ -2,17 +2,25 @@
   Common Theme
 *****************************************/
 .cp__header {
-  div[data-type=toolbar] {
+  div[data-type="toolbar"] {
     a {
       color: var(--ls-header-button-text-color);
     }
     a:hover {
       color: var(--ls-header-button-text-color-hover);
     }
+    .dropdown-wrapper {
+      a,
+      a:hover,
+      span {
+        color: var(--ls-primary-text-color);
+      }
+    }
   }
   .dropdown-wrapper {
     a,
-    a:hover {
+    a:hover,
+    span {
       color: var(--ls-primary-text-color);
     }
   }
@@ -39,8 +47,31 @@
 
   // icon baseline is not aligned with font.
   // windows specific?
-  .create .ui__icon{
+  .create .ui__icon {
     transform: translateY(-2px);
+  }
+
+  @media (min-width: 640px) {
+    .create {
+      #create-button {
+        transition: all 0.3s ease;
+        border: unset;
+        opacity: 0.6;
+        background-color: unset !important;
+        justify-content: flex-start;
+        padding: 0.625rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--ls-left-sidebar-text-color);
+        text-transform: uppercase;
+      }
+      #create-button:hover {
+        border: unset;
+        opacity: 1;
+        background-color: var(--ls-primary-background-color) !important;
+        box-shadow: 0 0 5px #7e7e7e3d;
+      }
+    }
   }
 }
 
@@ -250,9 +281,9 @@ html ::-webkit-scrollbar-thumb:hover {
       border-radius: 10px;
       margin: 2px 0px;
       color: var(--ls-tag-text-color);
-      background-color: var(--lx-accent-11,var(--bf-tag-background-color));
+      background-color: var(--lx-accent-11, var(--bf-tag-background-color));
       &:hover {
-        background-color: var(--lx-accent-11,var(--bf-tag-background-hover-color));
+        background-color: var(--lx-accent-11, var(--bf-tag-background-hover-color));
       }
     }
     &.external-link {
@@ -296,29 +327,26 @@ html ::-webkit-scrollbar-thumb:hover {
     background-color: var(--ls-tertiary-background-color);
   }
   div[data-refs-self*='"card"'] {
-
     box-shadow: unset;
     .block-children {
       margin-bottom: unset;
     }
 
-    &>.block-children-container {
+    & > .block-children-container {
       background: var(--ls-block-properties-background-color);
       padding: 1em 0;
       border-radius: 0.375rem;
       border-bottom: 2px solid var(--bf-hard-shadow-color);
 
-      &>.block-children {
+      & > .block-children {
         margin-bottom: 5px;
       }
     }
-    
   }
-
 
   // table
   table {
-    // word-break: break-word; is deprecated. 
+    // word-break: break-word; is deprecated.
     word-break: normal; // avoid break on file name like xxx.js
   }
   th {
@@ -334,7 +362,8 @@ html ::-webkit-scrollbar-thumb:hover {
       color: var(--ls-primary-text-color);
     }
   }
-  th:not(:last-child) , td:not(:last-child) {
+  th:not(:last-child),
+  td:not(:last-child) {
     border-right: solid 1px var(--ls-secondary-border-color);
   }
   tr td {
@@ -342,12 +371,12 @@ html ::-webkit-scrollbar-thumb:hover {
     padding: 0.5em 0.5em 0.5em 0.875em;
   }
   tbody {
-      tr:not(:last-child) {
-        border-bottom: solid 1px var(--ls-secondary-border-color);
-      }
-      tr:last-child {
-        border-bottom: solid 1.5px var(--ls-secondary-border-color);
-      }
+    tr:not(:last-child) {
+      border-bottom: solid 1px var(--ls-secondary-border-color);
+    }
+    tr:last-child {
+      border-bottom: solid 1.5px var(--ls-secondary-border-color);
+    }
   }
 }
 
