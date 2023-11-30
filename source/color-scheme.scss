@@ -19,14 +19,14 @@
 .dark-theme,
 html[data-theme="dark"] {
   // main text
-  --ls-primary-text-color: #ccc;
-  --ls-secondary-text-color: #aaa;
+  --ls-primary-text-color: #cecece;
+  --ls-secondary-text-color: #bbb;
 
   // main background
-  --ls-primary-background-color: rgb(32, 33, 36);
-  --ls-secondary-background-color: rgb(39, 40, 43);
-  --ls-tertiary-background-color: rgb(46, 48, 51);
-  --ls-quaternary-background-color: rgb(54, 56, 59);
+  --ls-primary-background-color: #202124;
+  --ls-secondary-background-color: #27282b;
+  --ls-tertiary-background-color: #303234;
+  --ls-quaternary-background-color: #36383b;
 
   // block bg
   --ls-block-properties-background-color: #33353891;
@@ -69,16 +69,17 @@ html[data-theme="dark"] {
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
   --ls-page-inline-code-color: #eb5757;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
-  --bf-strong-text-color: #dddddd;
+  --bf-strong-text-color: #d8d8d8;
   --ls-selection-background-color: #3e3e41;
 
   // ui
   --ls-icon-color: #767676;
   --ls-search-icon-color: var(--ls-quaternary-background-color);
-  --ls-header-button-text-color: var(--ls-primary-text-color);
+  --ls-header-button-text-color: #767676;
   --ls-header-button-text-color-hover: var(--ls-primary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+  --ls-a-chosen-bg: var(--ls-tertiary-background-color); // --ls-menu-hover-color
 
   // ui - scrollbar
   --ls-scrollbar-foreground-color: #8a8a8a3d;
@@ -93,11 +94,12 @@ html[data-theme="dark"] {
   --ls-block-highlight-color: #3e3e41;
 
   --ls-head-text-color: #ffe27c;
-  --ls-a-chosen-bg: var(--ls-secondary-background-color);
 
+  // right sidebar, cmdk, and accent color-level-4……
   --color-level-1: var(--ls-secondary-background-color);
   --color-level-2: var(--ls-tertiary-background-color);
   --color-level-3: var(--ls-quaternary-background-color);
+  --color-level-4: #4c4c4c;
 
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
@@ -117,8 +119,8 @@ html[data-theme="light"] {
   // main background
   --ls-primary-background-color: #fff;
   --ls-secondary-background-color: #f8f8f8;
-  --ls-tertiary-background-color: #eaeaea;
-  --ls-quaternary-background-color: #e0e0e0;
+  --ls-tertiary-background-color: #efefef;
+  --ls-quaternary-background-color: #e8e8e8;
 
   // block bg
   --ls-block-properties-background-color: #f5f5f5;
@@ -128,6 +130,7 @@ html[data-theme="light"] {
   --ls-table-tr-even-background-color: #0000000a;
 
   // borders
+  --ls-border-color: #d4d4d4;
 
   // accent color (link, hover)
   --ls-active-primary-color: rgb(64, 150, 213);
@@ -160,10 +163,11 @@ html[data-theme="light"] {
 
   // ui
   --ls-icon-color: #919191;
-  --ls-header-button-text-color: var(--ls-primary-text-color);
+  --ls-header-button-text-color: #999999;
   --ls-header-button-text-color-hover: var(--ls-primary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+  --ls-a-chosen-bg: var(--ls-tertiary-background-color); // --ls-menu-chosen-color
 
   // ui - scrollbar
   --ls-scrollbar-foreground-color: #00000014;
@@ -173,10 +177,10 @@ html[data-theme="light"] {
   // misc
   --ls-title-text-color: #303537;
 
-  --color-level-1: rgba(236, 236, 236, 0.3);
-  --color-level-2: #f3f3f3;
-  --color-level-3: #eaeaea;
-  --color-level-4: #ddd;
+  // right sidebar, cmdk, and accent color-level-4……
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-tertiary-background-color);
+  --color-level-3: var(--ls-quaternary-background-color);
 
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme

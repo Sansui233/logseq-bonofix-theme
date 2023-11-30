@@ -2,13 +2,8 @@
   White Theme
 *****************************************/
 
-.white-theme {
-  .cp__header {
-    color: var(--ls-primary-text-color);
-    a:hover {
-      background-color: #f1f1f1;
-    }
-  }
+html[data-theme=light] {
+
   #left-bar {
     nav > a,
     svg {
@@ -46,10 +41,6 @@
   .cp__right-sidebar {
     .block-properties.page-properties {
       --ls-page-properties-background-color: #f0f0f0;
-    }
-    .sidebar-item {
-      // background-color: var(--ls-secondary-background-color, #d8e1e8);
-      border-bottom: 2px solid var(--bf-hard-shadow-color);
     }
   }
 }

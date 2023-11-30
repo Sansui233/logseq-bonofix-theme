@@ -1,14 +1,25 @@
 /*****************************************
   Common Theme
 *****************************************/
-
 .cp__header {
-  a { // missing selector
-    color: var(--ls-header-button-text-color);
+  div[data-type=toolbar] {
+    a {
+      color: var(--ls-header-button-text-color);
+    }
+    a:hover {
+      color: var(--ls-header-button-text-color-hover);
+    }
+  }
+  .dropdown-wrapper {
+    a,
+    a:hover {
+      color: var(--ls-primary-text-color);
+    }
   }
 }
 
 .left-sidebar-inner {
+  border-right: none;
   // Unifed hover bg color
   a.item:hover {
     opacity: unset;
@@ -52,6 +63,7 @@
       --tw-shadow: unset;
       // padding: 10px 8px 10px 4px;
       // border: none;
+      border-bottom: 2px solid var(--color-level-3);
       .content {
         font-size: 0.95rem;
       }
@@ -238,9 +250,9 @@ html ::-webkit-scrollbar-thumb:hover {
       border-radius: 10px;
       margin: 2px 0px;
       color: var(--ls-tag-text-color);
-      background-color: var(--bf-tag-background-color);
+      background-color: var(--lx-accent-11,var(--bf-tag-background-color));
       &:hover {
-        background-color: var(--bf-tag-background-hover-color);
+        background-color: var(--lx-accent-11,var(--bf-tag-background-hover-color));
       }
     }
     &.external-link {
