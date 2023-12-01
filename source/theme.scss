@@ -27,17 +27,23 @@
 }
 
 .left-sidebar-inner {
+  a {
+    opacity: 0.9;
+  }
   // Unifed hover bg color
   a.item:hover {
     opacity: unset;
     background-color: var(--ls-a-chosen-bg);
+  }
+  .nav-content-item .bd ul a {
+    opacity: 0.9;
   }
   .nav-content-item .header:hover,
   .nav-content-item .bd ul a:hover {
     background-color: var(--ls-a-chosen-bg);
   }
 
-  // block header Font
+  // block header font
   .nav-content-item .header .wrap-th > span {
     font-size: 0.85rem;
     opacity: 0.6;
