@@ -1,0 +1,24 @@
+
+  <?xml version='1.0'?>
+  <workbook>
+    <preferences>
+      <color-palette name="bg_dark" type="ordered-sequential">
+        <color>#36383b</color>
+        <color>#343639</color>
+        <color>#333538</color>
+        <color>#313336</color>
+        <color>#303235</color>
+        <color>#2f3034</color>
+        <color>#2d2f32</color>
+        <color>#2c2d31</color>
+        <color>#2a2b2f</color>
+        <color>#292a2e</color>
+        <color>#27282c</color>
+        <color>#25272a</color>
+        <color>#242529</color>
+        <color>#232428</color>
+        <color>#212225</color>
+        <color>#202124</color>
+      </color-palette>
+    </preferences>
+  </workbook>

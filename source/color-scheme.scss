@@ -1,21 +1,21 @@
-// see palette
 // https://leonardocolor.io/scales.html
+// see palette
 
-$blue_dark1: #afd6ff;
-$blue_dark2: #90c9fd;
-$blue_dark3: #6cbcfa;
-$blue_dark4: #60ace8;
-$blue_dark5: #539bd6;
-$blue_dark6: #4589c4;
-$blue_dark7: #3578c4; // tag
+$blue_dark1: #afd6ff;   // (fixed)
+$blue_dark2: #99ccfd; 
+$blue_dark3: #6cbcfa;   // text (fixed)
+$blue_dark4: #61adea;
+$blue_dark5: #549cd9;   // checkbox (fixed)
+$blue_dark6: #4490d0;
+$blue_dark7: #2f82c6;   // tag before opacity 0.8 (fixed)
 
-$blue_light1: #82c0f0; // checkbox
-$blue_light2: #6db3ee;
-$blue_light3: #4497eb;
-$blue_light4:  #348ceb;
-$blue_light5: #2582ec; // tag
+$blue_light1: #8fc3ff;
+$blue_light2: #7cb4f4;  // checkbox (fixed)
+$blue_light3: #5c9de7;
+$blue_light4: #3e8adc;  // text (fixed)
+$blue_light5: #2582ec;  // tag before opacity 0.8 (fixed)
 $blue_light6: #1e79de;
-$blue_light7: #106bc6;
+$blue_light7: #106bc6;  // (fixed)
 
 /* ****************************
 ************** Root ***********
@@ -41,18 +41,18 @@ html[data-theme="dark"] {
   --ls-primary-text-color: #cecece;
   --ls-secondary-text-color: #bbb;
 
-  // main background
+  // main background (linear gradient)
   --ls-primary-background-color: #202124;
-  --ls-secondary-background-color: #27282b;
-  --ls-tertiary-background-color: #303234;
+  --ls-secondary-background-color: #27282c;
+  --ls-tertiary-background-color: #303235;
   --ls-quaternary-background-color: #36383b;
 
-  // block bg
-  --ls-block-properties-background-color: #33353891;
-  --ls-page-properties-background-color: #292b2e;
-  --ls-callout-background-color: #45474e4d;
+  // block bg (hue 232)
+  --ls-block-properties-background-color: #34353c91;
+  --ls-page-properties-background-color: #2b2c31;
+  --ls-callout-background-color: #45464f4d;
   --bf-codeblock-background-color: #313238;
-  --ls-table-tr-even-background-color: #adadad1c;
+  --ls-table-tr-even-background-color: #adaeb81c;
 
   // borders
   --ls-border-color: #3f3f3f;
@@ -122,7 +122,7 @@ html[data-theme="dark"] {
 
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
-  --ls-block-bullet-active-color: #4a99b9; // in log-seq dev theme
+  --ls-block-bullet-active-color: #{$blue_dark6}; // in log-seq dev theme
   --bf-hard-shadow-color: #1d1d1d;
 }
 
@@ -135,7 +135,7 @@ html[data-theme="light"] {
   // main text
   --ls-primary-text-color: #2b2926;
 
-  // main background
+  // main background (linear gradient)
   --ls-primary-background-color: #fff;
   --ls-secondary-background-color: #f8f8f8;
   --ls-tertiary-background-color: #efefef;
@@ -177,7 +177,7 @@ html[data-theme="light"] {
   // markdown content
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
-  --ls-page-checkbox-color: #{$blue_light1};
+  --ls-page-checkbox-color: #{$blue_light2};
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
 
   // ui
