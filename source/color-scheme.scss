@@ -46,6 +46,7 @@ html[data-theme="dark"] {
   --ls-secondary-background-color: #27282c;
   --ls-tertiary-background-color: #303235;
   --ls-quaternary-background-color: #36383b;
+  --ls-left-sidebar-background-color: var(--ls-secondary-background-color); // fix bug in logseq v0.10.0 mobile view.
 
   // block bg (hue 232)
   --ls-block-properties-background-color: #34353c91;
@@ -120,7 +121,7 @@ html[data-theme="dark"] {
   --color-level-1: var(--ls-secondary-background-color);
   --color-level-2: var(--ls-tertiary-background-color);
   --color-level-3: var(--ls-quaternary-background-color);
-  --color-level-4: #4c4c4c;
+  --color-level-4: #4c4e58;
 
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
