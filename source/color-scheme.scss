@@ -1,3 +1,22 @@
+// see palette
+// https://leonardocolor.io/scales.html
+
+$blue_dark1: #afd6ff;
+$blue_dark2: #98c8fa;
+$blue_dark3: #81b9f5;
+$blue_dark4: #70aae7;
+$blue_dark5: #5e9ada;
+$blue_dark6: #4b89cc;
+$blue_dark7: #3778be;
+
+$blue_light1: #84b6df;
+$blue_light2: #6cacdf;
+$blue_light3: #50a1e1;
+$blue_light4: #2c96e2;
+$blue_light5: #1e88db;
+$blue_light6: #177ad0;
+$blue_light7: #106bc6;
+
 /* ****************************
 ************** Root ***********
 *******************************/
@@ -40,11 +59,11 @@ html[data-theme="dark"] {
   --ls-secondary-border-color: #505255;
 
   // accent color (link, hover)
+  --ls-link-ref-text-color: #{$blue_dark3};
+  --ls-link-ref-text-hover-color: #{$blue_dark2};
   --ls-active-primary-color: var(--ls-link-ref-text-color);
-  --ls-active-secondary-color: #6fc2efcc;
-  --ls-block-ref-link-text-color: #73d2f6;
-  --ls-link-ref-text-color: #88c1fb;
-  --ls-link-ref-text-hover-color: #afd6ff;
+  --ls-active-secondary-color: #{$blue_dark5};
+  --ls-block-ref-link-text-color: #{$blue_dark4};
   --bf-external-link-color: #f67373;
   --bf-external-link-hover-color: #f29191;
   --ls-link-text-color: var(--ls-link-ref-text-color);
@@ -55,8 +74,8 @@ html[data-theme="dark"] {
   // tags
   --ls-tag-text-color: white;
   --ls-tag-text-hover-color: white;
-  --bf-tag-background-color: #3f74ae;
-  --bf-tag-background-hover-color: #5f97c0;
+  --bf-tag-background-color: #{$blue_dark7};
+  --bf-tag-background-hover-color: #{$blue_dark6};
 
   // guildline
   --ls-block-bullet-border-color: #ffffff14;
@@ -64,7 +83,7 @@ html[data-theme="dark"] {
   --ls-guideline-color: #ffffff14;
 
   // markdown content
-  --ls-page-checkbox-color: #5c94ce;
+  --ls-page-checkbox-color: #{$blue_dark5};
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
   --ls-page-inline-code-color: #eb5757;
@@ -133,11 +152,11 @@ html[data-theme="light"] {
   --ls-border-color: #d4d4d4;
 
   // accent color (link, hover)
-  --ls-active-primary-color: rgb(64, 150, 213);
-  --ls-active-secondary-color: rgb(46, 118, 170);
-  --ls-link-ref-text-color: #3d88ce;
-  --ls-link-ref-text-hover-color: #1a6cbf;
-  --bf-external-link-color: rgb(234, 110, 110);
+  --ls-link-ref-text-color: #{$blue_light5};
+  --ls-link-ref-text-hover-color: #{$blue_light7};
+  --ls-active-primary-color: #{$blue_light4};
+  --ls-active-secondary-color: #{$blue_light6};
+  --bf-external-link-color: #ea6e6e;
   --bf-external-link-hover-color: #e6515e;
   --ls-link-text-color: var(--ls-link-ref-text-color);
   --ls-link-text-hover-color: var(--ls-link-ref-text-hover-color);
@@ -147,8 +166,8 @@ html[data-theme="light"] {
   // tags
   --ls-tag-text-color: white;
   --ls-tag-text-hover-color: white;
-  --bf-tag-background-color: #2883df;
-  --bf-tag-background-hover-color: #84bdf4;
+  --bf-tag-background-color: #{$blue_light6};
+  --bf-tag-background-hover-color: #{$blue_light1};
 
   // guildline
   --ls-block-bullet-border-color: #dedede85;
@@ -158,7 +177,7 @@ html[data-theme="light"] {
   // markdown content
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
-  --ls-page-checkbox-color: #8ebce6;
+  --ls-page-checkbox-color: #{$blue_light1};
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
 
   // ui
