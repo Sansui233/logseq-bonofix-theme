@@ -2,13 +2,13 @@
   <?xml version='1.0'?>
   <workbook>
     <preferences>
-      <color-palette name="blue_light" type="ordered-sequential">
-        <color>#84b6df</color>
-        <color>#6cacdf</color>
-        <color>#50a1e1</color>
-        <color>#2c96e2</color>
-        <color>#1e88db</color>
-        <color>#177ad0</color>
+      <color-palette name="blue_dark" type="ordered-sequential">
+        <color>#82c0f0</color>
+        <color>#6db3ee</color>
+        <color>#59a6ec</color>
+        <color>#4497eb</color>
+        <color>#2f88ea</color>
+        <color>#1e79de</color>
         <color>#106bc6</color>
       </color-palette>
     </preferences>

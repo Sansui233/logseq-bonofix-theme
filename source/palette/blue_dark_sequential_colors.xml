@@ -1,0 +1,15 @@
+
+  <?xml version='1.0'?>
+  <workbook>
+    <preferences>
+      <color-palette name="blue_dark" type="ordered-sequential">
+        <color>#afd6ff</color>
+        <color>#90c9fd</color>
+        <color>#6cbcfa</color>
+        <color>#60ace8</color>
+        <color>#539bd6</color>
+        <color>#4589c4</color>
+        <color>#3778b1</color>
+      </color-palette>
+    </preferences>
+  </workbook>

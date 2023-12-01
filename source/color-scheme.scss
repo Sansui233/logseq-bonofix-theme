@@ -2,19 +2,19 @@
 // https://leonardocolor.io/scales.html
 
 $blue_dark1: #afd6ff;
-$blue_dark2: #98c8fa;
-$blue_dark3: #81b9f5;
-$blue_dark4: #70aae7;
-$blue_dark5: #5e9ada;
-$blue_dark6: #4b89cc;
-$blue_dark7: #3778be;
+$blue_dark2: #90c9fd;
+$blue_dark3: #6cbcfa;
+$blue_dark4: #60ace8;
+$blue_dark5: #539bd6;
+$blue_dark6: #4589c4;
+$blue_dark7: #3578c4; // tag
 
-$blue_light1: #84b6df;
-$blue_light2: #6cacdf;
-$blue_light3: #50a1e1;
-$blue_light4: #2c96e2;
-$blue_light5: #1e88db;
-$blue_light6: #177ad0;
+$blue_light1: #82c0f0; // checkbox
+$blue_light2: #6db3ee;
+$blue_light3: #4497eb;
+$blue_light4:  #348ceb;
+$blue_light5: #2582ec; // tag
+$blue_light6: #1e79de;
 $blue_light7: #106bc6;
 
 /* ****************************
@@ -152,8 +152,8 @@ html[data-theme="light"] {
   --ls-border-color: #d4d4d4;
 
   // accent color (link, hover)
-  --ls-link-ref-text-color: #{$blue_light5};
-  --ls-link-ref-text-hover-color: #{$blue_light7};
+  --ls-link-ref-text-color: #{$blue_light4};
+  --ls-link-ref-text-hover-color: #{$blue_light6};
   --ls-active-primary-color: #{$blue_light4};
   --ls-active-secondary-color: #{$blue_light6};
   --bf-external-link-color: #ea6e6e;
@@ -166,7 +166,7 @@ html[data-theme="light"] {
   // tags
   --ls-tag-text-color: white;
   --ls-tag-text-hover-color: white;
-  --bf-tag-background-color: #{$blue_light6};
+  --bf-tag-background-color: #{$blue_light5};
   --bf-tag-background-hover-color: #{$blue_light1};
 
   // guildline
