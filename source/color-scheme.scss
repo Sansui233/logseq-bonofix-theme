@@ -98,7 +98,9 @@ html[data-theme="dark"] {
   --ls-header-button-text-color-hover: var(--ls-primary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
-  --ls-a-chosen-bg: var(--ls-tertiary-background-color); // --ls-menu-hover-color
+  
+  // ui --ls-menu-chosen-color
+  --ls-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
 
   // ui - scrollbar
   --ls-scrollbar-foreground-color: #8a8a8a3d;
@@ -186,7 +188,9 @@ html[data-theme="light"] {
   --ls-header-button-text-color-hover: var(--ls-primary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
-  --ls-a-chosen-bg: var(--ls-tertiary-background-color); // --ls-menu-chosen-color
+
+  // ui --ls-menu-chosen-color
+  --ls-a-chosen-bg: #0007100f;
 
   // ui - scrollbar
   --ls-scrollbar-foreground-color: #00000014;

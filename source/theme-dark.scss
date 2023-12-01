@@ -3,6 +3,13 @@
 *****************************************/
 
 html[data-theme="dark"] {
+  .cp__header{
+    .dropdown-wrapper {
+      a,span {
+        opacity: 1; // fix opacity in dropdown menu when in darkmode
+      }
+    }
+  }
   .left-sidebar-inner {
     a.item {
       color: var(--ls-primary-text-color);

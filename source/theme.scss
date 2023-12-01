@@ -30,11 +30,11 @@
   // Unifed hover bg color
   a.item:hover {
     opacity: unset;
-    background-color: var(--ls-table-tr-even-background-color);
+    background-color: var(--ls-a-chosen-bg);
   }
   .nav-content-item .header:hover,
   .nav-content-item .bd ul a:hover {
-    background-color: var(--ls-table-tr-even-background-color);
+    background-color: var(--ls-a-chosen-bg);
   }
 
   // block header Font
@@ -58,7 +58,7 @@
         opacity: 0.6;
         background-color: unset !important;
         justify-content: flex-start;
-        padding: 0.625rem;
+        padding: 0.625rem; // align "create" with "recent"
         font-size: 0.85rem;
         font-weight: 600;
         color: var(--ls-left-sidebar-text-color);
@@ -69,6 +69,9 @@
         opacity: 1;
         background-color: var(--ls-primary-background-color) !important;
         box-shadow: 0 0 5px #7e7e7e3d;
+      }
+      .mx-1 {
+        margin: 0 0.5rem; // align "create" with "recent"
       }
     }
   }
@@ -464,9 +467,12 @@ svg.add-button > .circle {
  **************  search  *****************
  ******************************************/
 
-.cp__palette-main .chosen,
-.cp__select-main .chosen {
-  background-color: var(--ls-menu-hover-color);
+// .chosen
+.search-results {
+  .bg-gray-03-alpha,
+  .bg-gray-04-alpha { // temp selector
+    background-color: var(--ls-a-chosen-bg);
+  }
 }
 
 // ************** Mobile layout **************
