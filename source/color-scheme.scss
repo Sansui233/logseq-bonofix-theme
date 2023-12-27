@@ -78,6 +78,11 @@ html[data-theme="dark"] {
   --bf-tag-background-color: #{$blue_dark7};
   --bf-tag-background-hover-color: #{$blue_dark6};
 
+  // query builder
+  --bf-query-clause-border-color: #{$blue_dark7};
+  --bf-query-clause-background-color: #2f82c615;
+  --bf-query-clause-background-hover-color: #2f82c633;
+
   // guildline
   --ls-block-bullet-border-color: #ffffff14;
   --ls-block-bullet-color: #ffffff25;
@@ -99,6 +104,7 @@ html[data-theme="dark"] {
   --ls-header-button-text-color-hover: var(--ls-primary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+  --ls-button-background-hsl: 207 60% 54%; // $blue_dark6
   
   // ui --ls-menu-chosen-color
   --ls-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
@@ -172,6 +178,11 @@ html[data-theme="light"] {
   --bf-tag-background-color: #{$blue_light5};
   --bf-tag-background-hover-color: #{$blue_light1};
 
+  // query builder
+  --bf-query-clause-border-color: #{$blue_light1};
+  --bf-query-clause-background-color: #8fc3ff15;
+  --bf-query-clause-background-hover-color: #8fc3ff33;
+
   // guildline
   --ls-block-bullet-border-color: #dedede85;
   --ls-block-bullet-color: #00000018;
@@ -189,6 +200,7 @@ html[data-theme="light"] {
   --ls-header-button-text-color-hover: var(--ls-primary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+  --ls-button-background-hsl: 211.96 83.97% 53.53%; // $blue_light5
 
   // ui --ls-menu-chosen-color
   --ls-a-chosen-bg: #0007100f;
