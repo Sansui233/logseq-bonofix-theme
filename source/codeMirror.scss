@@ -36,7 +36,7 @@
 
   .extensions__code-lang {
     margin-right: 7px;
-    margin-top: 3px;
+    margin-top: 7px;
     padding: unset;
     background-color: unset;
     opacity: 0.6;
@@ -51,6 +51,7 @@
     color: var(--ls-secondary-text-color);
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
     padding: 0px 10px 0px 20px;
+    border-radius: 0.25rem;
 
 
     CodeMirror-sizer .CodeMirror-lines {
