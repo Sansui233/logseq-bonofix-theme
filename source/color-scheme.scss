@@ -49,8 +49,8 @@ html[data-theme="dark"] {
   --ls-left-sidebar-background-color: var(--ls-secondary-background-color); // fix bug in logseq v0.10.0 mobile view.
 
   // block bg (hue 232)
-  --ls-block-properties-background-color: #34353c91;
-  --ls-page-properties-background-color: #2b2c31;
+  --ls-page-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-properties-background-color: var(--ls-page-properties-background-color);
   --ls-callout-background-color: #45464f4d;
   --bf-codeblock-background-color: #313238;
   --ls-table-tr-even-background-color: #adaeb81c;
@@ -96,6 +96,7 @@ html[data-theme="dark"] {
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
   --bf-strong-text-color: #d8d8d8;
   --ls-selection-background-color: #3e3e41;
+  --ls-block-highlight-color: #3e3e41;
 
   // ui
   --ls-icon-color: #767676;
@@ -119,7 +120,6 @@ html[data-theme="dark"] {
 
   --ls-menu-hover-color: #36383b;
   --ls-slide-background-color: var(--ls-primary-background-color);
-  --ls-block-highlight-color: #3e3e41;
 
   --ls-head-text-color: #ffe27c;
 
@@ -151,8 +151,8 @@ html[data-theme="light"] {
   --ls-quaternary-background-color: #e8e8e8;
 
   // block bg
-  --ls-block-properties-background-color: #f5f5f5;
-  --ls-page-properties-background-color: #f5f5f5;
+  --ls-page-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-properties-background-color: var(--ls-page-properties-background-color);
   --ls-callout-background-color: #ebecedb5;
   --bf-codeblock-background-color: #f7f6f3;
   --ls-table-tr-even-background-color: #0000000a;
@@ -221,5 +221,5 @@ html[data-theme="light"] {
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
   --ls-block-bullet-active-color: #6ea7eead; // in log-seq dev theme
-  --bf-hard-shadow-color: #e6e6e6;
+  --bf-hard-shadow-color: var(--ls-block-bullet-border-color);
 }

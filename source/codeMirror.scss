@@ -29,6 +29,7 @@
 .extensions__code {
   display: block;
   background-color: var(--bf-codeblock-background-color); // calculator result
+  border-radius: 0.25rem; // with .CodeMirror
 
   .code-editor {
     margin: 0.5rem 0;
@@ -54,7 +55,7 @@
     border-radius: 0.25rem;
 
 
-    CodeMirror-sizer .CodeMirror-lines {
+    .CodeMirror-sizer .CodeMirror-lines {
       .CodeMirror-cursors .CodeMirror-cursor {
         border-left: solid thin #82aaff;
       }

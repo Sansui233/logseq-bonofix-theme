@@ -37,9 +37,14 @@ html[data-theme="light"] {
     }
   }
 
-  .cp__right-sidebar {
-    .block-properties.page-properties {
-      --ls-page-properties-background-color: #f0f0f0;
+  .cp__right-sidebar,
+  .references-blocks-item {
+
+    --ls-page-properties-background-color: #efefef;
+    --bf-codeblock-background-color: #f3f1ed;
+
+    .marker-switch {
+      background: #e8e7e3;
     }
   }
 }

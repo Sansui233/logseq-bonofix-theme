@@ -225,6 +225,7 @@ html ::-webkit-scrollbar-thumb:hover {
     padding: 16px 16px 16px 12px;
     background-color: var(--ls-callout-background-color);
     margin: unset;
+    border-radius: 0.25rem;
     .text-lg {
       font-size: 0.9em;
       margin-left: 0;
@@ -273,13 +274,16 @@ html ::-webkit-scrollbar-thumb:hover {
   h4,
   h5 {
     margin-top: 0;
+    padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 0;
   }
   .editor-inner textarea {
-    margin: 0 0 !important;
     &.h2,
     &.h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
       border-bottom: unset;
     }
   }
@@ -335,7 +339,8 @@ html ::-webkit-scrollbar-thumb:hover {
     border-radius: 3px;
     font-size: 85%;
     font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
-    padding: 0.2em 0.4em !important;
+    padding: 2px 6px !important;
+    margin: 0 1px;
     color: #eb5757;
     background-color: var(--ls-page-inline-code-bg-color);
   }
@@ -352,7 +357,7 @@ html ::-webkit-scrollbar-thumb:hover {
       background: var(--ls-block-properties-background-color);
       padding: 1em 0;
       border-radius: 0.375rem;
-      border-bottom: 2px solid var(--bf-hard-shadow-color);
+      border: solid 1px var(--bf-hard-shadow-color);
       box-shadow: 0 0 5px var(--bf-hard-shadow-color);
 
       & > .block-children {
@@ -398,7 +403,7 @@ html ::-webkit-scrollbar-thumb:hover {
 
   // query
   .custom-query {
-    & > .th{
+    & > .th {
       margin-bottom: 0.5rem;
       font-size: 0.825rem;
       text-transform: uppercase;
@@ -436,7 +441,7 @@ html ::-webkit-scrollbar-thumb:hover {
 
 .content.doc-mode {
   .ls-block {
-    margin-bottom: 0.35rem;
+    padding: 0.25rem;
     h1 {
       margin-top: 1rem;
       margin-bottom: 0.35rem;
@@ -474,6 +479,14 @@ html ::-webkit-scrollbar-thumb:hover {
     .admonitionblock {
       margin: 0.5rem 0;
     }
+  }
+}
+
+.references-blocks-item {
+  background-color: var(--ls-secondary-background-color);
+
+  div[data-refs-self*='"card"'] > .block-children-container {
+    background: var(--ls-primary-background-color);
   }
 }
 
