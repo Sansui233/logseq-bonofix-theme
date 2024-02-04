@@ -213,6 +213,10 @@ html ::-webkit-scrollbar-thumb:hover {
     border-radius: unset;
     transition: background-color 0.3s;
     padding: 0 1px;
+
+    &:hover {
+      --ls-block-left-color: var(--ls-active-secondary-color);
+    }
   }
   .block-properties {
     margin: 8px 0;
@@ -220,6 +224,7 @@ html ::-webkit-scrollbar-thumb:hover {
   }
   blockquote {
     background-color: unset;
+    border-color: var(--ls-primary-text-color);
   }
   .admonitionblock {
     padding: 16px 16px 16px 12px;
@@ -244,16 +249,20 @@ html ::-webkit-scrollbar-thumb:hover {
           height: 1.7em;
         }
         &.important {
-          color: #e54040;
+          color: #f17272; // TODO deprecate in next major version
+          fill: #f17272;
         }
         &.caution {
-          color: #ff8d55;
+          color: #ffb381;
+          fill: #ffb381;
         }
         &.tip {
-          color: #ffac54;
+          color: #4ca6f5;
+          fill: #4ca6f5;
         }
         &.note {
           color: var(--ls-secondary-text-color);
+          fill: var(--ls-secondary-text-color);
         }
       }
     }
@@ -293,9 +302,9 @@ html ::-webkit-scrollbar-thumb:hover {
       border-radius: 10px;
       margin: 2px 0px;
       color: var(--ls-tag-text-color);
-      background-color: var(--lx-accent-11, var(--bf-tag-background-color));
+      background-color: var(--bf-tag-background-color);
       &:hover {
-        background-color: var(--lx-accent-11, var(--bf-tag-background-hover-color));
+        background-color: var(--bf-tag-background-color);
       }
     }
     &.external-link {

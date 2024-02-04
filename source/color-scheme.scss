@@ -29,6 +29,34 @@ $blue_light7: #106bc6;  // (fixed)
   --ls-tag-text-hover-opacity: 0.8;
   --ls-page-text-size: 1em;
   --ls-page-title-size: 36px;
+  
+  --rx-logseq-01: #fff;
+  --rx-logseq-02: #ecf3fd;
+  --rx-logseq-03: #d7e7fe;
+  --rx-logseq-04: #c0dbfd;
+  --rx-logseq-05: #a8cffd;
+  --rx-logseq-06: #{$blue_light1};
+  --rx-logseq-07: #{$blue_light2};
+  --rx-logseq-08: #{$blue_light3};
+  --rx-logseq-09: #{$blue_light4};
+  --rx-logseq-10: #{$blue_light5};
+  --rx-logseq-11: #{$blue_light6};
+  --rx-logseq-12: $blue_light7;
+}
+
+html.dark, html[data-theme=dark] {
+  --rx-logseq-01: #0e4d8b;
+  --rx-logseq-02: #1b5fa0;
+  --rx-logseq-03: #2670b3;
+  --rx-logseq-04: #{$blue_dark7};
+  --rx-logseq-05: #{$blue_dark6};
+  --rx-logseq-06: #{$blue_dark5};
+  --rx-logseq-07: #{$blue_dark4};
+  --rx-logseq-08: #{$blue_dark3};
+  --rx-logseq-09: #{$blue_dark2};
+  --rx-logseq-10: #{$blue_dark1};
+  --rx-logseq-11: #{$blue_dark4};
+  --rx-logseq-12: #d1e6fe;
 }
 
 /* *****************************
@@ -51,7 +79,7 @@ html[data-theme="dark"] {
   // block bg (hue 232)
   --ls-page-properties-background-color: var(--ls-secondary-background-color);
   --ls-block-properties-background-color: var(--ls-page-properties-background-color);
-  --ls-callout-background-color: #45464f4d;
+  --ls-callout-background-color: var(--ls-page-properties-background-color);
   --bf-codeblock-background-color: #313238;
   --ls-table-tr-even-background-color: #adaeb81c;
 
@@ -153,7 +181,7 @@ html[data-theme="light"] {
   // block bg
   --ls-page-properties-background-color: var(--ls-secondary-background-color);
   --ls-block-properties-background-color: var(--ls-page-properties-background-color);
-  --ls-callout-background-color: #ebecedb5;
+  --ls-callout-background-color: var(--ls-page-properties-background-color);
   --bf-codeblock-background-color: #f7f6f3;
   --ls-table-tr-even-background-color: #0000000a;
 
