@@ -400,6 +400,8 @@ html ::-webkit-scrollbar-thumb:hover {
   tr td {
     font-size: 0.95em;
     padding: 0.5em 0.5em 0.5em 0.875em;
+    min-width: 17ch;
+    text-wrap: pretty;
   }
   tbody {
     tr:not(:last-child) {
@@ -498,6 +500,14 @@ html ::-webkit-scrollbar-thumb:hover {
     background: var(--ls-primary-background-color);
   }
 }
+
+// 2024-02-26 block-bullet plugin style
+// .bullet-container:not(.typed-list){
+//   .bullet {
+//     background-color: var(--ls-block-bullet-active-color);
+//     opacity: 1;
+//   }
+// }
 
 /******************************************
  **************  tippy  *****************

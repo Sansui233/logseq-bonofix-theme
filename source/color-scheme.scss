@@ -248,6 +248,6 @@ html[data-theme="light"] {
 
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
-  --ls-block-bullet-active-color: #6ea7eead; // in log-seq dev theme
+  --ls-block-bullet-active-color: #{$blue_light3}; // in log-seq dev theme
   --bf-hard-shadow-color: var(--ls-block-bullet-border-color);
 }
