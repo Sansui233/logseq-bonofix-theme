@@ -1,6 +1,10 @@
 /*****************************************
   Common Theme
 *****************************************/
+body{
+  background-color: var(--ls-primary-background-color);
+}
+
 .cp__header {
   div[data-type="toolbar"] {
     a {

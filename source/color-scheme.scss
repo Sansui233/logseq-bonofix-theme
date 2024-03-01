@@ -29,8 +29,10 @@ $blue_light7: #106bc6;  // (fixed)
   --ls-tag-text-hover-opacity: 0.8;
   --ls-page-text-size: 1em;
   --ls-page-title-size: 36px;
-  
-  --rx-logseq-01: #fff;
+}
+
+html[data-color=logseq][data-theme=light] {
+  --rx-logseq-01: #ffffff;
   --rx-logseq-02: #ecf3fd;
   --rx-logseq-03: #d7e7fe;
   --rx-logseq-04: #c0dbfd;
@@ -42,9 +44,11 @@ $blue_light7: #106bc6;  // (fixed)
   --rx-logseq-10: #{$blue_light5};
   --rx-logseq-11: #{$blue_light6};
   --rx-logseq-12: #{$blue_light7};
+
+  --accent: 212 84% 54%; // #{$blue_light5};
+  --primary: 212 84% 54%; // accent
 }
 
-html.dark, html[data-theme=dark],
 html[data-color=logseq][data-theme=dark] // v0.10.7
 {
   --rx-logseq-01: #0e4d8b;
@@ -129,7 +133,7 @@ html[data-theme="dark"] {
   --bf-query-clause-background-hover-color: #2f82c633;
 
   // guildline
-  --ls-block-bullet-border-color: #ffffff14;
+  --ls-block-bullet-border-color: #ffffff25;
   --ls-block-bullet-color: #ffffff25;
   --ls-guideline-color: #ffffff14;
 
@@ -229,9 +233,9 @@ html[data-theme="light"] {
   --bf-query-clause-background-hover-color: #8fc3ff33;
 
   // guildline
-  --ls-block-bullet-border-color: #dedede85;
-  --ls-block-bullet-color: #00000018;
-  --ls-guideline-color: rgba(62, 62, 63, 0.08);
+  --ls-block-bullet-border-color: #00000024;
+  --ls-block-bullet-color: #c7c7c7;
+  --ls-guideline-color: #00000024;
 
   // markdown content
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
