@@ -33,10 +33,8 @@ body{
   }
 
   // block header font
-  .nav-content-item .header .wrap-th > span {
-    font-size: 0.85rem;
-    opacity: 0.6;
-    transition: opacity ease 0.3s;
+  .nav-content-item .header .wrap-th>strong {
+    font-size: 0.8rem;
   }
 
   // icon baseline is not aligned with font.
@@ -189,9 +187,9 @@ html ::-webkit-scrollbar-thumb:hover {
  **************  Content  *****************
  ******************************************/
 .content {
-  hr {
-    margin: 0.1rem 0;
-  }
+  // hr {
+  //   margin: 0.1rem 0;
+  // }
   // div[haschild="true"] > div.block-children-container {
   //   margin-bottom: 0.3rem;
   // }
@@ -482,9 +480,8 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.references-blocks-item {
-  background-color: var(--ls-secondary-background-color);
-
+.references-blocks-item,
+.cp__right-sidebar {
   div[data-refs-self*='"card"'] > .block-children-container {
     background: var(--ls-primary-background-color);
   }

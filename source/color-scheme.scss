@@ -102,9 +102,9 @@ html[data-theme="dark"] {
   --ls-left-sidebar-background-color: var(--ls-secondary-background-color); // fix bug in logseq v0.10.0 mobile view.
 
   // block bg (hue 232)
-  --ls-page-properties-background-color: var(--ls-secondary-background-color);
+  --ls-page-properties-background-color: var(--ls-tertiary-background-color);
   --ls-block-properties-background-color: var(--ls-page-properties-background-color);
-  --ls-callout-background-color: var(--ls-page-properties-background-color);
+  --ls-callout-background-color: #ffffff08;
   --bf-codeblock-background-color: #313238;
   --ls-table-tr-even-background-color: #adaeb81c;
 
@@ -144,6 +144,7 @@ html[data-theme="dark"] {
   // markdown content
   --ls-page-checkbox-color: #{$blue_dark5};
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+  --ls-page-blockquote-color: var(--ls-primary-text-color);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
   --ls-page-inline-code-color: #eb5757;
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
@@ -204,9 +205,9 @@ html[data-theme="light"] {
   --ls-quaternary-background-color: #e8e8e8;
 
   // block bg
-  --ls-page-properties-background-color: var(--ls-secondary-background-color);
-  --ls-block-properties-background-color: var(--ls-page-properties-background-color);
-  --ls-callout-background-color: var(--ls-page-properties-background-color);
+  --ls-page-properties-background-color: #f3f3f3;
+  --ls-block-properties-background-color: #f3f3f3;
+  --ls-callout-background-color: #00000008;
   --bf-codeblock-background-color: #f7f6f3;
   --ls-table-tr-even-background-color: #0000000a;
 
@@ -243,6 +244,7 @@ html[data-theme="light"] {
 
   // markdown content
   --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+  --ls-page-blockquote-color: var(--ls-primary-text-color);
   --ls-page-blockquote-border-color: var(--ls-primary-text-color);
   --ls-page-checkbox-color: #{$blue_light2};
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
