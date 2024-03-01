@@ -3,9 +3,12 @@
 *****************************************/
 
 html[data-theme="dark"] {
-  .cp__header{
+  // v0.10.7
+
+  .cp__header {
     .dropdown-wrapper {
-      a,span {
+      a,
+      span {
         opacity: 1; // fix opacity in dropdown menu when in darkmode
       }
     }
@@ -15,7 +18,6 @@ html[data-theme="dark"] {
       color: var(--ls-primary-text-color);
     }
   }
-
 
   .content {
     b,
@@ -84,5 +86,28 @@ html[data-theme="dark"] {
 
   .ui__modal-overlay div {
     background: var(--ls-primary-background-color);
+  }
+  .tippy-tooltip,
+  .tippy-wrapper {
+    background-color: var(--ls-secondary-background-color);
+  }
+
+  // v0.10.7
+  &[data-color="logseq"] {
+    .cp__cmdk > .hints,
+    .ui__modal-panel,
+    .tippy-tooltip,
+    .form-input {
+      border-color: var(--ls-border-color);
+    }
+
+    .ui__button.as-ghost:hover {
+      background-color: #ffffff22;  
+    }
+
+    .cp__themes-installed .it.is-active,
+    .cp__themes-installed .it:hover {
+      background-color: var(--ls-table-tr-even-background-color);
+    }
   }
 }

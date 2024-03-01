@@ -41,10 +41,12 @@ $blue_light7: #106bc6;  // (fixed)
   --rx-logseq-09: #{$blue_light4};
   --rx-logseq-10: #{$blue_light5};
   --rx-logseq-11: #{$blue_light6};
-  --rx-logseq-12: $blue_light7;
+  --rx-logseq-12: #{$blue_light7};
 }
 
-html.dark, html[data-theme=dark] {
+html.dark, html[data-theme=dark],
+html[data-color=logseq][data-theme=dark] // v0.10.7
+{
   --rx-logseq-01: #0e4d8b;
   --rx-logseq-02: #1b5fa0;
   --rx-logseq-03: #2670b3;
@@ -57,6 +59,21 @@ html.dark, html[data-theme=dark] {
   --rx-logseq-10: #{$blue_dark1};
   --rx-logseq-11: #{$blue_dark4};
   --rx-logseq-12: #d1e6fe;
+  --background: 225 6% 13%; // --ls-primary-background-color
+  --popover: 228 6% 16%; // --ls-secondary-background-color
+  --accent: 207 60% 54%; // #{$blue_dark6};
+  --border: 0 0.01% 25%; // #3f3f3f
+  --primary: 210 60% 54%; // accent
+  --secondary: 210 85% 42% / 20%; // dimmed accent
+  --muted: 210 85% 42% / 20%; // dimmed accent
+  --card: 210 85% 42% / 20%; // dimmed accent
+  --input: 210 35% 25%;
+}
+
+html[data-theme=dark][data-color=logseq] .ui__context-menu-content,
+html[data-theme=dark][data-color=logseq] .ui__dropdown-menu-content,
+html[data-theme=dark][data-color=logseq] .ui__select-content { // v0.10.7
+  --accent: 235 7% 70% / 0.11; // Selection
 }
 
 /* *****************************
@@ -127,9 +144,9 @@ html[data-theme="dark"] {
   --ls-block-highlight-color: #3e3e41;
 
   // ui
-  --ls-icon-color: #767676;
+  --ls-icon-color: #b5b5b5;
   --ls-search-icon-color: var(--ls-quaternary-background-color);
-  --ls-header-button-text-color: #767676;
+  --ls-header-button-text-color: #b5b5b5;
   --ls-header-button-text-color-hover: var(--ls-primary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
