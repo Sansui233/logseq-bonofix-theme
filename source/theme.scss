@@ -1,7 +1,7 @@
 /*****************************************
   Common Theme
 *****************************************/
-body{
+body {
   background-color: var(--ls-primary-background-color);
 }
 
@@ -10,7 +10,7 @@ body{
   --ls-header-button-background: var(--ls-header-button-text-color);
 
   & button,
-  &>.r>div:not(.ui__dropdown-trigger) a {
+  & > .r > div:not(.ui__dropdown-trigger) a {
     color: var(--ls-header-button-text-color);
   }
 }
@@ -33,7 +33,7 @@ body{
   }
 
   // block header font
-  .nav-content-item .header .wrap-th>strong {
+  .nav-content-item .header .wrap-th > strong {
     font-size: 0.8rem;
   }
 
@@ -362,40 +362,48 @@ html ::-webkit-scrollbar-thumb:hover {
     }
   }
 
-  // table
-  table {
+  .query-table > table {
     // word-break: break-word; is deprecated.
     word-break: normal; // avoid break on file name like xxx.js
-  }
-  th {
-    border-top: solid 1.5px var(--ls-secondary-border-color);
-    border-bottom: solid 1px var(--ls-secondary-border-color);
-    text-transform: capitalize;
-    color: #9f9f9f;
-    padding: 0.5em 0.5em 0.5em 0.875em;
-    a {
+    th {
+      border-top: solid 1.5px var(--ls-border-color);
+      border-bottom: solid 1px var(--ls-border-color);
+      text-transform: capitalize;
       color: #9f9f9f;
+      padding: 0.5em 0.5em 0.5em 0.875em;
+      a {
+        color: #9f9f9f;
+      }
+      a:hover {
+        color: var(--ls-primary-text-color);
+      }
     }
-    a:hover {
-      color: var(--ls-primary-text-color);
+    th:not(:last-child),
+    td:not(:last-child) {
+      border-right: solid 1px var(--ls-border-color);
+    }
+    tr td {
+      font-size: 0.95em;
+      padding: 0.5em 0.5em 0.5em 0.875em;
+      min-width: 17ch;
+      text-wrap: pretty;
+    }
+    tbody {
+      tr:not(:last-child) {
+        border-bottom: solid 1px var(--ls-border-color);
+      }
+      tr:last-child {
+        border-bottom: solid 1.5px var(--ls-border-color);
+      }
     }
   }
-  th:not(:last-child),
-  td:not(:last-child) {
-    border-right: solid 1px var(--ls-secondary-border-color);
-  }
-  tr td {
-    font-size: 0.95em;
-    padding: 0.5em 0.5em 0.5em 0.875em;
-    min-width: 17ch;
-    text-wrap: pretty;
-  }
-  tbody {
-    tr:not(:last-child) {
-      border-bottom: solid 1px var(--ls-secondary-border-color);
-    }
-    tr:last-child {
-      border-bottom: solid 1.5px var(--ls-secondary-border-color);
+
+  .datapicker {
+    tr td {
+      font-size: unset;
+      min-width: unset;
+      padding: unset;
+      text-wrap: unset;
     }
   }
 
