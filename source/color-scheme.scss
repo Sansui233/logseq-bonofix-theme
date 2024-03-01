@@ -31,6 +31,10 @@ $blue_light7: #106bc6;  // (fixed)
   --ls-page-title-size: 36px;
 }
 
+/* ****************************
+***** New design system *******
+*******************************/
+
 html[data-color=logseq][data-theme=light] {
   --rx-logseq-01: #ffffff;
   --rx-logseq-02: #ecf3fd;
@@ -133,9 +137,9 @@ html[data-theme="dark"] {
   --bf-query-clause-background-hover-color: #2f82c633;
 
   // guildline
-  --ls-block-bullet-border-color: #ffffff25;
+  --ls-block-bullet-border-color: #ffffff18;
   --ls-block-bullet-color: #ffffff25;
-  --ls-guideline-color: #ffffff14;
+  --ls-guideline-color: #ffffff25;
 
   // markdown content
   --ls-page-checkbox-color: #{$blue_dark5};
@@ -233,7 +237,7 @@ html[data-theme="light"] {
   --bf-query-clause-background-hover-color: #8fc3ff33;
 
   // guildline
-  --ls-block-bullet-border-color: #00000024;
+  --ls-block-bullet-border-color: #00000015;
   --ls-block-bullet-color: #c7c7c7;
   --ls-guideline-color: #00000024;
 
@@ -245,8 +249,8 @@ html[data-theme="light"] {
 
   // ui
   --ls-icon-color: #919191;
-  --ls-header-button-text-color: #999999;
-  --ls-header-button-text-color-hover: var(--ls-primary-text-color);
+  --ls-header-button-text-color: #999;
+  --ls-header-button-text-color-hover: var(--ls-secondary-text-color);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
   --ls-button-background-hsl: 211.96 83.97% 53.53%; // $blue_light5

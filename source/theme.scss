@@ -6,35 +6,12 @@ body{
 }
 
 .cp__header {
-  div[data-type="toolbar"] {
-    a {
-      color: var(--ls-header-button-text-color);
-    }
-    a:hover {
-      color: var(--ls-header-button-text-color-hover);
-    }
-    .dropdown-wrapper {
-      a,
-      a:hover,
-      span {
-        color: var(--ls-primary-text-color);
-      }
-    }
-  }
-  .dropdown-wrapper {
-    a,
-    a:hover,
-    span {
-      color: var(--ls-primary-text-color);
-    }
-  }
-  button,
-  .cp__header > .r > div:not(.ui__dropdown-trigger) a {
-    color: var(--ls-header-button-text-color);
+  // Wrong semantics in logseq current v0.10.7 ?
+  --ls-header-button-background: var(--ls-header-button-text-color);
 
-    &:hover {
-      color: var(--ls-header-button-text-color-hover);
-    }
+  & button,
+  &>.r>div:not(.ui__dropdown-trigger) a {
+    color: var(--ls-header-button-text-color);
   }
 }
 
