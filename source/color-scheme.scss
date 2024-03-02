@@ -110,7 +110,8 @@ html[data-theme="dark"] {
 
   // borders
   --ls-border-color: #3f3f3f;
-  --ls-secondary-border-color: #505255;
+  // --ls-secondary-border-color: #505255;
+  --ls-secondary-border-color: #{$blue_dark6};
 
   // accent color (link, hover)
   --ls-link-ref-text-color: #{$blue_dark3};
@@ -213,6 +214,7 @@ html[data-theme="light"] {
 
   // borders
   --ls-border-color: #d4d4d4;
+  --ls-secondary-border-color: #{$blue_light1};
 
   // accent color (link, hover)
   --ls-link-ref-text-color: #{$blue_light4};
