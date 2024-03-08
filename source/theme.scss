@@ -291,7 +291,7 @@ html ::-webkit-scrollbar-thumb:hover {
       color: var(--ls-tag-text-color);
       background-color: var(--lx-accent-10,var(--bf-tag-background-color));
       &:hover {
-        background-color: var(--lx-accent-06,var(--bf-tag-background-color-hover));
+        text-decoration: unset;
       }
     }
     &.external-link {
@@ -306,6 +306,7 @@ html ::-webkit-scrollbar-thumb:hover {
     font-style: italic;
     color: var(--ls-primary-text-color);
   }
+
   // checkbox
   .form-checkbox {
     border-radius: 50%;
@@ -362,7 +363,9 @@ html ::-webkit-scrollbar-thumb:hover {
     }
   }
 
-  .query-table > table {
+  // tables
+  .query-table > table,
+  .custom-query-results table{
     // word-break: break-word; is deprecated.
     word-break: normal; // avoid break on file name like xxx.js
     th {
@@ -397,22 +400,11 @@ html ::-webkit-scrollbar-thumb:hover {
       }
     }
   }
-
-  .datapicker {
-    tr td {
-      font-size: unset;
-      min-width: unset;
-      padding: unset;
-      text-wrap: unset;
-    }
-  }
-
-  // query
+  
   .custom-query {
     & > .th {
       margin-bottom: 0.5rem;
       font-size: 0.825rem;
-      text-transform: uppercase;
       font-weight: 500;
       opacity: 0.5;
     }
@@ -421,26 +413,27 @@ html ::-webkit-scrollbar-thumb:hover {
       margin-top: 0.5rem;
     }
   }
+  // query builder
   .cp__query-builder {
     .query-clause-btn {
       padding: 0 0.5rem;
       line-height: 1.5rem;
       border-radius: 1.5rem;
       border-color: var(--ls-secondary-border-color, var(--bf-query-clause-border-color));
-      background-color: color-mix(in srgb, var(--lx-accent-02) 25%, transparent);
+      background-color: color-mix(in srgb, var(--lx-accent-03) 25%, transparent);
       &:hover {
-        background-color: color-mix(in srgb, var(--lx-accent-03) 25%, transparent);
+        background-color: color-mix(in srgb, var(--lx-accent-04) 25%, transparent);
       }
     }
     a.query-clause {
-      color: var(--lx-accent-11,var(--ls-active-secondary-color));
+      color: var(--lx-accent-09,var(--ls-active-secondary-color));
     }
     a.add-filter {
       opacity: 0.4;
     }
     a.add-filter:hover {
       opacity: 1;
-      color: var(--lx-accent-11,var(--bf-tag-background-color));
+      color: var(--lx-accent-09,var(--bf-tag-background-color));
     }
   }
 }

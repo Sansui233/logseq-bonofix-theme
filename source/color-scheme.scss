@@ -55,18 +55,18 @@ html[data-color=logseq][data-theme=light] {
 
 html[data-color=logseq][data-theme=dark] // v0.10.7
 {
-  --rx-logseq-01: #0e4d8b;
-  --rx-logseq-02: #1b5fa0;
-  --rx-logseq-03: #2670b3;
-  --rx-logseq-04: #{$blue_dark7};
-  --rx-logseq-05: #{$blue_dark6};
-  --rx-logseq-06: #{$blue_dark5};
-  --rx-logseq-07: #{$blue_dark4};
-  --rx-logseq-08: #{$blue_dark3};
-  --rx-logseq-09: #{$blue_dark2};
-  --rx-logseq-10: #{$blue_dark1};
-  --rx-logseq-11: #{$blue_dark4};
-  --rx-logseq-12: #d1e6fe;
+  --rx-logseq-01: #093562;
+  --rx-logseq-02: #0f4276;
+  --rx-logseq-03: #0e4d8b;
+  --rx-logseq-04: #1b5fa0;
+  --rx-logseq-05: #2670b3;
+  --rx-logseq-06: #{$blue_dark7};
+  --rx-logseq-07: #{$blue_dark6};
+  --rx-logseq-08: #{$blue_dark5};
+  --rx-logseq-09: #{$blue_dark4};
+  --rx-logseq-10: #{$blue_dark3};
+  --rx-logseq-11: #{$blue_dark3}; // link text color
+  --rx-logseq-12: #{$blue_dark1};
   --background: 225 6% 13%; // --ls-primary-background-color
   --popover: 228 6% 16%; // --ls-secondary-background-color
   --accent: 207 60% 54%; // #{$blue_dark6};
@@ -76,12 +76,12 @@ html[data-color=logseq][data-theme=dark] // v0.10.7
   --muted: 210 85% 42% / 20%; // dimmed accent
   --card: 210 85% 42% / 20%; // dimmed accent
   --input: 210 35% 25%;
-}
 
-html[data-theme=dark][data-color=logseq] .ui__context-menu-content,
-html[data-theme=dark][data-color=logseq] .ui__dropdown-menu-content,
-html[data-theme=dark][data-color=logseq] .ui__select-content { // v0.10.7
-  --accent: 235 7% 70% / 0.11; // Selection
+  .ui__context-menu-content,
+  .ui__dropdown-menu-content,
+  .ui__select-content { // v0.10.7
+    --accent: 235 7% 70% / 0.11; // Selection
+  }
 }
 
 /* *****************************

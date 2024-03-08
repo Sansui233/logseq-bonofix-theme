@@ -28,10 +28,10 @@ html[data-theme="dark"] {
     a {
       &.tag {
         opacity: 0.83;
-        background-color: var(--lx-accent-04,var(--bf-tag-background-color));
+        background-color: var(--lx-accent-06,var(--bf-tag-background-color));
         &:hover {
           opacity: 1;
-          background-color: var(--lx-accent-05,var(--bf-tag-background-color-hover));
+          background-color: var(--lx-accent-07,var(--bf-tag-background-color-hover));
         }
       }
       &.external-link {

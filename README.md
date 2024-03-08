@@ -62,7 +62,7 @@ Here are two ways of installing theme in Logseq.
 - Calender emoji before journal title  
   <img src="./media/journal-title-emoji.png" alt="Journal Title Emoji" width="600px" />
 
-- Rounded tags  
+- Round tags  
   <img src="./media/tag-label.png" alt="Tags" width="300px" />
 
 - Round checkbox 
