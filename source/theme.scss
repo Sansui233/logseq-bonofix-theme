@@ -22,14 +22,14 @@ body {
   // Unifed hover bg color
   a.item:hover {
     opacity: unset;
-    background-color: var(--ls-a-chosen-bg);
+    background-color: var(--bf-a-chosen-bg);
   }
   .nav-content-item .bd ul a {
     opacity: 0.9;
   }
   .nav-content-item .header:hover,
   .nav-content-item .bd ul a:hover {
-    background-color: var(--ls-a-chosen-bg);
+    background-color: var(--bf-a-chosen-bg);
   }
 
   // block header font
@@ -481,8 +481,12 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 
+.references-blocks-item {
+  background: var(--lx-gray-02);
+}
+
 .references-blocks-item,
-.cp__right-sidebar {
+.cp__right-sidebar-inner {
   div[data-refs-self*='"card"'] > .block-children-container {
     background: var(--ls-primary-background-color);
   }
@@ -533,19 +537,6 @@ html ::-webkit-scrollbar-thumb:hover {
   a > span {
     // fix logseq bug
     width: 100%;
-  }
-}
-
-/******************************************
- **************  search  *****************
- ******************************************/
-
-// .chosen
-.search-results {
-  .bg-gray-03-alpha,
-  .bg-gray-04-alpha {
-    // temp selector
-    background-color: var(--ls-a-chosen-bg);
   }
 }
 

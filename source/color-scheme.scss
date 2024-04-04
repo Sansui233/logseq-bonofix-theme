@@ -84,6 +84,13 @@ html[data-color="logseq"][data-theme="dark"] {
   }
 }
 
+/**
+TODO Attention that logseq generates the whole color 
+pallete for every single accent color selector, which may lead
+the default color pallete completely expired in future.
+**/
+
+
 /* *****************************
 ********* Dark Theme ***********
 *******************************/
@@ -185,6 +192,7 @@ html[data-theme="dark"] {
   --color-level-4: #4c4e58;
 
   // Not in default theme.
+  --bf-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
   --ls-block-bullet-active-color: var(--lx-accent-07); // in log-seq dev theme
   --bf-hard-shadow-color: #1d1d1d;
@@ -278,5 +286,6 @@ html[data-theme="light"] {
   // Not in default theme.
   --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
   --ls-block-bullet-active-color: var(--rx-logseq-08); // in log-seq dev theme $blue_light8
+  --bf-a-chosen-bg: #0007100f;
   --bf-hard-shadow-color: var(--ls-block-bullet-border-color);
 }
