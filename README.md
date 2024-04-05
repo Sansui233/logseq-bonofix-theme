@@ -21,11 +21,12 @@ The style is strongly inspired by [logseq-bujo-theme](https://github.com/PiotrSs
 
 ![Desktop](./media/Desktop-2022-05-23.jpg)
 
-Now, it adapts to custom accent color in logseq's settings. You can change the default accent(blue) color without accent style breaking（2024-03-08 in logseq v0.10.7）. 
+It partially adapts to the custom accent color in logseq's settings. You can change the default accent(blue) color without obvious style breaking.
 
 ## Install
 
 Here are two ways of installing theme in Logseq.
+
 ### Install plugin
 
 <img src="./media/plugin.png" alt="Tags" width="450px" />
@@ -34,7 +35,6 @@ Here are two ways of installing theme in Logseq.
 
 - Open Logseq → Themes, choose your theme
 
-> The theme installed via plugin is not compatible with your local `custom.css`. Only plugin theme works.
 ### Install `custom.css`
 
 - General installation
@@ -55,7 +55,7 @@ Here are two ways of installing theme in Logseq.
 
 - Simple but functional colors
 
-- Make tippy window like responsive card instead of filling the screen and obscuring text
+- Make tippy window like responsive card instead of filling the screen and obscuring text. (Legacy bcz Logseq default theme has made it)
 
 - Wrap text in query table results to make it easier to read. Table remains to scroll if too many columns
 
@@ -91,4 +91,4 @@ npm install
 - [Logseq](https://github.com/logseq/logseq)
 - [logseq-bujo-theme](https://github.com/PiotrSss/logseq-bujo-theme) by PiotrSss
 - Dark mode of [Notion](https://notion.so)
-- All feedbacks from email and discord
+- All feedbacks from github issue, email and discord 

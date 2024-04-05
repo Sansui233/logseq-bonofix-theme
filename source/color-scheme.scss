@@ -44,7 +44,7 @@ html[data-theme="light"] {
   --bf-tag-background-color: var(--lx-accent-10);
 
   // query builder
-  --bf-query-clause-border-color: #{$blue_light6};
+  --bf-query-clause-border-color: var(--lx-accent-06);
   --bf-query-clause-background-color: #8fc3ff15;
   --bf-query-clause-background-hover-color: #8fc3ff33;
 
@@ -54,7 +54,8 @@ html[data-theme="light"] {
   --bf-scrollbar-thumb-hover-color: #8a8a8a61;
 
   --bf-a-chosen-bg: #0007100f;
-  --bf-hard-shadow-color: var(--ls-block-bullet-border-color);
+  --bf-hard-shadow-color: #00000015;
+  --bf-transparent-bg-mask: #88888813;
 }
 
 .dark-theme,
@@ -65,7 +66,7 @@ html[data-theme="dark"] {
   --bf-external-link-hover-color: #f29191;
 
   // query builder
-  --bf-query-clause-border-color: var(--ls-secondary-border-color, #{$blue_dark6});
+  --bf-query-clause-border-color: var(--lx-accent-06);
   --bf-query-clause-background-color: #2f82c615;
   --bf-query-clause-background-hover-color: #2f82c633;
 
@@ -76,13 +77,14 @@ html[data-theme="dark"] {
   --ls-scrollbar-background-color: #fff0;
   --bf-scrollbar-thumb-hover-color: #8a8a8a61;
 
-  --bf-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
+  --bf-a-chosen-bg: #adaeb81c; // --ls-menu-hover-color
   --bf-hard-shadow-color: #1d1d1d;
+  --bf-transparent-bg-mask: #86878920;
 }
 
 
 /* ****************************
-***** Color Specific *******
+***** Accent Color Specific *******
 *******************************/
 
 // Attention that logseq generates the whole color
@@ -90,9 +92,26 @@ html[data-theme="dark"] {
 // the default color pallete completely expired in future.
 
 // accent color design system
-html[data-color="cyan"] {
+
+html[data-color="tomato"],
+html[data-color="red"],
+html[data-color="crimson"],
+html[data-color="pink"],
+html[data-color="plum"],
+html[data-color="purple"],
+html[data-color="violet"],
+html[data-color="indigo"],
+html[data-color="blue"],
+html[data-color="cyan"],
+html[data-color="teal"],
+html[data-color="green"],
+html[data-color="grass"],
+html[data-color="orange"]
+{
   body {
-    --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+    // --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15); Please overwrite relative dom
+    --ls-tag-text-color: white;
+    --ls-tag-text-hover-color: white;
   }
   body.dark-theme {
     --ls-page-checkbox-color: var(--lx-accent-09);
@@ -183,9 +202,13 @@ html[data-color="logseq"] {
     --ls-title-text-color: #303537;
 
     // right sidebar, cmdk, and accent color-level-4……
-    --color-level-1: var(--ls-secondary-background-color);
-    --color-level-2: var(--ls-tertiary-background-color);
-    --color-level-3: var(--ls-quaternary-background-color);
+    // light mode color-level in this selector not work in v0.10.8 bcz another selector did this. really confusing.
+    // --color-level-1: var(--ls-tertiary-background-color);
+    // --color-level-2: var(--ls-quaternary-background-color);
+    // --color-level-3: #dfdfdf;
+    // --color-level-4: #d8d8d8;
+    // --color-level-5: #cfcfcf;
+    // --color-level-6: #c8c8c8;
   }
 
   &[data-theme="dark"] {

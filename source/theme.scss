@@ -195,21 +195,20 @@ html ::-webkit-scrollbar-thumb:hover {
     border-radius: unset;
     transition: background-color 0.3s;
     padding: 0 1px;
-    border-left-color: var(var(--ls-border-color,var(--rx-gray-09)), var(--lx-gray-09));
+    border-left-color: var(var(--ls-border-color, var(--rx-gray-09)), var(--lx-gray-09));
 
     &:hover {
       background-color: var(--lx-accent-11);
     }
   }
-  .block-properties {
+  .block-properties,
+  .page-properties {
     margin: 8px 0;
     padding: 10px 20px;
-  }
-  .block-properties, .page-properties {
-    background-color: var(--ls-block-properties-background-color,var(--rx-gray-03));
+    background-color: var(--ls-block-properties-background-color, var(--rx-gray-03));
   }
   .embed.color-level {
-    background-color:var(--color-level-1)
+    background-color: var(--bf-transparent-bg-mask);
   }
   blockquote {
     background-color: unset;
@@ -288,7 +287,7 @@ html ::-webkit-scrollbar-thumb:hover {
   a {
     &.tag {
       padding: 0px 7px;
-      border-radius: 10px;
+      border-radius: 1em;
       margin: 2px 0px;
       color: var(--ls-tag-text-color);
       background-color: var(--bf-tag-background-color);
@@ -367,7 +366,7 @@ html ::-webkit-scrollbar-thumb:hover {
 
   // tables
   .query-table > table,
-  .custom-query-results table{
+  .custom-query-results table {
     // word-break: break-word; is deprecated.
     word-break: normal; // avoid break on file name like xxx.js
     th {
@@ -402,7 +401,7 @@ html ::-webkit-scrollbar-thumb:hover {
       }
     }
   }
-  
+
   .custom-query {
     & > .th {
       margin-bottom: 0.5rem;
@@ -428,7 +427,7 @@ html ::-webkit-scrollbar-thumb:hover {
       }
     }
     a.query-clause {
-      color: var(--lx-accent-09,var(--ls-active-secondary-color));
+      color: var(--lx-accent-09, var(--ls-active-secondary-color));
     }
     a.add-filter {
       opacity: 0.4;
@@ -437,6 +436,10 @@ html ::-webkit-scrollbar-thumb:hover {
       opacity: 1;
       color: var(--bf-tag-background-color);
     }
+  }
+  // unset background for right sider and reference block
+  .block-content tr:nth-child(odd) {
+    background: unset;
   }
 }
 
@@ -483,15 +486,8 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.references-blocks-item,
-.cp__right-sidebar-inner {
-  div[data-refs-self*='"card"'] > .block-children-container {
-    background: var(--ls-primary-background-color);
-  }
-}
-
 .bullet-container:not(.typed-list) .bullet {
-  background-color: var(--ls-block-bullet-color,var(--rx-gray-08));
+  background-color: var(--ls-block-bullet-color, var(--rx-gray-08));
 }
 
 /******************************************
