@@ -27,265 +27,279 @@ $blue_light12: #106bc6; // (fixed)
   // --ls-main-content-max-width: 840px;
   --ls-tag-text-opacity: 0.6;
   --ls-tag-text-hover-opacity: 0.8;
-  --ls-page-text-size: 1em;
   --ls-page-title-size: 36px;
 }
 
-/* ****************************
-***** New design system *******
-*******************************/
-
-html[data-color="logseq"][data-theme="light"] {
-  --rx-logseq-01: #ffffff;
-  --rx-logseq-02: #ecf3fd;
-  --rx-logseq-03: #d7e7fe;
-  --rx-logseq-04: #c0dbfd;
-  --rx-logseq-05: #a8cffd;
-  --rx-logseq-06: #{$blue_light6};
-  --rx-logseq-07: #{$blue_light7};
-  --rx-logseq-08: #{$blue_light8};
-  --rx-logseq-09: #{$blue_light9};
-  --rx-logseq-10: #{$blue_light10};
-  --rx-logseq-11: #{$blue_light11};
-  --rx-logseq-12: #{$blue_light12};
-
-  --accent: 212 84% 54%; // #{$blue_light10};
-  --primary: 212 84% 54%; // accent
-}
-
-html[data-color="logseq"][data-theme="dark"] {
-  --rx-logseq-01: #093562;
-  --rx-logseq-02: #0f4276;
-  --rx-logseq-03: #0e4d8b;
-  --rx-logseq-04: #1b5fa0;
-  --rx-logseq-05: #2670b3;
-  --rx-logseq-06: #{$blue_dark6};
-  --rx-logseq-07: #{$blue_dark7};
-  --rx-logseq-08: #{$blue_dark8};
-  --rx-logseq-09: #{$blue_dark9};
-  --rx-logseq-10: #{$blue_dark10};
-  --rx-logseq-11: #{$blue_dark10}; // link text color
-  --rx-logseq-12: #{$blue_dark12};
-  --background: 225 6% 13%; // --ls-primary-background-color
-  --popover: 228 6% 16%; // --ls-secondary-background-color
-  --accent: 207 60% 54%; // #{$blue_dark7};
-  --border: 0 0.01% 25%; // #3f3f3f
-  --primary: 210 60% 54%; // accent
-  --secondary: 210 85% 42% / 20%; // dimmed accent
-  --muted: 210 85% 42% / 20%; // dimmed accent
-  --card: 210 85% 42% / 20%; // dimmed accent
-  --input: 210 35% 25%;
-
-  .ui__context-menu-content,
-  .ui__dropdown-menu-content,
-  .ui__select-content {
-    // v0.10.7
-    --accent: 235 7% 70% / 0.11; // Selection
-  }
-}
-
-/**
-TODO Attention that logseq generates the whole color 
-pallete for every single accent color selector, which may lead
-the default color pallete completely expired in future.
-**/
-
-
-/* *****************************
-********* Dark Theme ***********
-*******************************/
-
-.dark-theme,
-html[data-theme="dark"] {
-  // main text
-  --ls-primary-text-color: #cecece;
-  --ls-secondary-text-color: #bbb;
-
-  // main background (linear gradient)
-  --ls-primary-background-color: #202124;
-  --ls-secondary-background-color: #27282c;
-  --ls-tertiary-background-color: #303235;
-  --ls-quaternary-background-color: #36383b;
-  --ls-left-sidebar-background-color: var(--ls-secondary-background-color); // fix bug in logseq v0.10.0 mobile view.
-
-  // block bg (hue 232)
-  --ls-page-properties-background-color: var(--ls-tertiary-background-color);
-  --ls-block-properties-background-color: var(--ls-page-properties-background-color);
-  --ls-callout-background-color: #ffffff08;
-  --bf-codeblock-background-color: #313238;
-  --ls-table-tr-even-background-color: #adaeb81c;
-
-  // borders
-  --ls-border-color: #3f3f3f;
-  // --ls-secondary-border-color: #505255;
-  --ls-secondary-border-color: var(--rx-logseq-07);
-
-  // accent color (link, hover)
-  --ls-link-ref-text-color: var(--rx-logseq-11);
-  --ls-link-ref-text-hover-color: var(--rx-logseq-12);
-  --ls-active-primary-color: var(--ls-link-ref-text-color);
-  --ls-active-secondary-color: var(--rx-logseq-08);
-  --ls-block-ref-link-text-color: var(--rx-logseq-09);
-  --bf-external-link-color: #e86e6e;
-  --bf-external-link-hover-color: #f29191;
-  --ls-link-text-color: var(--ls-link-ref-text-color);
-  --ls-link-text-hover-color: var(--ls-link-ref-text-hover-color);
-  --ls-alink-color: var(--ls-link-text-color);
-  --ls-cloze-text-color: var(--ls-link-ref-text-color);
-
-  // tags
-  --ls-tag-text-color: white;
-  --ls-tag-text-hover-color: white;
-  --bf-tag-background-color: #{$blue_dark6};
-  --bf-tag-background-hover-color: #{$blue_dark7};
-
-  // query builder
-  --bf-query-clause-border-color: #{$blue_dark6};
-  --bf-query-clause-background-color: #2f82c615;
-  --bf-query-clause-background-hover-color: #2f82c633;
-
-  // guildline
-  --ls-block-bullet-border-color: #ffffff18;
-  --ls-block-bullet-color: #ffffff25;
-  --ls-guideline-color: #ffffff25;
-
-  // markdown content
-  --ls-page-checkbox-color: var(--rx-logseq-08);
-  --ls-page-checkbox-border-color: var(--ls-primary-background-color);
-  --ls-page-blockquote-color: var(--ls-primary-text-color);
-  --ls-page-blockquote-border-color: var(--ls-primary-text-color);
-  --ls-page-inline-code-color: #eb5757;
-  --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
-  --bf-strong-text-color: #d8d8d8;
-  --ls-selection-background-color: #3e3e41;
-  --ls-block-highlight-color: #3e3e41;
-
-  // ui
-  --ls-icon-color: #b5b5b5;
-  --ls-search-icon-color: var(--ls-quaternary-background-color);
-  --ls-header-button-text-color: #b5b5b5;
-  --ls-header-button-text-color-hover: var(--ls-primary-text-color);
-  --ls-header-button-background: var(--ls-secondary-background-color);
-  --ls-left-sidebar-text-color: var(--ls-primary-text-color);
-  --ls-button-background-hsl: 207 60% 54%; // $blue_dark7
-
-  // ui --ls-menu-chosen-color
-  --ls-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
-
-  // ui - scrollbar
-  --ls-scrollbar-foreground-color: #8a8a8a3d;
-  --ls-scrollbar-background-color: #fff0;
-  --bf-scrollbar-thumb-hover-color: #8a8a8a61;
-
-  // misc
-  --ls-title-text-color: var(--ls-primary-text-color);
-
-  --ls-menu-hover-color: #36383b;
-  --ls-slide-background-color: var(--ls-primary-background-color);
-
-  --ls-head-text-color: #ffe27c;
-
-  // right sidebar, cmdk, and accent color-level-4……
-  --color-level-1: var(--ls-secondary-background-color);
-  --color-level-2: var(--ls-tertiary-background-color);
-  --color-level-3: var(--ls-quaternary-background-color);
-  --color-level-4: #4c4e58;
-
-  // Not in default theme.
-  --bf-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
-  --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
-  --ls-block-bullet-active-color: var(--lx-accent-07); // in log-seq dev theme
-  --bf-hard-shadow-color: #1d1d1d;
-}
-
-/* *****************************
-********* White Theme ***********
-*******************************/
+/* **************************
+****** Common Fallbacks *****
+*****************************/
 
 .white-theme,
 html[data-theme="light"] {
-  // main text
-  --ls-primary-text-color: #2b2926;
-
-  // main background (linear gradient)
-  --ls-primary-background-color: #fff;
-  --ls-secondary-background-color: #f8f8f8;
-  --ls-tertiary-background-color: #efefef;
-  --ls-quaternary-background-color: #e8e8e8;
-
-  // block bg
-  --ls-page-properties-background-color: #f3f3f3;
-  --ls-block-properties-background-color: #f3f3f3;
-  --ls-callout-background-color: #00000008;
   --bf-codeblock-background-color: #f7f6f3;
-  --ls-table-tr-even-background-color: #0000000a;
 
-  // borders
-  --ls-border-color: #d4d4d4;
-  --ls-secondary-border-color: var(--rx-logseq-06);
-
-  // accent color (link, hover)
-  --ls-link-ref-text-color: var(--rx-logseq-09);
-  --ls-link-ref-text-hover-color: var(--rx-logseq-011);
-  --ls-active-primary-color: var(--rx-logseq-09);
-  --ls-active-secondary-color: var(--rx-logseq-011);
   --bf-external-link-color: #ea6e6e;
   --bf-external-link-hover-color: #e6515e;
-  --ls-link-text-color: var(--ls-link-ref-text-color);
-  --ls-link-text-hover-color: var(--ls-link-ref-text-hover-color);
-  --ls-alink-color: var(--ls-link-text-color);
-  --ls-cloze-text-color: var(--ls-link-ref-text-color);
 
-  // tags
-  --ls-tag-text-color: white;
-  --ls-tag-text-hover-color: white;
-  --bf-tag-background-color: #{$blue_light10};
-  --bf-tag-background-hover-color: #{$blue_light6};
+  --bf-tag-background-color: var(--lx-accent-10);
 
   // query builder
   --bf-query-clause-border-color: #{$blue_light6};
   --bf-query-clause-background-color: #8fc3ff15;
   --bf-query-clause-background-hover-color: #8fc3ff33;
 
-  // guildline
-  --ls-block-bullet-border-color: #00000015;
-  --ls-block-bullet-color: #c7c7c7;
-  --ls-guideline-color: #00000024;
-
-  // markdown content
-  --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
-  --ls-page-blockquote-color: var(--ls-primary-text-color);
-  --ls-page-blockquote-border-color: var(--ls-primary-text-color);
-  --ls-page-checkbox-color: var(--rx-logseq-07);
-  --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
-
-  // ui
-  --ls-icon-color: #919191;
-  --ls-header-button-text-color: #999;
-  --ls-header-button-text-color-hover: var(--ls-secondary-text-color);
-  --ls-header-button-background: var(--ls-secondary-background-color);
-  --ls-left-sidebar-text-color: var(--ls-primary-text-color);
-  --ls-button-background-hsl: 211.96 83.97% 53.53%; // $blue_light10
-
-  // ui --ls-menu-chosen-color
-  --ls-a-chosen-bg: #0007100f;
-
   // ui - scrollbar
   --ls-scrollbar-foreground-color: #00000014;
   --ls-scrollbar-background-color: #fff0;
   --bf-scrollbar-thumb-hover-color: #8a8a8a61;
 
-  // misc
-  --ls-title-text-color: #303537;
-
-  // right sidebar, cmdk, and accent color-level-4……
-  --color-level-1: var(--ls-secondary-background-color);
-  --color-level-2: var(--ls-tertiary-background-color);
-  --color-level-3: var(--ls-quaternary-background-color);
-
-  // Not in default theme.
-  --ls-block-bullet-threading-width: 2px; // in log-seq dev theme
-  --ls-block-bullet-active-color: var(--rx-logseq-08); // in log-seq dev theme $blue_light8
   --bf-a-chosen-bg: #0007100f;
   --bf-hard-shadow-color: var(--ls-block-bullet-border-color);
 }
+
+.dark-theme,
+html[data-theme="dark"] {
+  --bf-codeblock-background-color: #313238;
+
+  --bf-external-link-color: #e86e6e;
+  --bf-external-link-hover-color: #f29191;
+
+  // query builder
+  --bf-query-clause-border-color: var(--ls-secondary-border-color, #{$blue_dark6});
+  --bf-query-clause-background-color: #2f82c615;
+  --bf-query-clause-background-hover-color: #2f82c633;
+
+  --bf-strong-text-color: #d8d8d8;
+
+  // ui - scrollbar
+  --ls-scrollbar-foreground-color: #8a8a8a3d;
+  --ls-scrollbar-background-color: #fff0;
+  --bf-scrollbar-thumb-hover-color: #8a8a8a61;
+
+  --bf-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
+  --bf-hard-shadow-color: #1d1d1d;
+}
+
+
+/* ****************************
+***** Color Specific *******
+*******************************/
+
+// Attention that logseq generates the whole color
+// pallete for every single accent color selector, which may lead
+// the default color pallete completely expired in future.
+
+// accent color design system
+html[data-color="cyan"] {
+  body {
+    --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+  }
+  body.dark-theme {
+    --ls-page-checkbox-color: var(--lx-accent-09);
+    --bf-tag-background-color: var(--lx-accent-09);
+  }
+  body.light-theme {
+    --ls-page-checkbox-color: var(--lx-accent-08);
+  }
+}
+
+// default color design system
+html[data-color="logseq"] {
+  &[data-theme="light"] {
+    --rx-logseq-01: #ffffff;
+    --rx-logseq-02: #ecf3fd;
+    --rx-logseq-03: #d7e7fe;
+    --rx-logseq-04: #c0dbfd;
+    --rx-logseq-05: #a8cffd;
+    --rx-logseq-06: #{$blue_light6};
+    --rx-logseq-07: #{$blue_light7};
+    --rx-logseq-08: #{$blue_light8};
+    --rx-logseq-09: #{$blue_light9};
+    --rx-logseq-10: #{$blue_light10};
+    --rx-logseq-11: #{$blue_light11};
+    --rx-logseq-12: #{$blue_light12};
+
+    --accent: 212 84% 54%; // #{$blue_light10};
+    --primary: 212 84% 54%; // accent
+
+    // main text
+    --ls-primary-text-color: #2b2926;
+
+    // main background (linear gradient)
+    --ls-primary-background-color: #fff;
+    --ls-secondary-background-color: #f8f8f8;
+    --ls-tertiary-background-color: #efefef;
+    --ls-quaternary-background-color: #e8e8e8;
+
+    // block bg
+    --ls-page-properties-background-color: #88888818;
+    --ls-block-properties-background-color: #88888818;
+    --ls-callout-background-color: #8888881a;
+    --ls-table-tr-even-background-color: #0000000a;
+
+    // borders
+    --ls-border-color: #d4d4d4;
+    --ls-secondary-border-color: var(--rx-logseq-06);
+
+    // accent color (link, hover)
+    --ls-link-ref-text-color: var(--rx-logseq-09);
+    --ls-link-ref-text-hover-color: var(--rx-logseq-011);
+    --ls-active-primary-color: var(--rx-logseq-09);
+    --ls-active-secondary-color: var(--rx-logseq-011);
+
+    --ls-link-text-color: var(--ls-link-ref-text-color);
+    --ls-link-text-hover-color: var(--ls-link-ref-text-hover-color);
+    --ls-alink-color: var(--ls-link-text-color);
+    --ls-cloze-text-color: var(--ls-link-ref-text-color);
+
+    // tags
+    --ls-tag-text-color: white;
+    --ls-tag-text-hover-color: white;
+
+    // guildline
+    --ls-block-bullet-border-color: #00000015;
+    --ls-block-bullet-color: #c7c7c7;
+    --ls-guideline-color: #00000024;
+
+    // markdown content
+    --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+    --ls-page-blockquote-color: var(--ls-primary-text-color);
+    --ls-page-blockquote-border-color: var(--ls-primary-text-color);
+    --ls-page-checkbox-color: var(--rx-logseq-07);
+    --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
+
+    // ui
+    --ls-icon-color: #919191;
+    --ls-header-button-text-color: #999;
+    --ls-header-button-text-color-hover: var(--ls-secondary-text-color);
+    --ls-header-button-background: var(--ls-secondary-background-color);
+    --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+    --ls-button-background-hsl: 211.96 83.97% 53.53%; // $blue_light10
+
+    // ui --ls-menu-chosen-color
+    --ls-a-chosen-bg: #0007100f;
+
+    // misc
+    --ls-title-text-color: #303537;
+
+    // right sidebar, cmdk, and accent color-level-4……
+    --color-level-1: var(--ls-secondary-background-color);
+    --color-level-2: var(--ls-tertiary-background-color);
+    --color-level-3: var(--ls-quaternary-background-color);
+  }
+
+  &[data-theme="dark"] {
+    --rx-logseq-01: #093562;
+    --rx-logseq-02: #0f4276;
+    --rx-logseq-03: #0e4d8b;
+    --rx-logseq-04: #1b5fa0;
+    --rx-logseq-05: #2670b3;
+    --rx-logseq-06: #{$blue_dark6};
+    --rx-logseq-07: #{$blue_dark7};
+    --rx-logseq-08: #{$blue_dark8};
+    --rx-logseq-09: #{$blue_dark9};
+    --rx-logseq-10: #{$blue_dark10};
+    --rx-logseq-11: #{$blue_dark10}; // link text color
+    --rx-logseq-12: #{$blue_dark12};
+    --background: 225 6% 13%; // --ls-primary-background-color
+    --popover: 228 6% 16%; // --ls-secondary-background-color
+    --accent: 207 60% 54%; // #{$blue_dark7};
+    --border: 0 0.01% 25%; // #3f3f3f
+    --primary: 210 60% 54%; // accent
+    --secondary: 210 85% 42% / 20%; // dimmed accent
+    --muted: 210 85% 42% / 20%; // dimmed accent
+    --card: 210 85% 42% / 20%; // dimmed accent
+    --input: 210 35% 25%;
+
+    // main text
+    --ls-primary-text-color: #cecece;
+    --ls-secondary-text-color: #bbb;
+
+    // main background (linear gradient)
+    --ls-primary-background-color: #202024;
+    --ls-secondary-background-color: #28282c;
+    --ls-tertiary-background-color: #323235;
+    --ls-quaternary-background-color: #38383b;
+    --ls-left-sidebar-background-color: var(--ls-secondary-background-color); // fix bug in logseq v0.10.0 mobile view.
+
+    // block bg (hue 232)
+    --ls-page-properties-background-color: #8687892a;
+    --ls-block-properties-background-color: #8687892a;
+    --ls-callout-background-color: #8687892a;
+    --ls-table-tr-even-background-color: #adaeb81c;
+
+    // borders
+    --ls-border-color: #3f3f3f;
+    // --ls-secondary-border-color: #505255;
+    --ls-secondary-border-color: var(--rx-logseq-07);
+
+    // accent color (link, hover)
+    --ls-link-ref-text-color: var(--rx-logseq-11);
+    --ls-link-ref-text-hover-color: var(--rx-logseq-12);
+    --ls-active-primary-color: var(--ls-link-ref-text-color);
+    --ls-active-secondary-color: var(--rx-logseq-08);
+    --ls-block-ref-link-text-color: var(--rx-logseq-09);
+
+    --ls-link-text-color: var(--ls-link-ref-text-color);
+    --ls-link-text-hover-color: var(--ls-link-ref-text-hover-color);
+    --ls-alink-color: var(--ls-link-text-color);
+    --ls-cloze-text-color: var(--ls-link-ref-text-color);
+
+    // tags
+    --ls-tag-text-color: white;
+    --ls-tag-text-hover-color: white;
+    --bf-tag-background-color: var(--lx-accent-06);
+
+    // guildline
+    --ls-block-bullet-border-color: #ffffff25;
+    --ls-block-bullet-color: #ffffff33;
+    --ls-guideline-color: #ffffff33;
+
+    // markdown content
+    --ls-page-checkbox-color: var(--rx-logseq-08);
+    --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+    --ls-page-blockquote-color: var(--ls-primary-text-color);
+    --ls-page-blockquote-border-color: var(--ls-primary-text-color);
+    --ls-page-inline-code-color: #eb5757;
+    --ls-page-inline-code-bg-color: rgba(135, 131, 120, 0.15);
+    --ls-selection-background-color: #3e3e41;
+    --ls-block-highlight-color: #3e3e41;
+
+    // ui
+    --ls-icon-color: #b5b5b5;
+    --ls-search-icon-color: var(--ls-quaternary-background-color);
+    --ls-header-button-text-color: #b5b5b5;
+    --ls-header-button-text-color-hover: var(--ls-primary-text-color);
+    --ls-header-button-background: var(--ls-secondary-background-color);
+    --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+    --ls-button-background-hsl: 207 60% 54%; // $blue_dark7
+
+    // ui --ls-menu-chosen-color
+    --ls-a-chosen-bg: var(--ls-table-tr-even-background-color); // --ls-menu-hover-color
+    // misc
+    --ls-title-text-color: var(--ls-primary-text-color);
+
+    --ls-menu-hover-color: #36383b;
+    --ls-slide-background-color: var(--ls-primary-background-color);
+
+    --ls-head-text-color: #ffe27c;
+
+    // right sidebar, cmdk, and accent color-level-4……
+    --color-level-1: var(--ls-tertiary-background-color);
+    --color-level-2: var(--ls-quaternary-background-color);
+    --color-level-3: #3c3c40;
+    --color-level-4: #4c4e58;
+
+    .ui__context-menu-content,
+    .ui__dropdown-menu-content,
+    .ui__select-content {
+      --accent: 235 7% 70% / 0.11; // fix selection in // v0.10.7
+    }
+
+    .cp__cmdk .border-gray-06,
+    .cp__cmdk .border-gray-07 {
+      opacity: 1; // fix the dimmed text in v0.10.7
+    }
+  }
+}
+

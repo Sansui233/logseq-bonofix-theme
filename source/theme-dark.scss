@@ -28,10 +28,8 @@ html[data-theme="dark"] {
     a {
       &.tag {
         opacity: 0.83;
-        background-color: var(--lx-accent-06,var(--bf-tag-background-color));
         &:hover {
           opacity: 1;
-          background-color: var(--lx-accent-07,var(--bf-tag-background-color-hover));
         }
       }
       &.external-link {
@@ -46,7 +44,7 @@ html[data-theme="dark"] {
     }
 
     mark {
-      background: #524b25;
+      background: #766101;
       color: var(--ls-primary-text-color);
     }
     .external-link {

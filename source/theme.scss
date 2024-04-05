@@ -16,16 +16,11 @@ body {
 }
 
 .left-sidebar-inner {
-  a {
-    opacity: 0.9;
-  }
   // Unifed hover bg color
+  a.item.active,
   a.item:hover {
     opacity: unset;
     background-color: var(--bf-a-chosen-bg);
-  }
-  .nav-content-item .bd ul a {
-    opacity: 0.9;
   }
   .nav-content-item .header:hover,
   .nav-content-item .bd ul a:hover {
@@ -200,14 +195,21 @@ html ::-webkit-scrollbar-thumb:hover {
     border-radius: unset;
     transition: background-color 0.3s;
     padding: 0 1px;
+    border-left-color: var(var(--ls-border-color,var(--rx-gray-09)), var(--lx-gray-09));
 
     &:hover {
-      --ls-block-left-color: var(--ls-active-secondary-color);
+      background-color: var(--lx-accent-11);
     }
   }
   .block-properties {
     margin: 8px 0;
     padding: 10px 20px;
+  }
+  .block-properties, .page-properties {
+    background-color: var(--ls-block-properties-background-color,var(--rx-gray-03));
+  }
+  .embed.color-level {
+    background-color:var(--color-level-1)
   }
   blockquote {
     background-color: unset;
@@ -289,7 +291,7 @@ html ::-webkit-scrollbar-thumb:hover {
       border-radius: 10px;
       margin: 2px 0px;
       color: var(--ls-tag-text-color);
-      background-color: var(--lx-accent-10,var(--bf-tag-background-color));
+      background-color: var(--bf-tag-background-color);
       &:hover {
         text-decoration: unset;
       }
@@ -419,7 +421,7 @@ html ::-webkit-scrollbar-thumb:hover {
       padding: 0 0.5rem;
       line-height: 1.5rem;
       border-radius: 1.5rem;
-      border-color: var(--ls-secondary-border-color, var(--bf-query-clause-border-color));
+      border-color: var(--bf-query-clause-border-color);
       background-color: color-mix(in srgb, var(--lx-accent-03) 25%, transparent);
       &:hover {
         background-color: color-mix(in srgb, var(--lx-accent-04) 25%, transparent);
@@ -433,7 +435,7 @@ html ::-webkit-scrollbar-thumb:hover {
     }
     a.add-filter:hover {
       opacity: 1;
-      color: var(--lx-accent-09,var(--bf-tag-background-color));
+      color: var(--bf-tag-background-color);
     }
   }
 }
@@ -481,10 +483,6 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.references-blocks-item {
-  background: var(--lx-gray-02);
-}
-
 .references-blocks-item,
 .cp__right-sidebar-inner {
   div[data-refs-self*='"card"'] > .block-children-container {
@@ -492,13 +490,9 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 
-// 2024-02-26 block-bullet plugin style
-// .bullet-container:not(.typed-list){
-//   .bullet {
-//     background-color: var(--ls-block-bullet-active-color);
-//     opacity: 1;
-//   }
-// }
+.bullet-container:not(.typed-list) .bullet {
+  background-color: var(--ls-block-bullet-color,var(--rx-gray-08));
+}
 
 /******************************************
  **************  tippy  *****************
