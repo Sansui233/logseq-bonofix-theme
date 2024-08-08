@@ -7,7 +7,7 @@
    | 
   <a href="#install">📦 Install</a>
    | 
-  <a href="#whats-improved">✨ What's different</a>
+  <a href="#whats-different">✨ What's different</a>
    | 
   <a href="#how-to-build">🔨 How to build</a>
 </p>
