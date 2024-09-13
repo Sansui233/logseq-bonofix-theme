@@ -366,7 +366,8 @@ html ::-webkit-scrollbar-thumb:hover {
 
   // tables
   .query-table > table,
-  .custom-query-results table {
+  .custom-query-results table,
+  .block-body > .table-wrapper table {
     // word-break: break-word; is deprecated.
     word-break: normal; // avoid break on file name like xxx.js
     th {
