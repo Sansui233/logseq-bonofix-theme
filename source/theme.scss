@@ -197,14 +197,7 @@ html ::-webkit-scrollbar-thumb:hover {
     margin-bottom: 0.3rem;
   }
   .block-children-left-border {
-    border-radius: unset;
     transition: background-color 0.3s;
-    padding: 0 1px;
-    border-left-color: var(var(--ls-border-color, var(--rx-gray-09)), var(--lx-gray-09));
-
-    &:hover {
-      background-color: var(--lx-accent-11);
-    }
   }
   .block-properties,
   .page-properties {
