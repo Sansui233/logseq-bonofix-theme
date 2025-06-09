@@ -159,28 +159,24 @@ body {
   // }
 }
 
-// html ::-webkit-scrollbar {
-//   width: 8px;
-//   height: 8px;
-// }
 
-html ::-webkit-scrollbar-thumb {
-  background: var(--ls-scrollbar-foreground-color);
-  background-clip: padding-box;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-html ::-webkit-scrollbar-thumb:hover {
-  background: var(--bf-scrollbar-thumb-hover-color);
-  border-radius: 4px;
-  border: 2px solid transparent;
-}
-
-.visible-scrollbar ::-webkit-scrollbar, html.custom-scrollbar ::-webkit-scrollbar {
-  background-color: var(--ls-scrollbar-background-color);
+.visible-scrollbar, html.custom-scrollbar {
+  ::-webkit-scrollbar {
+    background-color: var(--ls-scrollbar-background-color);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--bf-scrollbar-thumb-hover-color);
+    border-radius: 4px;
+    border: 2px solid transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--ls-scrollbar-foreground-color);
+    background-clip: padding-box;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }
 
 /******************************************
