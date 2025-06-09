@@ -22,6 +22,11 @@ body {
     opacity: unset;
     background-color: var(--bf-a-chosen-bg);
   }
+
+  .nav-content-item .header {
+    background-color: var(--ls-secondary-background-color);
+  }
+
   .nav-content-item .header:hover,
   .nav-content-item .bd ul a:hover {
     background-color: var(--bf-a-chosen-bg);
